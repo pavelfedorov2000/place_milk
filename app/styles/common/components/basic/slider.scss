@@ -1,0 +1,73 @@
+.slider {
+	&-wrap {
+		position: relative;
+	}
+
+	&-arrows {
+		left: -17px;
+		right: -17px;
+
+		.swiper-button {
+
+			&-prev,
+			&-next {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}
+
+.swiper-button {
+
+	&-prev,
+	&-next {
+		margin: 0;
+
+		&:after {
+			content: '';
+		}
+	}
+
+	&-prev {
+		left: 0;
+	}
+
+	&-next {
+		right: 0;
+	}
+
+	&-disabled {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+
+	&:not(:last-child) {
+		margin-right: 1.65rem;
+	}
+}
+
+/* .swiper-pagination-current,
+.swiper-pagination-total {
+    &:before {
+        content: '0'; // если хотим нумерацию 01, 02, 03, ...
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+} */

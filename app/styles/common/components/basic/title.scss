@@ -1,0 +1,17 @@
+h2,
+.title {
+	font-size: 28px;
+	line-height: calc(33 / 28 * 100%);
+	font-weight: 400;
+	color: $color-default;
+}
+
+.title {
+	position: relative;
+
+	&__count {
+		position: absolute;
+		top: 2px;
+		right: -25px;
+	}
+}

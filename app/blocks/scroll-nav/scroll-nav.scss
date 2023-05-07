@@ -1,0 +1,73 @@
+.scroll-nav {
+	$this: &;
+
+	&__list {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 4px;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+		}
+	}
+
+	&__btn {
+		display: flex;
+		flex-direction: column;
+		gap: 6.5px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 300;
+
+		&::before {
+			display: none;
+		}
+
+		&.active {
+			font-weight: 400;
+
+			.btn__dot {
+				&::before {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&--aside {
+		@include sticky(20px);
+		grid-column: -2 / -1;
+		padding: 24px 30px;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+		box-shadow: $bsh-2;
+
+		#{$this} {
+			&__list {
+				@include row-grid(11px);
+				justify-items: end;
+
+				&::after {
+					top: 2px;
+					left: auto;
+					bottom: 2px;
+					right: 7px;
+					width: 2.5px;
+					height: auto;
+				}
+			}
+
+			&__btn {
+				flex-direction: row;
+				justify-content: flex-end;
+				gap: 22px;
+				text-align: right;
+			}
+		}
+	}
+}

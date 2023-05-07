@@ -1,0 +1,25 @@
+.bookmark {
+	position: relative;
+	padding: 25px 7px 8px 7px;
+	background-color: #AEC1E4;
+	writing-mode: vertical-lr;
+	clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+	transform: rotate(-180deg);
+
+	/* &::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: 0;
+		height: 10px;
+		background-color: #fff;
+		clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+	} */
+
+	&__text {
+		font-size: 10px;
+		line-height: 12px;
+		font-weight: 300;
+	}
+}

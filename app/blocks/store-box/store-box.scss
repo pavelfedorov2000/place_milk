@@ -1,0 +1,50 @@
+.store-box {
+	position: relative;
+	padding: 20px 20px 20px 65px;
+	min-height: 108px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(#AEC1E4, 0.3);
+	box-shadow: $bsh;
+
+	&__mark {
+		position: absolute;
+		top: 0;
+		left: 10px;
+	}
+
+	&__content {
+		width: 100%;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		gap: 15px;
+	}
+
+	// .store-box__title
+
+	&__title {
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	// .store-box__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4px;
+
+		.icon {
+			width: 16px;
+			height: 16px;
+		}
+
+		.btn__text {
+			text-decoration: underline;
+		}
+	}
+}

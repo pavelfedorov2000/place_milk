@@ -1,0 +1,48 @@
+<section class="buyers-photos">
+	<h3 class="buyers-photos__title">Фотографии покупателей</h3>
+	<div id="buyers-photos" class="slider-wrap buyers-photos__slider-wrap">
+		<div class="btns slider-arrows btns--arrows">
+			@@loop('blocks/button/button.html', [{
+			"style": "swiper",
+			"class": "swiper-button-prev",
+			"icon": "arrow-left"
+			}, {
+			"style": "swiper",
+			"class": "swiper-button-next",
+			"icon": "arrow-right"
+			}])
+		</div>
+		<div class="swiper buyers-photos__slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<picture>
+						<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
+						<img src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото" width="94" height="100"
+							loading="lazy">
+					</picture>
+				</div>
+				<div class="swiper-slide">
+					<picture>
+						<source type="image/webp" srcset="assets/images/content/catalog-goods/t-shirt-01.webp">
+						<img src="assets/images/content/catalog-goods/t-shirt-01.jpg" alt="фото" width="94" height="100"
+							loading="lazy">
+					</picture>
+				</div>
+				<div class="swiper-slide">
+					<picture>
+						<source type="image/webp" srcset="assets/images/content/catalog-goods/t-shirt-02.webp">
+						<img src="assets/images/content/catalog-goods/t-shirt-02.jpg" alt="фото" width="94" height="100"
+							loading="lazy">
+					</picture>
+				</div>
+				<div class="swiper-slide">
+					<picture>
+						<source type="image/webp" srcset="assets/images/content/catalog-goods/t-shirt-03.webp">
+						<img src="assets/images/content/catalog-goods/t-shirt-03.jpg" alt="фото" width="94" height="100"
+							loading="lazy">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

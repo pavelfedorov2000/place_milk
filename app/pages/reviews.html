@@ -1,0 +1,18 @@
+@@include("blocks/head/head.html", {"title": "Отзывы"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page">
+		@@include('blocks/promo-store/promo-store.html')
+		<div class="container">
+			@@include('blocks/reviews-block/reviews-block.html', {
+			"titleLevel": "h2",
+			"reviewAside": true
+			})
+		</div>
+	</main>
+	@@include("blocks/footer/footer.html")
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

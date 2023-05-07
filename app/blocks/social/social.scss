@@ -1,0 +1,24 @@
+.social {
+
+	// .social__title
+
+	&__title {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-weight: 500;
+	}
+}
+
+.social-list {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	&__item {
+		.icon {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+[{
+    "href": "home.html",
+    "title": "Главная"
+}, {
+    "href": "home-without-catalog.html",
+    "title": "Главная (без каталога)"
+}, {
+    "href": "catalog.html",
+    "title": "Каталог"
+}, {
+    "href": "catalog-subcategories.html",
+    "title": "Каталог подкатегорий"
+}, {
+    "href": "product-card.html",
+    "title": "Карточка товара"
+}, {
+    "href": "reviews.html",
+    "title": "Отзывы"
+}, {
+    "href": "shops.html",
+    "title": "Общая магазины"
+}, {
+    "href": "shop-reviews.html",
+    "title": "Страница магазина отзывы"
+}, {
+    "href": "shop-goods.html",
+    "title": "Страница магазина товары"
+}, {
+    "href": "lk-orders.html",
+    "title": "ЛК Заказы"
+}, {
+    "href": "lk-goods.html",
+    "title": "ЛК Товары"
+}, {
+    "href": "lk-messages.html",
+    "title": "ЛК Сообщения"
+}, {
+    "href": "lk-characteristics.html",
+    "title": "Характеристики"
+}, {
+    "href": "lk-discounts.html",
+    "title": "ЛК Скидки"
+}, {
+    "href": "lk-upload.html",
+    "title": "ЛК Загрузка товаров"
+}, {
+    "href": "lk-add-info.html",
+    "title": "ЛК Добавление основной информации"
+}, {
+    "href": "lk-add-media.html",
+    "title": "ЛК Добавление медиа"
+}, {
+    "href": "lk-add-good-look.html",
+    "title": "ЛК Добавление вида товара"
+}, {
+    "href": "lk-add-good-variation.html",
+    "title": "ЛК Добавление вариации товара"
+}, {
+    "href": "lk-add-good-characteristics.html",
+    "title": "ЛК Добавление характеристик"
+}, {
+    "href": "lk-profile-settings.html",
+    "title": "Настройки профиля"
+}, {
+    "href": "lk-disputes.html",
+    "title": "ЛК Возвраты и споры"
+}, {
+    "href": "lk-user-orders.html",
+    "title": "ЛК Заказы Юзера"
+}, {
+    "href": "news.html",
+    "title": "Общая новости"
+}, {
+    "href": "news-detail.html",
+    "title": "Страница новости"
+}, {
+    "href": "articles.html",
+    "title": "Общая статьи"
+}, {
+    "href": "article.html",
+    "title": "Страница статьи"
+}, {
+    "href": "common-text.html",
+    "title": "Общая текстовая"
+}]

@@ -1,0 +1,181 @@
+@@include("blocks/head/head.html", {"title": "Характеристики"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page lk-page">
+		<div class="container">
+			<div class="grid-row lk-page__grid">
+				<div class="span-3 lk-page__nav">
+					@@include('blocks/aside-nav/aside-nav.html', {
+					"secondActive": true
+					})
+				</div>
+				<div class="lk-page__top">
+					<h1 class="title">Характеристики</h1>
+					@@include('blocks/button/button.html', {
+					"href": "#",
+					"class": "lk-page__help-btn",
+					"style": "bg-blue",
+					"sprite": "info",
+					"text": "Помощь"
+					})
+				</div>
+				<div class="span-9 lk-page__body">
+					@@include('blocks/link-tabs/link-tabs.html', {
+					"secondActive": true,
+					"class": "lk-page__tabs"
+					})
+					@@include('blocks/button/button.html', {
+					"class": "lk-page__add-btn",
+					"text": "Добавить группу"
+					})
+					<ul class="lk-page__cards">
+						<li>
+							<article class="characteristics-card">
+								<div class="characteristics-card__content">
+									<h2 class="characteristics-card__title">Сезон</h2>
+									<section class="characteristics-card__item">
+										<h3 class="characteristics-card__item-title">Характеристики</h3>
+										<div class="characteristics-card__item-content">
+											<div class="badges characteristics-card__badges">
+												@@loop('blocks/badge/badge.html', [{
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Лето"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Осень"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Зима"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Весна"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Демисезон"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Снег"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "Все сезоны"
+												}])
+											</div>
+										</div>
+									</section>
+									<section class="characteristics-card__item">
+										<h3 class="characteristics-card__item-title">Разделы</h3>
+										<div class="characteristics-card__item-content">
+											<div class="characteristics-card__categories">
+												<div class="characteristics-card__category">
+													<p>
+														Одежда, обувь и аксессуары / Мужчинам / Футболки и майки /
+														Футболки /
+													</p>
+													<div class="characteristics-card__category-title">Marple</div>
+												</div>
+												<div class="characteristics-card__category">
+													<p>
+														Одежда, обувь и аксессуары / Мужчинам / Футболки и майки /
+														Футболки /
+													</p>
+													<div class="characteristics-card__category-title">Лето</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="characteristics-card__btns btns">
+									@@loop('blocks/button/button.html', [{
+									"class": "characteristics-card__action-btn",
+									"style": "action-purple",
+									"icon": "pencil"
+									}, {
+									"class": "characteristics-card__action-btn",
+									"style": "action-red",
+									"sprite": "trash"
+									}])
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="characteristics-card">
+								<div class="characteristics-card__content">
+									<h2 class="characteristics-card__title">Сезон</h2>
+									<section class="characteristics-card__item">
+										<h3 class="characteristics-card__item-title">Характеристики</h3>
+										<div class="characteristics-card__item-content">
+											<div class="badges characteristics-card__badges">
+												@@loop('blocks/badge/badge.html', [{
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "S"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "M"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "XS"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "L"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "XXL"
+												}, {
+												"style": "2",
+												"class": "characteristics-card__badge",
+												"text": "XXS"
+												}])
+											</div>
+										</div>
+									</section>
+									<section class="characteristics-card__item">
+										<h3 class="characteristics-card__item-title">Разделы</h3>
+										<div class="characteristics-card__item-content">
+											<div class="characteristics-card__categories">
+												<div class="characteristics-card__category">
+													<p>
+														Одежда, обувь и аксессуары / Мужчинам / Футболки и майки /
+														Футболки /
+													</p>
+													<div class="characteristics-card__category-title">Marple</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="characteristics-card__btns btns">
+									@@loop('blocks/button/button.html', [{
+									"class": "characteristics-card__action-btn",
+									"style": "action-purple",
+									"icon": "pencil"
+									}, {
+									"class": "characteristics-card__action-btn",
+									"style": "action-red",
+									"sprite": "trash"
+									}])
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	@@include("blocks/footer/footer.html")
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

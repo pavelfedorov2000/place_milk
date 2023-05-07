@@ -1,0 +1,27 @@
+@@include("blocks/head/head.html", {"title": "Общая статьи"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page">
+		<div class="container">
+			<div class="page-top">
+				<h1 class="title">Наши статьи</h1>
+			</div>
+			<ul class="grid-row articles">
+				@@loop('blocks/article-card/article-card.html', "../resources/assets/articles.json")
+			</ul>
+			@@include('blocks/pagination/pagination.html')
+		</div>
+	</main>
+	@@include('blocks/catalog-section/catalog-section.html', {
+	"aside": true,
+	"title": "Ранее вы смотрели",
+	"goods": "viewed-earlier",
+	"items": "5",
+	"with": "bg",
+	"withoutBtn": true
+	})
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

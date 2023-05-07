@@ -1,0 +1,28 @@
+<div class="promo">
+	<div class="container">
+		<div class="grid-row">
+			@@include('blocks/menu/menu.html', {
+			"class": "card promo__menu span-3"
+			})
+			@@include('blocks/banner-slider/banner-slider.html', {
+			"class": "promo__banner span-9"
+			})
+			@@if(context.smallBanners){
+			<a href="#" class="promo__banner span-3">
+				<picture class="promo__banner-img">
+					<source type="image/webp" srcset="assets/images/content/banners/banner-01.webp">
+					<img class="img-cover" src="assets/images/content/banners/banner-01.jpg" alt="баннер" width="295"
+						height="162" loading="lazy">
+				</picture>
+			</a>
+			<a href="#" class="promo__banner span-3">
+				<picture class="promo__banner-img">
+					<source type="image/webp" srcset="assets/images/content/banners/banner-02.webp">
+					<img class="img-cover" src="assets/images/content/banners/banner-02.jpg" alt="баннер" width="295"
+						height="162" loading="lazy">
+				</picture>
+			</a>
+			}
+		</div>
+	</div>
+</div>

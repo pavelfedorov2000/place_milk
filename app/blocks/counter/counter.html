@@ -1,0 +1,11 @@
+<div class="counter@@if(context.class){ @@class}">
+	@@include('blocks/button/button.html', {
+	"class": "counter__btn js-minus",
+	"sprite": "arrow-down"
+	})
+	<input type="number" class="counter__input" value="@@value">
+	@@include('blocks/button/button.html', {
+	"class": "counter__btn js-plus",
+	"sprite": "arrow-up"
+	})
+</div>

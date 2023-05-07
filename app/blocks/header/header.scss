@@ -1,0 +1,65 @@
+.header {
+	position: relative;
+	padding: 15px 0 18px;
+	box-shadow: $bsh;
+
+	@media(max-width: $lg) {
+		height: var(--header-height-mob);
+	}
+
+	// .header__inner
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(2, auto) 1fr auto;
+		grid-template-areas:
+			'. . menu lang'
+			'burger logo search actions'
+		;
+		gap: 10px 32px;
+		align-items: center;
+	}
+
+	&__menu {
+		grid-area: menu;
+	}
+
+	&__lang {
+		grid-area: lang;
+		justify-self: end;
+	}
+
+	&__burger {
+		grid-area: burger;
+		width: 77px;
+		height: 77px;
+	}
+
+	// .header__logo
+
+	&__logo {
+		grid-area: logo;
+	}
+
+	&__search {
+		grid-area: search;
+	}
+
+	// .header__actions
+
+	&__actions {
+		grid-area: actions;
+		gap: 50px;
+	}
+
+	&__action {
+		flex-direction: column;
+
+		svg {
+			margin-right: 0;
+			margin-bottom: 5px;
+			width: 26px;
+			height: 26px;
+		}
+	}
+}

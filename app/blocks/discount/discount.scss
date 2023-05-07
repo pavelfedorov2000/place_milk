@@ -1,0 +1,21 @@
+.discount {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	// .discount__title
+
+	&__title {}
+
+	// .discount__value
+
+	&__value {
+		margin-left: 40px;
+		font-weight: 300;
+	}
+
+	// .discount__actions
+
+	&__actions {
+		gap: 5px;
+	}
+}

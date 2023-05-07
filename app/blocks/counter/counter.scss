@@ -1,0 +1,41 @@
+.counter {
+	position: relative;
+	display: grid;
+	grid-template-columns: 24px 1fr 24px;
+	grid-template-rows: 44px;
+	background: var(--accent);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		left: 1px;
+		background-color: var(--white);
+	}
+
+	&__input {
+		position: relative;
+		z-index: 2;
+		align-self: center;
+		width: 100%;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&__btn {
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.1) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+
+		&:before {
+			display: none;
+		}
+
+		.icon {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.prices {
+	display: flex;
+	align-items: flex-end;
+
+	&--orientation {
+		&_col {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}
+
+.new-price {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: var(--red);
+}
+
+.old-price {
+	position: relative;
+	font-size: 10px;
+	line-height: 12px;
+	color: var(--gray);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: -2px;
+		width: 37px;
+		height: 1px;
+		background-color: var(--red);
+		transform: matrix(1, -0.09, 0.08, 1, 0, 0);
+	}
+}
+
+.price {
+	font-size: 16px;
+	line-height: calc(19 / 16 * 100%);
+	font-weight: 500;
+}

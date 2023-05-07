@@ -1,0 +1,30 @@
+<nav class="aside-nav">
+	<ul class="aside-nav__list">
+		@@loop('blocks/button/button.html', [{
+		"href": "#",
+		"transparent": true,
+		"class": "aside-nav__link@@if(context.firstActive){ active}",
+		"text": "Заказы"
+		}, {
+		"href": "#",
+		"transparent": true,
+		"class": "aside-nav__link@@if(context.secondActive){ active}",
+		"text": "@@if(context.disputes){Возвраты и споры}@@if(!context.disputes){Каталог товаров}"
+		}, {
+		"href": "#",
+		"transparent": true,
+		"class": "aside-nav__link@@if(context.thirdActive){ active}",
+		"text": "@@if(context.wishes){Мои желания}@@if(!context.wishes){Сообщения}"
+		}, {
+		"href": "#",
+		"transparent": true,
+		"class": "aside-nav__link@@if(context.fourthActive){ active}",
+		"text": "@@if(context.reviews){Отзывы}@@if(!context.reviews){Сообщения}"
+		}, {
+		"href": "#",
+		"transparent": true,
+		"class": "aside-nav__link@@if(context.fifthActive){ active}",
+		"text": "Настройки профиля"
+		}])
+	</ul>
+</nav>

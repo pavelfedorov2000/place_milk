@@ -1,0 +1,28 @@
+@@include("blocks/head/head.html", {"title": "Новости общая"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page text-page">
+		<div class="container">
+			<div class="page-top">
+				<h1 class="title">Новости</h1>
+			</div>
+			<ul class="grid-row news">
+				@@loop('blocks/news-card/news-card.html', "../resources/assets/news.json")
+			</ul>
+			@@include('blocks/pagination/pagination.html')
+		</div>
+	</main>
+	@@include('blocks/catalog-section/catalog-section.html', {
+	"aside": true,
+	"title": "Ранее вы смотрели",
+	"goods": "viewed-earlier",
+	"items": "5",
+	"with": "bg",
+	"withoutBtn": true
+	})
+	@@include('blocks/footer/footer.html')
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

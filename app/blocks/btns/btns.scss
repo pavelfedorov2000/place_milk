@@ -1,0 +1,11 @@
+.btns {
+	display: flex;
+
+	&--arrows {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		justify-content: space-between;
+		z-index: 10;
+	}
+}

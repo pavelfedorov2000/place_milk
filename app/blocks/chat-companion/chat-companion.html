@@ -1,0 +1,19 @@
+<button class="chat-companion@@if(context.isActive){ active}" type="button">
+	<picture class="chat-companion__avatar">
+		<source type="image/webp" srcset="@@src.webp">
+		<img class="img-cover" src="@@src.png" alt="аватарка собеседника" width="36" height="36" loading="lazy">
+	</picture>
+	<span class="chat-companion__name">@@name</span>
+	<span class="chat-companion__datetime">@@datetime</span>
+	<span class="chat-companion__text">
+		Добрый день, подскажите пожалуйста Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa praesentium,
+		velit aliquid vitae nam at officia minus possimus, in, hic perspiciatis fugiat iure nostrum a officiis! Pariatur
+		vero ex corporis?
+	</span>
+	@@if(context.count){
+	@@include('blocks/count/count.html', {
+	"class": "chat-companion__count",
+	"valueFirst": "@@count"
+	})
+	}
+</button>

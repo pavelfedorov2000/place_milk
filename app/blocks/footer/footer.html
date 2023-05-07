@@ -1,0 +1,137 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__main">
+			<section class="footer__col">
+				<span class="footer__title">Покупателям</span>
+				<ul class="footer__menu">
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Как это работает"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Защита покупателя"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Условия оплаты"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Условия использования"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Регистрация аккаунта"
+						})
+					</li>
+				</ul>
+			</section>
+			<section class="footer__col">
+				<span class="footer__title">Поставщикам</span>
+				<ul class="footer__menu">
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Как стать продавцом"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Правила участия"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Личный кабинет продавца"
+						})
+					</li>
+				</ul>
+			</section>
+			<section class="footer__col">
+				<span class="footer__title">О компании</span>
+				<ul class="footer__menu">
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "О PlaceMik"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Новости"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Часто задаваемые вопросы"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Служба поддержки"
+						})
+					</li>
+					<li>
+						@@include('blocks/button/button.html', {
+						"href": "#",
+						"transparent": true,
+						"class": "footer__menu-link",
+						"text": "Сообщить о нарушении авторских прав"
+						})
+					</li>
+				</ul>
+			</section>
+			<section class="footer__col">
+				@@include('blocks/subscribe-form/subscribe-form.html', {
+				"class": "footer__subscribe"
+				})
+				@@include('blocks/social/social.html')
+			</section>
+		</div>
+		<div class="footer__bottom">
+			<a class="logo footer__logo" href="#">
+				<img class="logo__img" src="assets/images/logo/logo-white.svg" alt="Логотип">
+			</a>
+			<div class="footer__copyright">© PlaceMik.ru, 2021</div>
+		</div>
+	</div>
+</footer>

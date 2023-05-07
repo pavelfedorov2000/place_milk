@@ -1,0 +1,263 @@
+[{
+    "sale": "-25%",
+    "src": "boy-01",
+    "newPrice": "1 999 ₽",
+    "oldPrice": "2 499 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая"
+    }
+}, {
+    "sale": "-25%",
+    "src": "boy-02",
+    "newPrice": "1 999 ₽",
+    "oldPrice": "3 179 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 01 градиент"
+    }
+}, {
+    "sale": "-25%",
+    "src": "hat-01",
+    "newPrice": "1 375 ₽",
+    "oldPrice": "1 999 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Бейсболка с дизайнерским принтом Super Shape 01 белая"
+    }
+}, {
+    "sale": "-25%",
+    "src": "phone-01",
+    "newPrice": "599 ₽",
+    "oldPrice": "990 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03"
+    }
+}, {
+    "src": "boy-01",
+    "price": "1 999 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 05"
+    }
+}, {
+    "sale": "-25%",
+    "src": "boy-02",
+    "newPrice": "1 999 ₽",
+    "oldPrice": "2 499 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка80 с дизайнерским принтом Super Shape 0201 абстракция на фиолетовом фоне"
+    }
+}, {
+    "sale": "-25%",
+    "src": "hat-02",
+    "newPrice": "1 375 ₽",
+    "oldPrice": "2 499 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Бейсболка с дизайнерским принтом Super Shape 02 абстракция"
+    }
+}, {
+    "sale": "-25%",
+    "src": "phone-02",
+    "newPrice": "599 ₽",
+    "oldPrice": "990 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03"
+    }
+}, {
+    "sale": "-25%",
+    "src": "phone-03",
+    "newPrice": "599 ₽",
+    "oldPrice": "990 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 02"
+    }
+}, {
+    "sale": "-25%",
+    "src": "boy-03",
+    "newPrice": "3 179 ₽",
+    "oldPrice": "1 999 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая"
+    }
+}, {
+    "sale": "-25%",
+    "src": "phone-04",
+    "newPrice": "599 ₽",
+    "oldPrice": "990 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 06"
+    }
+}, {
+    "sale": "-25%",
+    "src": "boy-05",
+    "newPrice": "2 3999 ₽",
+    "oldPrice": "3 790 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 06 абстракция"
+    }
+}, {
+    "src": "t-shirt-01",
+    "price": "2 399 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}, {
+    "src": "boy-05",
+    "price": "1 375 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}, {
+    "src": "t-shirt-02",
+    "price": "2 399 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}, {
+    "src": "phone-05",
+    "price": "1 375 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 01"
+    }
+}, {
+    "src": "phone-06",
+    "price": "1 999 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03"
+    }
+}, {
+    "src": "hat-03",
+    "price": "1 599 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Бейсболка с дизайнерским принтом Super Shape 01 белая"
+    }
+}, {
+    "src": "phone-07",
+    "price": "2 399 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03"
+    }
+}, {
+    "src": "t-shirt-03",
+    "price": "3 179 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}, {
+    "src": "phone-02",
+    "price": "2 399 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 05"
+    }
+}, {
+    "src": "phone-07",
+    "price": "1 375 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03"
+    }
+}, {
+    "src": "boy-06",
+    "price": "1 999 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}, {
+    "src": "t-shirt-04",
+    "price": "2 399 ₽",
+    "rating": {
+        "total": "4.9",
+        "text": "14 отзывов"
+    },
+    "title": {
+        "text": "Футболка с дизайнерским принтом Super Shape 04 формулы"
+    }
+}]

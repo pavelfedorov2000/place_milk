@@ -1,0 +1,60 @@
+.radiobutton {
+	$this: &; // .radio
+
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&__input {
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		clip: rect(0 0 0 0);
+
+		&:checked~#{$this} {
+			&__style {
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			&__text {
+				background: var(--accent);
+				color: var(--white);
+				font-weight: 400;
+			}
+		}
+	}
+
+	&__style {
+		position: relative;
+		flex-shrink: 0;
+		@include round(20px);
+		box-sizing: border-box;
+		border: 1px solid var(--black);
+		transition: $transition all;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@include round(14px);
+			background: var(--accent);
+			opacity: 0;
+			transition: $transition opacity;
+		}
+	}
+
+	&__text {
+		padding: 6px 29px;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.1) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+		border-radius: $brs-card;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 300;
+	}
+}

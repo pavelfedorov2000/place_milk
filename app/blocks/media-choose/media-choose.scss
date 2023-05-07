@@ -1,0 +1,76 @@
+.media-choose {
+	$this: &;
+
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 27px;
+
+	&:first-child {
+		grid-column: 1 / -1;
+	}
+
+	// .media-choose__box
+
+	&__box {
+		width: 160px;
+		height: 160px;
+		display: grid;
+		place-items: center;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+		transition: $transition box-shadow;
+
+		&--round {
+			border-radius: 50%;
+		}
+
+		.icon {
+			width: 30px;
+			height: 30px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: $bsh;
+			}
+		}
+	}
+
+	// .media-choose__text
+
+	&__text {
+		@include row-grid(10px);
+	}
+
+	&.is-disabled {
+		display: none;
+	}
+
+	&--size {
+		&_small {
+			gap: 11px;
+
+			#{$this} {
+				&__box {
+					width: 50px;
+					height: 50px;
+
+					.icon {
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				&__text {
+					row-gap: 5px;
+
+					p {
+						font-size: 12px;
+						line-height: 15px;
+					}
+				}
+			}
+		}
+	}
+}

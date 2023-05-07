@@ -1,0 +1,8 @@
+<div class="search-block@@if(context.class){ @@class}">
+	<input @@if(context.id){@@id} class="search-block__input">
+	@@include('blocks/button/button.html', {
+	"class": "search-block__btn",
+	"transparent": true,
+	"sprite": "search"
+	})
+</div>

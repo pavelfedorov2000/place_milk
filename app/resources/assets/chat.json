@@ -1,0 +1,48 @@
+[{
+    "src": "assets/images/icons/avatars/01",
+    "name": "Иван Сидоров",
+    "datetime": "13:30",
+    "count": "1"
+}, {
+    "src": "assets/images/icons/avatars/02",
+    "name": "Мария Миронова",
+    "datetime": "12:30",
+    "count": "1"
+}, {
+    "src": "assets/images/icons/avatars/03",
+    "name": "Анастасия Константиновна",
+    "datetime": "понедельник"
+}, {
+    "src": "assets/images/icons/avatars/04",
+    "name": "Василий Петров",
+    "datetime": "01/03/20"
+}, {
+    "isActive": true,
+    "src": "assets/images/icons/avatars/03",
+    "name": "Анастасия Константиновна",
+    "datetime": "01/03/20"
+}, {
+    "src": "assets/images/icons/avatars/04",
+    "name": "Василий Петров",
+    "datetime": "01/03/20"
+}, {
+    "src": "assets/images/icons/avatars/03",
+    "name": "Анастасия Константиновна",
+    "datetime": "01/03/20"
+}, {
+    "src": "assets/images/icons/avatars/04",
+    "name": "Василий Петров",
+    "datetime": "01/03/20"
+}, {
+    "src": "assets/images/icons/avatars/03",
+    "name": "Анастасия Константиновна",
+    "datetime": "01/03/20"
+},{
+    "src": "assets/images/icons/avatars/01",
+    "name": "Иван Сидоров",
+    "datetime": "01/03/20"
+}, {
+    "src": "assets/images/icons/avatars/02",
+    "name": "Мария Миронова",
+    "datetime": "01/03/20"
+}]

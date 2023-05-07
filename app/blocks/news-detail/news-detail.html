@@ -1,0 +1,28 @@
+<article class="news-detail">
+	<header class="news-detail__head">
+		<h1 class="title">@@title</h1>
+		<time class="news-detail__date" datetime="@@datetime">@@date</time>
+	</header>
+	<div class="news-detail__subtitle">@@subtitle</div>
+	<picture class="news-detail__picture">
+		<source type="image/webp" srcset="@@picture.webp">
+		<img src="@@picture.jpg" alt="фото" width="1280" height="425" loading="lazy">
+	</picture>
+	<div class="text-block news-detail__text">
+		@@if(context.text1){
+		<p>@@text1</p>
+		}
+		@@if(context.text2){
+		<p>@@text2</p>
+		}
+		@@if(context.text3){
+		<p>@@text3</p>
+		}
+		@@if(context.text4){
+		<p>@@text4</p>
+		}
+		@@if(context.text5){
+		<p>@@text5</p>
+		}
+	</div>
+</article>

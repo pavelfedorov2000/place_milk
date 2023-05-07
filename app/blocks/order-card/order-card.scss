@@ -1,0 +1,285 @@
+.order-card {
+	$this: &;
+
+	display: grid;
+	grid-template-columns: 187px 1fr;
+
+	.order-card {
+		display: grid;
+		grid-template-columns: 171px 1fr;
+	}
+
+	&--style {
+		&_wrap {
+			padding: 12px 16px;
+			grid-template-columns: 1fr;
+			gap: 16px;
+			box-shadow: $bsh-2;
+
+			#{$this} {
+				&__title {
+					justify-self: center;
+				}
+
+				&__aside {
+					padding: 14px;
+					display: grid;
+					align-content: center;
+					justify-items: center;
+					text-align: center;
+					background-color: rgba(#AEC1E4, 0.2);
+					box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+				}
+
+				&__body {
+					padding: 15px 17px 15px 31px;
+					gap: 50px;
+				}
+
+				&__date {
+					text-align: left;
+				}
+
+				&__total {
+					align-self: center;
+					column-gap: 20px;
+				}
+			}
+		}
+	}
+
+	&__header {
+		padding-right: 17px;
+		display: grid;
+		grid-template-columns: 171px 1fr auto 50px auto;
+		align-items: center;
+	}
+
+	&__trash-btn {
+		grid-column: -2 / -1;
+	}
+
+	// .order-card__aside
+
+	&__aside {
+		padding: 22px 21px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__aside-btns {
+		gap: 10px;
+	}
+
+	&__title,
+	&__brand {
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+	}
+
+	// .order-card__title
+
+	&__title {
+		font-weight: 400;
+	}
+
+	&__brand {
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	// .order-card__date
+
+	&__date {
+		font-weight: 300;
+	}
+
+	&__title,
+	&__date,
+	&__code {
+		text-align: center;
+	}
+
+	&__status {
+		align-self: start;
+	}
+
+	&__status-subtext {
+		text-align: left;
+	}
+
+	// .order-card__code
+
+	&__code {
+		margin-top: auto;
+		background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	&__code-text {
+		font-weight: 300;
+	}
+
+	// .order-card__body
+
+	&__body {
+		padding: 23px 30px 32px;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: flex-start;
+		gap: 60px;
+	}
+
+	// .order-card__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .order-card__goods
+
+	&__goods {
+		@include row-grid(14px);
+	}
+
+	// .order-card__total
+
+	&__total {
+		align-self: end;
+		display: flex;
+		align-items: flex-start;
+		gap: 5px 50px;
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+	}
+
+	// .order-card__total-key
+
+	&__total-key {
+		font-weight: 300;
+	}
+
+	// .order-card__total-value
+
+	&__total-value {
+		font-weight: 500;
+	}
+
+	// .order-card__actions
+
+	&__actions {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&.waiting_for_the_delivery {
+		#{$this} {
+			&__aside {
+				background-color: rgba(196, 196, 196, 0.1);
+			}
+		}
+	}
+
+	&.denied {
+		#{$this} {
+			&__aside {
+				background-color: rgba(#F64D4D, 0.1);
+			}
+
+			&__status {
+				color: var(--red);
+			}
+		}
+	}
+
+	&.sended {
+		#{$this} {
+			&__aside {
+				background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.1) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+			}
+
+			&__status {
+				font-weight: 300;
+			}
+		}
+	}
+
+	&.received {
+		#{$this} {
+			&__aside {
+				background-color: rgba(174, 193, 228, 0.3);
+			}
+
+			&__status {
+				color: var(--blue);
+			}
+		}
+	}
+}
+
+.order-good {
+	display: grid;
+	grid-template-columns: 80px 1fr auto;
+	gap: 36px;
+	// .order-good__img
+
+	&__img {
+		width: 80px;
+		height: 80px;
+		object-fit: cover;
+		border: 1px solid var(--black);
+	}
+
+	// .order-good__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 4px;
+	}
+
+	// .order-good__title
+
+	&__title {
+		position: relative;
+		max-width: 187px;
+		font-weight: 300;
+	}
+
+	// .order-good__articul
+
+	&__articul {
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+
+		span,
+		b {
+			font-weight: 400;
+		}
+	}
+
+	&__remove {
+		margin-top: auto;
+	}
+
+	// .order-good__nums
+
+	&__nums {
+		display: flex;
+		gap: 4px 36px;
+	}
+
+	// .order-good__num
+
+	&__num {
+		font-weight: 300;
+	}
+}

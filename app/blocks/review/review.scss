@@ -1,0 +1,85 @@
+.reviews-list {
+	@include row-grid(20px);
+}
+
+.review {
+	padding: 22px 20px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 40px;
+	align-items: flex-start;
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, max-content) 8px max-content 8px max-content 1fr;
+		grid-template-areas: 'avatar author . datetime . rating .'
+			'avatar city city . . . .'
+			'. text text text text text text'
+			'. btn btn btn btn btn .'
+		;
+		gap: 10px 16px;
+		justify-items: start;
+	}
+
+	// .review__avatar
+
+	&__avatar {
+		@include round(40px);
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+		display: grid;
+		place-items: center;
+		grid-area: avatar;
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-weight: 500;
+		color: var(--white);
+		text-align: center;
+	}
+
+	// .review__author
+
+	&__author {
+		grid-area: author;
+	}
+
+	// .review__date
+
+	&__datetime {
+		grid-area: datetime;
+		font-weight: 300;
+	}
+
+	&__rating {
+		grid-area: rating;
+	}
+
+	// .review__city
+
+	&__city {
+		grid-area: city;
+	}
+
+	// .review__text
+
+	&__text {
+		grid-area: text;
+		font-weight: 300;
+		max-width: 608px;
+	}
+
+	&__btn {
+		padding: 8px 19.5px;
+		grid-area: btn;
+	}
+
+	&__aside {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&__aside-rate {
+		width: 80px;
+		height: 80px;
+	}
+}

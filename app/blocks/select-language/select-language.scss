@@ -1,0 +1,37 @@
+.select-language {
+	display: flex;
+	gap: 11px;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 300;
+	// .select-language__flag
+
+	&__flag {
+		width: 20px;
+		height: 13px;
+	}
+
+	&__drop {
+		svg {
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	>* {
+		&:not(:first-child):not(:last-child) {
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -5px;
+				width: 0.5px;
+				height: 10px;
+				background-color: var(--black);
+			}
+		}
+	}
+}

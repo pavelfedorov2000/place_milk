@@ -1,0 +1,21 @@
+<li>
+	<div class="discount">
+		<div class="discount__title">
+			Скидка опт @@percent
+		</div>
+		<div class="discount__value">
+			<span>@@percent%</span> / <span>@@quantity шт.</span>
+		</div>
+		<div class="btns discount__actions">
+			@@loop('blocks/button/button.html', [{
+			"class": "characteristics-card__action-btn",
+			"style": "action-purple",
+			"icon": "pencil"
+			}, {
+			"class": "characteristics-card__action-btn",
+			"style": "action-red",
+			"sprite": "trash"
+			}])
+		</div>
+	</div>
+</li>

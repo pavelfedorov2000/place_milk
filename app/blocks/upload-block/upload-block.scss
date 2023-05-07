@@ -1,0 +1,22 @@
+.upload-block {
+
+	// .upload-block__title
+
+	&__title {
+		margin: 30px 0 15px;
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+	}
+
+	// .upload-block__btn
+
+	&__choose-file {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 27px;
+	}
+
+	&__btn {
+		padding: 14px 45.5px;
+	}
+}

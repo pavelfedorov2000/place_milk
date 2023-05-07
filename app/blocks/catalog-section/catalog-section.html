@@ -1,0 +1,43 @@
+<@@if(context.aside){aside}@@if(!context.aside){section} @@if(context.id){id="@@id" }
+	class="catalog-section@@if(context.with){ catalog-section--with_@@with}">
+	<div class="container">
+		<div class="section-top">
+			<h2 class="title">@@title</h2>
+		</div>
+		@@if(!context.swiper){
+		<ul class="grid-row@@if(context.items){ grid-row--items_@@items}">
+			@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/@@goods.json")
+		</ul>
+		}
+		@@if(context.swiper){
+		<div class="slider-wrap">
+			<div class="btns slider-arrows btns--arrows">
+				@@include('blocks/button/button.html', {
+				"style": "swiper",
+				"class": "swiper-button-prev",
+				"icon": "arrow-left"
+				})
+				@@include('blocks/button/button.html', {
+				"style": "swiper",
+				"class": "swiper-button-next",
+				"icon": "arrow-right"
+				})
+			</div>
+			<div class="swiper @@swiper">
+				<ul class="swiper-wrapper">
+					@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/@@goods.json")
+				</ul>
+			</div>
+		</div>
+		}
+		@@if(!context.withoutBtn){
+		<div class="grid-row">
+			@@include('blocks/button/button.html', {
+			"href": "#",
+			"class": "catalog-section__btn",
+			"text": "Все товары"
+			})
+		</div>
+		}
+	</div>
+</@@if(context.aside){aside}@@if(!context.aside){section}>

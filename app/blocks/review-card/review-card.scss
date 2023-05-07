@@ -1,0 +1,137 @@
+.review-card {
+	padding: 18px 12px;
+	display: grid;
+	grid-template-columns: 6px 79px 17px 1fr 6px;
+	grid-template-areas:
+		'. . . metrics metrics'
+		'rate rate . metrics metrics'
+		'stats stats stats stats stats'
+		'. btn btn btn .'
+	;
+	row-gap: 15px;
+	// .review-card__rate
+
+	&__rate {
+		grid-area: rate;
+		@include row-grid(6px);
+		justify-items: center;
+		text-align: center;
+	}
+
+	&__rate-total {
+		@include round(56px);
+
+		.rating {
+			&__total-count {
+				font-size: 18px;
+				line-height: calc(21 / 18 * 100%);
+			}
+		}
+	}
+
+	// .review-card__rate-descr
+
+	&__rate-descr {
+		font-size: 11px;
+		line-height: 13px;
+		font-weight: 300;
+	}
+
+	// .review-card__metrics
+
+	&__metrics {
+		grid-area: metrics;
+	}
+
+	// .review-card__stats
+
+	&__stats {
+		grid-area: stats;
+	}
+
+	&__btn {
+		padding: 14px;
+		grid-area: btn;
+	}
+}
+
+.review-metrics {
+	@include row-grid(9px);
+}
+
+.review-metric {
+	display: grid;
+	grid-template-columns: minmax(51px, auto) 1fr minmax(18px, auto);
+	gap: 9px;
+	align-items: center;
+	font-size: 12px;
+	line-height: 14px;
+	// .review-metric__text
+
+	&__text {
+		font-weight: 300;
+	}
+
+	// .review-metric__bar
+
+	&__bar {
+		position: relative;
+		height: 4px;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+		border-radius: $brs;
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: var(--accent);
+			border-radius: $brs;
+		}
+	}
+}
+
+.review-stats {
+	$this: &;
+
+	display: flex;
+	justify-content: center;
+	gap: 33px;
+	// .review-stats__item
+
+	&__item {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+		gap: 3px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	// .review-stats__item-title
+
+	&__item-title {
+		font-weight: 300;
+	}
+
+	// .review-stats__item-num
+
+	&__item-num {
+		font-weight: 500;
+	}
+
+	&--orientation {
+		&_col {
+			@include row-grid(12px);
+
+			#{$this} {
+				&__item {
+					flex-direction: row;
+					gap: 8px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}

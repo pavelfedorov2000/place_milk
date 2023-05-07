@@ -1,0 +1,18 @@
+.buyers-photos {
+	padding-bottom: 22px;
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-weight: 500;
+	}
+
+	&__slider-wrap {
+		width: 430px;
+
+		@media(max-width: $sm) {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<div class="subscribe-form@@if(context.class){ @@class}">
+	<div class="subscribe-form__title">
+		Хотите быть в курсе последних новостей и акций?
+	</div>
+	<form action="#" class="subscribe-form__row">
+		<input class="subscribe-form__input" type="email" placeholder="konstantinkonstantinov@yandex.ru">
+		@@include('blocks/button/button.html', {
+		"class": "subscribe-form__btn",
+		"style": "bg-white",
+		"text": "Подписаться",
+		"type": "submit"
+		})
+	</form>
+</div>

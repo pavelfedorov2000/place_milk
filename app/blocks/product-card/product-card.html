@@ -1,0 +1,251 @@
+<div class="product-card">
+	<div class="grid-row">
+		<div class="span-7">
+			<div class="product-card__gallery">
+				<div class="swiper product-card__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/boy.webp">
+								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
+									height="656" loading="lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
+								<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото"
+									width="656" height="656" loading="lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/boy.webp">
+								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
+									height="656" loading="lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/boy.webp">
+								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
+									height="656" loading="lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/boy.webp">
+								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
+									height="656" loading="lazy">
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source type="image/webp" srcset="assets/images/content/boy.webp">
+								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
+									height="656" loading="lazy">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div id="thumbs-slider" class="slider-wrap">
+					<div class="btns slider-arrows btns--arrows">
+						@@loop('blocks/button/button.html', [{
+						"style": "swiper",
+						"class": "swiper-button-prev",
+						"icon": "arrow-left"
+						}, {
+						"style": "swiper",
+						"class": "swiper-button-next",
+						"icon": "arrow-right"
+						}])
+					</div>
+					<div class="product-card__thumbs swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/boy.webp">
+									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
+										height="100" loading="lazy">
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
+									<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg"
+										alt="фото" width="100" height="100" loading="lazy">
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/boy.webp">
+									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
+										height="100" loading="lazy">
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/boy.webp">
+									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
+										height="100" loading="lazy">
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/boy.webp">
+									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
+										height="100" loading="lazy">
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="assets/images/content/boy.webp">
+									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
+										height="100" loading="lazy">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span-5 product-card__content">
+			<dl class="leader product-card__articul leader--style_2">
+				<div class="leader__item">
+					<dt>Артикул:</dt>
+					<dd><b>123654785</b></dd>
+				</div>
+			</dl>
+			<h1 class="title product-card__title">
+				Футболка с дизайнерским принтом Graphic Hypnotize
+			</h1>
+			<div class="product-card__info">
+				@@include('blocks/rating/rating.html', {
+				"class": "product-card__rating",
+				"stars": true,
+				"text": "14 отзывов"
+				})
+				<div class="product-card__info-property">
+					@@include('blocks/icons/like-heart.html')
+					<span>В избранном</span>
+				</div>
+				<dl class="leader leader--style_2">
+					<div class="leader__item">
+						<dt><b>В наличии:</b></dt>
+						<dd><b>155</b></dd>
+					</div>
+				</dl>
+			</div>
+			<div class="product-card__prices-block">
+				<div class="prices product-card__prices">
+					<div class="new-price product-card__new-price">1 999 ₽</div>
+					<div class="old-price product-card__old-price">2 499 ₽</div>
+				</div>
+				<small class="product-card__prices-text">
+					1799 ₽ при покупке от 10 шт <sup>*</sup>
+				</small>
+			</div>
+			<div class="product-card__color">
+				<dl class="leader product-card__property">
+					<div class="leader__item">
+						<dt><b>Цвет:</b></dt>
+						<dd>градиент</dd>
+					</div>
+				</dl>
+				<div class="product-card__colors"></div>
+			</div>
+			<div class="product-card__size">
+				<dl class="leader product-card__property">
+					<div class="leader__item">
+						<dt><b>Размер:</b></dt>
+						<dd>S</dd>
+					</div>
+				</dl>
+				<div class="product-card__sizes">
+
+				</div>
+			</div>
+			<div class="product-card__btns">
+				@@include('blocks/counter/counter.html', {
+				"class": "product-card__counter",
+				"value": "133"
+				})
+				@@loop('blocks/button/button.html', [{
+				"class": "product-card__btn",
+				"style": "bg-gradient",
+				"text": "Купить сейчас"
+				}, {
+				"class": "product-card__btn",
+				"text": "Добавить в корзину"
+				}])
+			</div>
+			<dl class="leader product-card__leader">
+				<div class="leader__item">
+					<dt><b>Ваш регион:</b></dt>
+					<dd>Москва</dd>
+				</div>
+				<div class="leader__item">
+					<dt><b>Расчётное время доставки:</b></dt>
+					<dd>17 февраля</dd>
+				</div>
+			</dl>
+			<dl class="leader product-card__leader">
+				<div class="leader__item">
+					<dt><b>О товаре:</b></dt>
+					<dd>купили более <b>100</b> раз</dd>
+				</div>
+			</dl>
+			<div class="product-card__scroll-btns">
+				@@loop('blocks/button/button.html', [{
+				"data": {
+				"attr": "section",
+				"value": "characteristics"
+				},
+				"style": "border",
+				"class": "product-card__scroll-btn",
+				"text": "Характеристики"
+				}, {
+				"data": {
+				"attr": "section",
+				"value": "description"
+				},
+				"style": "border",
+				"class": "product-card__scroll-btn",
+				"text": "Описание"
+				}, {
+				"data": {
+				"attr": "section",
+				"value": "reviews"
+				},
+				"style": "border",
+				"class": "product-card__scroll-btn",
+				"text": "Отзывы"
+				}])
+			</div>
+			@@include('blocks/store-box/store-box.html', {
+			"class": "product-card__box",
+			"title": "Marple Store"
+			})
+			<ul class="product-card__features">
+				<li class="product-card__feature">
+					<svg class="icon">
+						<use xlink:href="assets/images/sprite.svg#delivery-box"></use>
+					</svg>
+					<span>Доставка до дверей</span>
+				</li>
+				<li class="product-card__feature">
+					<svg class="icon">
+						<use xlink:href="assets/images/sprite.svg#shield"></use>
+					</svg>
+					<span>Гарантия возврата</span>
+				</li>
+				<li class="product-card__feature">
+					<svg class="icon">
+						<use xlink:href="assets/images/sprite.svg#credit-card"></use>
+					</svg>
+					<span>Оплата Online</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

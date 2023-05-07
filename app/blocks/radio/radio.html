@@ -1,0 +1,14 @@
+<label class="radiobutton@@if(context.class){ @@class}">
+	<input class="radiobutton__input" name="@@name" type="radio" @@if(context.isChecked){ checked}>
+	<span class="radiobutton__style"></span>
+	@@if(context.text){
+	<span class="radiobutton__text">@@text</span>
+	}
+	@@if(context.btn){
+	@@include('blocks/button/button.html', {
+	"class": "radiobutton__action",
+	"transparent": true,
+	"sprite": "@@btn"
+	})
+	}
+</label>

@@ -1,0 +1,139 @@
+[{
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "waiting_for_the_delivery",
+        "text": "Ожидает отправки"
+    },
+    "secondGood": true,
+    "thirdGood": true,
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "sended",
+        "text": "Отправлен"
+    },
+    "code": "MIK3214569878",
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Отказ"
+    },
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "received",
+        "text": "Получен"
+    },
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "sended",
+        "text": "Отправлен"
+    },
+    "code": "MIK3214569878",
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "waiting_for_the_delivery",
+        "text": "Ожидает отправки"
+    },
+    "secondGood": true,
+    "thirdGood": true,
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "sended",
+        "text": "Отправлен"
+    },
+    "code": "MIK3214569878",
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Отказ"
+    },
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "received",
+        "text": "Получен"
+    },
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "sended",
+        "text": "Отправлен"
+    },
+    "code": "MIK3214569878",
+    "deleteButton": true,
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽"
+}]

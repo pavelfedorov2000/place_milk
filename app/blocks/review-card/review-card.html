@@ -1,0 +1,57 @@
+<div class="review-card card">
+	<div class="review-card__rate">
+		@@include('blocks/rating/rating.html', {
+		"class": "review-card__rate-total",
+		"style": "bg",
+		"total": "4.9"
+		})
+		<div class="review-card__rate-descr">
+			На основании 28 отзывов
+		</div>
+	</div>
+	<ol class="review-card__metrics review-metrics" reversed>
+		<li class="review-metric">
+			<div class="review-metric__text">5 звёзд</div>
+			<span class="review-metric__bar"><span style="width: 70%;"></span></span>
+			<div class="review-metric__value">27</div>
+		</li>
+		<li class="review-metric">
+			<div class="review-metric__text">4 звезды</div>
+			<span class="review-metric__bar"><span style="width: 10%;"></span></span>
+			<div class="review-metric__value">1</div>
+		</li>
+		<li class="review-metric">
+			<div class="review-metric__text">3 звезды</div>
+			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
+			<div class="review-metric__value">0</div>
+		</li>
+		<li class="review-metric">
+			<div class="review-metric__text">2 звезды</div>
+			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
+			<div class="review-metric__value">0</div>
+		</li>
+		<li class="review-metric">
+			<div class="review-metric__text">1 звезда</div>
+			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
+			<div class="review-metric__value">0</div>
+		</li>
+	</ol>
+	<dl class="review-card__stats review-stats">
+		<div class="review-stats__item">
+			<dt class="review-stats__item-title">Скорость отправки </dt>
+			<dd class="review-stats__item-num">4.8</dd>
+		</div>
+		<div class="review-stats__item">
+			<dt class="review-stats__item-title">Консультация</dt>
+			<dd class="review-stats__item-num">4.9</dd>
+		</div>
+		<div class="review-stats__item">
+			<dt class="review-stats__item-title">Качество товара</dt>
+			<dd class="review-stats__item-num">4.9</dd>
+		</div>
+	</dl>
+	@@include('blocks/button/button.html', {
+	"class": "review-card__btn",
+	"text": "Написать отзыв"
+	})
+</div>

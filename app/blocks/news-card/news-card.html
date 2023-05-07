@@ -1,0 +1,15 @@
+<li @@if(context.class){class="@@class" }>
+	<article class="news-card">
+		@@if(context.src){
+		<picture class="news-card__img">
+			<source type="image/webp" srcset="@@src.webp">
+			<img class="img-cover" src="@@src.jpg" alt="фото" width="296" height="260" loading="lazy">
+		</picture>
+		}
+		<div class="news-card__content">
+			<time class="news-card__date" datetime="@@datetime">@@date</time>
+			<a href="#" class="full-link news-card__title">@@title</a>
+			<p>@@text</p>
+		</div>
+	</article>
+</li>

@@ -1,0 +1,14 @@
+<div class="count@@if(context.class){ @@class}">
+	<span class="count__item@@if(context.style){ count__item--style_@@style}">
+		<span class="count__value">
+			@@valueFirst
+		</span>
+	</span>
+	@@if(context.valueSecond){
+	<span class="count__item">
+		<span class="count__value">
+			@@valueSecond
+		</span>
+	</span>
+	}
+</div>

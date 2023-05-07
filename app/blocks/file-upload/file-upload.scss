@@ -1,0 +1,74 @@
+.file-upload {
+	@include row-grid(15px);
+	justify-items: start;
+	padding: 20px 15px;
+	background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+	// .file-upload__title
+
+	&__title {
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-weight: 400;
+	}
+
+	&__download {
+		svg {
+			margin-right: 11px;
+			width: 36px;
+			height: 36px;
+		}
+	}
+
+	// .file-upload__wrap
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+	}
+
+	&__btn {
+		padding: 14px 41.5px;
+	}
+
+	// .file-upload__file
+
+	&__file {
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+		font-style: italic;
+	}
+
+	// .file-upload__progress
+
+	&__progress {
+		@include row-grid(5px);
+	}
+
+	// .file-upload__bar
+
+	&__bar {
+		position: relative;
+		width: 609px;
+		height: 8px;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+		border-radius: $brs-card;
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: var(--accent);
+			border-radius: $brs-card;
+		}
+	}
+
+	// .file-upload__progress-text
+
+	&__progress-text {
+		font-size: 14px;
+		line-height: 16px;
+		font-style: italic;
+	}
+}

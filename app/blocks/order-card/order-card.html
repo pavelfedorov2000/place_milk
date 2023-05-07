@@ -1,0 +1,176 @@
+<li>
+	<article class="card order-card@@if(!context.subcard){ @@status.code}">
+		<div class="order-card__aside">
+			@@if(!context.subcard){
+			<div class="order-card__title">@@title</div>
+			<time class="order-card__date" datetime="@@datetime">@@date</time>
+			}
+			@@if(context.subcard){
+			@@if(context.brand){
+			<div class="order-card__brand">@@brand</div>
+			}
+			<div class="btns order-card__aside-btns">
+				@@loop('blocks/button/button.html', [{
+				"href": "#",
+				"style": "action-purple",
+				"icon": "chat"
+				}, {
+				"href": "#",
+				"style": "action-blue",
+				"sprite": "home"
+				}])
+			</div>
+			}
+			<span class="order-card__status">@@status.text</span>
+
+			@@if(context.code){
+			@@if(context.subcard){
+			<p class="order-card__code-text">Номер отслеживания</p>
+			}
+			<span class="order-card__code">@@code</span>
+			}
+		</div>
+		<div class="order-card__body">
+			<div class="order-card__content">
+				<ul class="order-card__goods">
+					<li class="order-good">
+						<picture class="order-good__img">
+							<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
+							<img src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото" width="80" height="80"
+								loading="lazy">
+						</picture>
+						<div class="order-good__content">
+							<div class="order-good__title">
+								<a href="#" class="full-link">
+									Футболка с дизайнерским принтом Super Shape 01
+								</a>
+							</div>
+							<div class="order-good__articul">Артикул: <b>123654785</b></div>
+							@@if(context.deleteButton){
+							@@include('blocks/button/button.html', {
+							"class": "order-good__remove",
+							"transparent": true,
+							"style": "color-red",
+							"text": "Удалить"
+							})
+							}
+							@@if(context.returnButton){
+							@@include('blocks/button/button.html', {
+							"class": "order-good__return",
+							"transparent": true,
+							"style": "color-gradient",
+							"text": "Вернуть"
+							})
+							}
+						</div>
+						<div class="order-good__nums">
+							<div class="order-good__num">@@price</div>
+							<div class="order-good__num">@@quantity</div>
+							<div class="order-good__num">@@sum</div>
+						</div>
+					</li>
+					@@if(context.secondGood == 'true'){
+					<li class="order-good">
+						<picture class="order-good__img">
+							<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-02.webp">
+							<img src="assets/images/content/catalog-goods/boy-02.jpg" alt="фото" width="80" height="80"
+								loading="lazy">
+						</picture>
+						<div class="order-good__content">
+							<div class="order-good__title">
+								<a href="#" class="full-link">
+									Футболка с дизайнерским принтом Super Shape 01
+								</a>
+							</div>
+							<div class="order-good__articul">Артикул: <b>123654785</b></div>
+							@@include('blocks/button/button.html', {
+							"class": "order-good__remove",
+							"transparent": true,
+							"style": "color-red",
+							"text": "Удалить"
+							})
+						</div>
+						<div class="order-good__nums">
+							<div class="order-good__num">@@price</div>
+							<div class="order-good__num">@@quantity</div>
+							<div class="order-good__num">@@sum</div>
+						</div>
+					</li>
+					}
+					@@if(context.thirdGood == 'true'){
+					<li class="order-good">
+						<picture class="order-good__img">
+							<source type="image/webp" srcset="assets/images/content/catalog-goods/hat-01.webp">
+							<img src="assets/images/content/catalog-goods/hat-01.jpg" alt="фото" width="80" height="80"
+								loading="lazy">
+						</picture>
+						<div class="order-good__content">
+							<div class="order-good__title">
+								<a href="#" class="full-link">
+									Футболка с дизайнерским принтом Super Shape 01
+								</a>
+							</div>
+							<div class="order-good__articul">Артикул: <b>123654785</b></div>
+							@@include('blocks/button/button.html', {
+							"class": "order-good__remove",
+							"transparent": true,
+							"style": "color-red",
+							"text": "Удалить"
+							})
+						</div>
+						<div class="order-good__nums">
+							<div class="order-good__num">@@price</div>
+							<div class="order-good__num">@@quantity</div>
+							<div class="order-good__num">@@sum</div>
+						</div>
+					</li>
+					}
+				</ul>
+				@@if(!context.subcard){
+				<div class="order-card__total">
+					<div class="order-card__total-key">Сумма</div>
+					<div class="order-card__total-value">@@total</div>
+				</div>
+				}
+			</div>
+			<div class="btns order-card__actions">
+				@@if(!context.subcard){
+				@@include('blocks/button/button.html', {
+				"style": "action-purple",
+				"icon": "@@if(context.up){arrow-up}@@if(context.chat){chat}"
+				})
+				@@if(context.deleteButton){
+				@@include('blocks/button/button.html', {
+				"style": "action-red",
+				"sprite": "cross-red"
+				})
+				}
+				@@if(context.mace){
+				@@include('blocks/button/button.html', {
+				"style": "action-gray",
+				"sprite": "mace"
+				})
+				}
+				}
+				@@if(context.subcard){
+				@@loop('blocks/button/button.html', [{
+				"style": "action-gray",
+				"text": "Ok"
+				}, {
+				"style": "action-gray",
+				"sprite": "help"
+				}, {
+				"style": "action-gray",
+				"sprite": "tracking"
+				}, {
+				"style": "action-gray",
+				"sprite": "repeat"
+				}, {
+				"style": "action-gray",
+				"sprite": "review"
+				}])
+				}
+			</div>
+		</div>
+	</article>
+</li>

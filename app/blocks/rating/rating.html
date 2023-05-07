@@ -1,0 +1,36 @@
+<div class="rating@@if(context.class){ @@class}@@if(context.style){ rating--style_@@style}">
+	@@if(context.stars){
+	<ul class="rating__stars">
+		<li class="rating__star">
+			@@include('blocks/icons/star.html')
+		</li>
+		<li class="rating__star">
+			@@include('blocks/icons/star.html')
+		</li>
+		<li class="rating__star">
+			@@include('blocks/icons/star.html')
+		</li>
+		<li class="rating__star">
+			@@include('blocks/icons/star.html')
+		</li>
+		<li class="rating__star">
+			@@include('blocks/icons/star.html')
+		</li>
+	</ul>
+	}
+	@@if(context.total){
+	<div class="rating__total">
+		<span class="rating__total-count">
+			@@total
+		</span>
+		@@include('blocks/icons/star.html', {
+		"class": "rating__star"
+		})
+	</div>
+	}
+	@@if(context.text){
+	<div class="rating__text">
+		@@text
+	</div>
+	}
+</div>

@@ -1,0 +1,32 @@
+<fieldset class="good-look">
+	<legend class="lk-page__title">Вид товара</legend>
+	<div class="lk-page__fields">
+		<div class="lk-page__fields-group">
+			<div class="lk-page__fields-item">
+				<span class="lk-page__label">Значение вида товара</span>
+				<div class="select lk-page__field">
+					<div class="select__title">Цвет</div>
+					<div class="select__content">
+						<input id="goodColor0" class="select__input" type="radio" name="goodColor" checked />
+						<label for="goodColor0" tabindex="0" class="select__label" data-value="Цвет ">Цвет</label>
+						<input id="goodColor1" class="select__input" type="radio" name="goodColor" />
+						<label for="goodColor1" tabindex="0" class="select__label" data-value="Красный">Красный</label>
+						<input id="goodColor2" class="select__input" type="radio" name="goodColor" />
+						<label for="goodColor2" tabindex="0" class="select__label" data-value="Синий">Синий</label>
+						<input id="goodColor3" class="select__input" type="radio" name="goodColor" />
+						<label for="goodColor3" tabindex="0" class="select__label" data-value="Зеленый">Зеленый</label>
+					</div>
+				</div>
+			</div>
+			<div class="lk-page__fields-item">
+				<label for="good_search" class="lk-page__label">Поиск товара</label>
+				@@include('blocks/search-block/search-block.html', {
+				"id": "good_search",
+				"class": "lk-page__field"
+				})
+			</div>
+			@@include('blocks/good-look-item/good-look-item.html')
+			@@include('blocks/good-look-item/good-look-item.html')
+		</div>
+	</div>
+</fieldset>

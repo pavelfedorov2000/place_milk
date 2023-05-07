@@ -1,0 +1,62 @@
+@@include("blocks/head/head.html", {"title": "Добавление медиа"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page lk-page">
+		<div class="container">
+			<div class="grid-row lk-page__grid">
+				<div class="span-3 lk-page__nav">
+					@@include('blocks/aside-nav/aside-nav.html', {
+					"secondActive": true
+					})
+				</div>
+				<div class="lk-page__top">
+					<h1 class="title">Добавление товара</h1>
+					@@include('blocks/button/button.html', {
+					"href": "#",
+					"class": "lk-page__back-btn",
+					"style": "bg-blue",
+					"sprite": "back-arrow",
+					"text": "Каталог"
+					})
+					@@include('blocks/button/button.html', {
+					"href": "#",
+					"class": "lk-page__help-btn",
+					"style": "bg-blue",
+					"sprite": "info",
+					"text": "Помощь"
+					})
+				</div>
+				<div class="span-9 lk-page__body">
+					@@include('blocks/scroll-nav/scroll-nav.html', {
+					"active": "second",
+					"class": "lk-page__road-tabs"
+					})
+					@@include('blocks/media-block/media-block.html')
+					<div class="lk-page__nav-btns">
+						@@loop('blocks/button/button.html', [{
+						"class": "lk-page__nav-btn",
+						"style": "bg-gradient",
+						"text": "Создать товар"
+						}, {
+						"class": "lk-page__nav-btn lk-page__nav-btn--back",
+						"style": "bg-pink",
+						"text": "Назад",
+						"icon": "arrow-back"
+						}, {
+						"class": "lk-page__nav-btn lk-page__nav-btn--next",
+						"style": "bg-pink",
+						"text": "Далее",
+						"icon": "arrow-more",
+						"icon_position_right": true
+						}])
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	@@include("blocks/footer/footer.html")
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

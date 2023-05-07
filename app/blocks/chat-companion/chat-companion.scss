@@ -1,0 +1,65 @@
+.chat-companion {
+	padding: 6px 17px 12px 9px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas:
+		'avatar name time'
+		'avatar text count'
+	;
+	gap: 4px 9px;
+	text-align: left;
+	transition: $transition box-shadow;
+
+	&.active {
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+	}
+
+	// .chat-companion__avatar
+
+	&__avatar {
+		@include round(36px);
+		grid-area: avatar;
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	// .chat-companion__name
+
+	&__name {
+		grid-area: name;
+		@include truncate(139px);
+	}
+
+	// .chat-companion__time
+
+	&__datetime {
+		justify-self: end;
+		grid-area: time;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+	}
+
+	// .chat-companion__text
+
+	&__text {
+		grid-area: text;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+		@include truncate(157px);
+	}
+
+	&__count {
+		justify-self: end;
+		grid-area: count;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			box-shadow: $bsh;
+		}
+	}
+}

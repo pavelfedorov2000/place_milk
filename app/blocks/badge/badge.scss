@@ -1,0 +1,33 @@
+.badge {
+	$this: &;
+
+	padding: 2px 5px;
+	border-radius: $brs;
+	border: 0.5px solid var(--red);
+
+	&__text {
+		font-size: 10px;
+		line-height: 12px;
+		font-weight: 500;
+	}
+
+	&--style {
+		&_2 {
+			border-color: var(--black);
+			border-radius: $brs-card;
+
+			#{$this} {
+				&__text {
+					font-size: 14px;
+					line-height: 16px;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}
+
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+}

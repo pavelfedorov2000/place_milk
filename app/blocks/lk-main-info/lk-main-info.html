@@ -1,0 +1,78 @@
+<fieldset class="lk-main-info">
+	<legend class="lk-page__title">Основная информация</legend>
+	<div class="lk-main-info__fields">
+		<div class="lk-main-info__field">
+			<label class="lk-main-info__label" for="good_name">Название товара</label>
+			<div class="lk-main-info__field-content">
+				<input id="good_name" class="input lk-main-info__input lk-main-info__input--long"
+					placeholder="Введите название товара">
+			</div>
+		</div>
+		<div class="lk-main-info__field">
+			<label class="lk-main-info__label" for="catalog_category">Раздел каталога</label>
+			<div class="lk-main-info__field-content">
+				<input id="catalog_category" class="input lk-main-info__input" placeholder="Введите название раздела ">
+				<div class="lk-main-info__radios">
+					@@include('blocks/radio/radio.html', {
+					"name": "catalog_category_radio",
+					"isChecked": true,
+					"text": "Футболки",
+					"btn": "trash"
+					})
+					@@include('blocks/radio/radio.html', {
+					"name": "catalog_category_radio",
+					"text": "Одежда ",
+					"btn": "trash"
+					})
+					@@include('blocks/radio/radio.html', {
+					"name": "catalog_category_radio",
+					"text": "Мужчинам",
+					"btn": "trash"
+					})
+				</div>
+			</div>
+		</div>
+		<div class="lk-main-info__field">
+			<label class="lk-main-info__label" for="articul">Артикул</label>
+			<div class="lk-main-info__field-content">
+				<input id="articul" class="input lk-main-info__input" placeholder="Введите артикул">
+			</div>
+		</div>
+		<div class="lk-main-info__field">
+			<label class="lk-main-info__label" for="price">Цена </label>
+			<div class="lk-main-info__field-content">
+				<div class="input-wrap">
+					<input id="price"
+						class="input lk-main-info__input lk-main-info__input--short input--border_gradient"
+						value="100 000 ₽">
+				</div>
+			</div>
+		</div>
+		<div class="lk-main-info__field">
+			<label class="lk-main-info__label">Скидки</label>
+			<div class="lk-main-info__field-content">
+				<div class="lk-main-info__discount">
+					<span class="lk-main-info__discount-percent">25% от 500 шт</span>
+					<span class="lk-main-info__discount-sum">75 000 ₽ / шт. </span>
+				</div>
+				<div class="select lk-main-info__discount-select">
+					<div class="select__title">Добавить</div>
+					<div class="select__content">
+						<input id="addDiscount0" class="select__input" type="radio" name="addDiscount" checked />
+						<label for="addDiscount0" tabindex="0" class="select__label"
+							data-value="Добавить">Добавить</label>
+						<input id="addDiscount1" class="select__input" type="radio" name="addDiscount" />
+						<label for="addDiscount1" tabindex="0" class="select__label" data-value="10% от 100 шт">10% от
+							100 шт</label>
+						<input id="addDiscount2" class="select__input" type="radio" name="addDiscount" />
+						<label for="addDiscount2" tabindex="0" class="select__label" data-value="25% от 500 шт">25% от
+							500 шт</label>
+						<input id="addDiscount3" class="select__input" type="radio" name="addDiscount" />
+						<label for="addDiscount3" tabindex="0" class="select__label" data-value="30% от 1000 шт">30% от
+							1000 шт</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</fieldset>

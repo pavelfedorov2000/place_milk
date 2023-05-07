@@ -1,0 +1,18 @@
+<div class="upload-block">
+	@@include('blocks/file-upload/file-upload.html', {
+	"text": "Для загрузки товаров в каталог Вам нужно скачать данный файл, заполнить и загрузить",
+	"downloadBtn": "Скачать"
+	})
+	<div class="upload-block__title">Загрузка файла</div>
+	<label class="upload-block__choose-file">
+		<input type="file" name="UPLOAD_FILE">
+		<span class="upload-block__btn btn">
+			<span class="btn__text">Выбрать файл</span>
+		</span>
+	</label>
+	@@include('blocks/file-upload/file-upload.html', {
+	"title": "Загрузка файла",
+	"file": "exportfile.xlsx",
+	"progress": "60%"
+	})
+</div>

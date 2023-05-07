@@ -1,0 +1,39 @@
+@@include("blocks/head/head.html", {"title": "Каталог"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page">
+		<div class="container">
+			@@include('blocks/breadcrumbs/breadcrumbs.html', {
+			"firstPage": "Каталог",
+			"prevPage": "Одежда, обувь и аксессуары",
+			"currentPage": "Мужчинам"
+			})
+			<div class="grid-row catalog">
+				<div class="span-3">
+					@@include('blocks/aside-filters/aside-filters.html')
+				</div>
+				<div class="span-9 catalog__body">
+					<h1 class="title">Мужчинам</h1>
+					@@include('blocks/catalog-sort/catalog-sort.html')
+					<ul class="catalog-list">
+						@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/catalog-goods.json")
+					</ul>
+					@@include('blocks/pagination/pagination.html')
+				</div>
+			</div>
+		</div>
+		@@include('blocks/text-section/text-section.html')
+	</main>
+	@@include('blocks/catalog-section/catalog-section.html', {
+	"aside": true,
+	"title": "Ранее вы смотрели",
+	"goods": "viewed-earlier",
+	"items": "5",
+	"with": "bg",
+	"withoutBtn": true
+	})
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

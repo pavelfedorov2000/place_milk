@@ -1,0 +1,94 @@
+<div class="chat">
+	<div class="chat__aside chat-aside">
+		@@include('blocks/search-block/search-block.html', {
+		"class": "chat-aside__search"
+		})
+		<div class="chat-aside__items">
+			@@loop('blocks/chat-companion/chat-companion.html', "../resources/assets/chat.json")
+		</div>
+	</div>
+	<div class="chat__body">
+		<div class="chat__day">
+			<div class="chat__title">Понедельник</div>
+			<div class="chat__messages">
+				<div class="chat__message chat-message">
+					<p class="chat-message__text">
+						Здравствуйте. У вас возникли вопросы в работе с нашим сервисом? Опишите вашу проблему. Также
+						необходима информация: номер вашего заказа, отправления и имя вашего персонального менеджера.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+					</div>
+				</div>
+				<div class="chat__message chat-message chat__message--response">
+					<p class="chat-message__text">
+						Добрый день. Подскажите, делал заказа 1го марта у вас на сайте, сказали, что доставка будет 5го
+						числа до сих пор ничего нет. Номер отправления 123456789, на сайте сказано, что заказ отправлен.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+						@@include('blocks/icons/double-check.html')
+					</div>
+				</div>
+				<div class="chat__message chat-message">
+					<p class="chat-message__text">
+						Здравствуйте. У вас возникли вопросы в работе с нашим сервисом? Опишите вашу проблему. Также
+						необходима информация: номер вашего заказа, отправления и имя вашего персонального менеджера.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+					</div>
+				</div>
+				<div class="chat__message chat-message chat__message--response">
+					<p class="chat-message__text">
+						Добрый день. Подскажите, делал заказа 1го марта у вас на сайте, сказали, что доставка будет 5го
+						числа до сих пор ничего нет. Номер отправления 123456789, на сайте сказано, что заказ отправлен.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+						@@include('blocks/icons/double-check.html')
+					</div>
+				</div>
+				<div class="chat__message chat-message">
+					<p class="chat-message__text">
+						Здравствуйте. У вас возникли вопросы в работе с нашим сервисом? Опишите вашу проблему. Также
+						необходима информация: номер вашего заказа, отправления и имя вашего персонального менеджера.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+					</div>
+				</div>
+				<div class="chat__message chat-message chat__message--response">
+					<p class="chat-message__text">
+						Добрый день. Подскажите, делал заказа 1го марта у вас на сайте, сказали, что доставка будет 5го
+						числа до сих пор ничего нет. Номер отправления 123456789, на сайте сказано, что заказ отправлен.
+					</p>
+					<div class="chat-message__meta">
+						<span class="chat-message__time">12:30</span>
+						@@include('blocks/icons/double-check.html')
+					</div>
+				</div>
+			</div>
+		</div>
+		<form action="#" class="chat-send">
+			<textarea class="chat-send__textfield" placeholder="Введите сообщение"></textarea>
+			<div class="chat-send__bottom">
+				<div class="btns chat-send__icons">
+					@@loop('blocks/button/button.html', [{
+					"transparent": true,
+					"sprite": "gallery"
+					}, {
+					"transparent": true,
+					"sprite": "happy"
+					}])
+				</div>
+				@@include('blocks/button/button.html', {
+				"type": "submit",
+				"class": "chat-send__submit",
+				"style": "bg-gradient",
+				"text": "Отправить"
+				})
+			</div>
+		</form>
+	</div>
+</div>

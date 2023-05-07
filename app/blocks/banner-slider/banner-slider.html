@@ -1,0 +1,23 @@
+<div class="swiper banner-slider@@if(context.class){ @@class}">
+	<div class="btns banner-slider__arrows btns--arrows">
+		@@include('blocks/button/button.html', {
+		"style": "swiper",
+		"class": "swiper-button-prev",
+		"icon": "arrow-left"
+		})
+		@@include('blocks/button/button.html', {
+		"style": "swiper",
+		"class": "swiper-button-next",
+		"icon": "arrow-right"
+		})
+	</div>
+	<div class="swiper-wrapper">
+		<a href="#" class="swiper-slide">
+			<picture class="banner-slider__img">
+				<source type="image/webp" srcset="assets/images/content/banners/banner.webp">
+				<img class="img-cover" src="assets/images/content/banners/banner.jpg" alt="баннер" width="953"
+					height="351" loading="lazy">
+			</picture>
+		</a>
+	</div>
+</div>

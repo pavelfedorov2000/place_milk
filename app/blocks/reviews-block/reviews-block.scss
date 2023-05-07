@@ -1,0 +1,25 @@
+.reviews-block {
+	&__actions {
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 26px;
+	}
+
+	&__btn {
+		margin-right: auto;
+		padding: 12px 39.5px;
+	}
+
+	&__select {
+		width: 200px;
+
+		.select__title {
+			padding: 7px 30px 7px 10px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}

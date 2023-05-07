@@ -1,0 +1,22 @@
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+	<ol class="breadcrumbs__list">
+		<li class="breadcrumbs__item">
+			<a href="#">
+				@@if(context.firstPage){
+				@@firstPage
+				}
+				@@if(!context.firstPage){
+				Главная
+				}
+			</a>
+		</li>
+		@@if(context.prevPage){
+		<li class="breadcrumbs__item">
+			<a href="#">@@prevPage</a>
+		</li>
+		}
+		<li class="breadcrumbs__item">
+			<span>@@currentPage</span>
+		</li>
+	</ol>
+</nav>

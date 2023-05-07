@@ -1,0 +1,151 @@
+[{
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Повреждённый товар",
+        "subtext": "Ожидается решение: возврат 5 997 ₽"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Товар не пришёл",
+        "subtext": "Завершён: оплата&nbsp;магазину"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Повреждённый товар",
+        "subtext": "Ожидается решение: возврат 5 997 ₽"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Товар не пришёл",
+        "subtext": "Завершён: оплата&nbsp;магазину"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Повреждённый товар",
+        "subtext": "Ожидается решение: возврат 5 997 ₽"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Товар не пришёл",
+        "subtext": "Завершён: оплата&nbsp;магазину"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Повреждённый товар",
+        "subtext": "Ожидается решение: возврат 5 997 ₽"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Товар не пришёл",
+        "subtext": "Завершён: оплата&nbsp;магазину"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Повреждённый товар",
+        "subtext": "Ожидается решение: возврат 5 997 ₽"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}, {
+    "title": "Заказ № 321456",
+    "date": "25 февраля 2021",
+    "datetime": "2021-02-25",
+    "status": {
+        "code": "denied",
+        "text": "Товар не пришёл",
+        "subtext": "Завершён: оплата&nbsp;магазину"
+    },
+    "price": "1 999 ₽",
+    "quantity": "3 шт",
+    "sum": "5 997 ₽",
+    "total": "5 997 ₽",
+    "chat": true,
+    "mace": true
+}]

@@ -1,0 +1,54 @@
+<li>
+	<article class="good-card">
+		@@include('blocks/checkbox/checkbox.html', {
+		@@if(context.isChecked){"checked": "@@isChecked",}
+		"class": "good-card__check"
+		})
+		<picture class="good-card__img">
+			<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
+			<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото" width="60"
+				height="60" loading="lazy">
+		</picture>
+		<div class="good-card__col">
+			<div class="good-card__title">Наименование товара</div>
+			<div class="good-card__text">
+				<b>Футболка с дизайнерским принтом Super Shape 01</b>
+			</div>
+		</div>
+		<div class="good-card__col">
+			<div class="good-card__title">Артикул</div>
+			<div class="good-card__text"><b>123654785</b></div>
+		</div>
+		<div class="good-card__col">
+			<div class="good-card__title">Раздел каталога</div>
+			<div class="good-card__text">
+				Одежда, обувь и аксессуары / Мужчинам / Футболки и майки/ Футболки / <b>Marple</b>
+			</div>
+		</div>
+		<div class="good-card__col">
+			<div class="good-card__title">Цена</div>
+			<div class="prices good-card__prices prices--orientation_col">
+				<div class="new-price">1 999 ₽</div>
+				<div class="old-price">2 499 ₽</div>
+			</div>
+		</div>
+		<div class="good-card__col">
+			<div class="good-card__title">Связанные товары</div>
+			<div class="good-card__text"><b>3</b></div>
+		</div>
+		<div class="good-card__btns">
+			@@include('blocks/button/button.html', {
+			"style": "action-green",
+			"text": "On"
+			})
+			@@include('blocks/button/button.html', {
+			"style": "action-purple",
+			"icon": "pencil"
+			})
+			@@include('blocks/button/button.html', {
+			"style": "action-red",
+			"sprite": "trash"
+			})
+		</div>
+	</article>
+</li>

@@ -1,0 +1,8 @@
+.promo {
+	@include padding-y(10px);
+	// .promo__banner
+
+	&__banner {
+		width: 100%;
+	}
+}

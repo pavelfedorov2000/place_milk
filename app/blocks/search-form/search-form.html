@@ -1,0 +1,18 @@
+<form class="search-form@@if(context.class){ @@class}">
+	@@include('blocks/button/button.html', {
+	"class": "search-form__btn",
+	"style": "bg-pink",
+	"text": "Везде",
+	"icon": "down-arrow",
+	"icon_position_right": true,
+	"ariaExpanded": true
+	})
+	<input class="search-form__input">
+	@@include('blocks/button/button.html', {
+	"class": "search-form__submit",
+	"transparent": true,
+	"sprite": "search",
+	"ariaLabel": "Искать",
+	"type": "submit"
+	})
+</form>

@@ -1,0 +1,48 @@
+.search-form {
+	position: relative;
+	padding: 4px 5px;
+	display: flex;
+	background: var(--accent);
+	box-shadow: $bsh;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		bottom: 2px;
+		left: 2px;
+		background-color: var(--white);
+	}
+
+
+	>* {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__btn {
+		padding: 11px 16px 11px 25px;
+
+		svg {
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	// .search-form__input
+
+	&__input {
+		flex-grow: 1;
+		@include padding-x(10px);
+	}
+
+	&__submit {
+		padding: 6px 18px;
+
+		.icon {
+			width: 26px;
+			height: 26px;
+		}
+	}
+}

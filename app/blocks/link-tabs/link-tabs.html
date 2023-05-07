@@ -1,0 +1,23 @@
+<ul class="link-tabs@@if(context.class){ @@class}">
+	@@loop('blocks/button/button.html', [{
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.firstActive){ active}",
+	"style": "tab",
+	"text": "Товары"
+	}, {
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.secondActive){ active}",
+	"style": "tab",
+	"text": "Характеристики"
+	}, {
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.thirdActive){ active}",
+	"style": "tab",
+	"text": "Скидки"
+	}, {
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.fourthActive){ active}",
+	"style": "tab",
+	"text": "Загрузка товаров"
+	}])
+</ul>

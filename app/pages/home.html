@@ -1,0 +1,31 @@
+@@include("blocks/head/head.html", {"title": "Главная"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page">
+		@@include("blocks/promo/promo.html")
+		@@loop('blocks/catalog-section/catalog-section.html', [{
+		"title": "Успей купить",
+		"goods": "sale-goods"
+		}, {
+		"title": "Новинки",
+		"goods": "new-goods"
+		}, {
+		"title": "Рекомендуемые для вас товары",
+		"goods": "recommended-goods"
+		}])
+		@@include('blocks/text-section/text-section.html')
+	</main>
+	@@include('blocks/catalog-section/catalog-section.html', {
+	"aside": true,
+	"title": "Ранее вы смотрели",
+	"goods": "viewed-earlier",
+	"items": "5",
+	"with": "bg",
+	"withoutBtn": true
+	})
+	@@include("blocks/footer/footer.html")
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

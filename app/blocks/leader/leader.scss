@@ -1,0 +1,74 @@
+.leader {
+	$this: &;
+
+	@include row-grid(10px);
+
+	&__item {
+		display: flex;
+		gap: 5px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 300;
+
+		dt {
+			font-weight: 400;
+		}
+
+		dd {
+			font-weight: 300;
+		}
+	}
+
+	&--style {
+		&_2 {
+			font-size: 12px;
+			line-height: 14px;
+
+			#{$this}__item {
+				dt {
+					font-weight: 300;
+				}
+
+				dd {
+					font-weight: 400;
+				}
+			}
+		}
+
+		&_dots {
+			line-height: calc(26 / 14 * 100%);
+
+			#{$this} {
+				&__item {
+					display: grid;
+					grid-template-columns: 1fr minmax(126px, auto);
+				}
+			}
+
+			dt {
+				position: relative;
+				display: flex;
+				align-items: flex-end;
+
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					border-bottom: 1px dotted var(--gray);
+				}
+
+				span {
+					position: relative;
+					padding-right: 15px;
+					background-color: var(--white);
+				}
+			}
+
+			dd {
+				padding-left: 15px;
+			}
+		}
+	}
+}

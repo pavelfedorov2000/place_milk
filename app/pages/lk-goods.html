@@ -1,0 +1,101 @@
+@@include("blocks/head/head.html", {"title": "ЛК Товары"})
+<div class="wrapper">
+	@@include("blocks/header/header.html")
+	<main class="page lk-page">
+		<div class="container">
+			<div class="grid-row lk-page__grid">
+				<div class="span-3 lk-page__nav">
+					@@include('blocks/aside-nav/aside-nav.html', {
+					"secondActive": true,
+					"reviews": true
+					})
+				</div>
+				<div class="lk-page__top">
+					<h1 class="title">Товары</h1>
+					@@include('blocks/button/button.html', {
+					"href": "#",
+					"class": "lk-page__help-btn",
+					"style": "bg-blue",
+					"sprite": "info",
+					"text": "Помощь"
+					})
+				</div>
+				<div class="span-9 lk-page__body">
+					@@include('blocks/link-tabs/link-tabs.html', {
+					"firstActive": true,
+					"class": "lk-page__tabs"
+					})
+					<div class="lk-page__filters">
+						<div class="select lk-page__select">
+							<div class="select__title">Футболки</div>
+							<div class="select__content">
+								<input id="goodType0" class="select__input" type="radio" name="goodType" checked />
+								<label for="goodType0" tabindex="0" class="select__label"
+									data-value="Футболки">Футболки</label>
+								<input id="goodType1" class="select__input" type="radio" name="goodType" />
+								<label for="goodType1" tabindex="0" class="select__label"
+									data-value="Чехлы">Чехлы</label>
+							</div>
+						</div>
+						<form class="search-block lk-page__search" action="#">
+							<input class="search-block__input">
+							@@include('blocks/button/button.html', {
+							"class": "search-block__btn",
+							"transparent": true,
+							"sprite": "search"
+							})
+						</form>
+						@@include('blocks/button/button.html', {
+						"class": "lk-page__add-good-btn",
+						"text": "Добавить товар"
+						})
+					</div>
+					<div class="lk-page__check-all">
+						@@include('blocks/checkbox/checkbox.html', {
+						"text": "Выбрать все"
+						})
+					</div>
+					<ul class="lk-goods">
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+						@@include('blocks/good-card/good-card.html')
+						@@include('blocks/good-card/good-card.html', {
+						"isChecked": true
+						})
+					</ul>
+					@@include('blocks/pagination/pagination.html')
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

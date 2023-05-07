@@ -1,0 +1,45 @@
+.catalog-section {
+	@include padding-y(60px);
+
+	&+.catalog-section {
+		padding-top: 0;
+	}
+
+	&--with {
+		&_bg {
+			background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+		}
+	}
+
+	&--cards-without {
+		&_bg {
+			.catalog-card {
+				background-color: transparent;
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__btn {
+		margin-top: 20px;
+		padding: 14px;
+		grid-column: -3 / -1;
+
+		@media(max-width: $xl) {
+			grid-column: -4 / -1;
+		}
+
+		@media(max-width: $lg) {
+			grid-column: -5 / -1;
+		}
+
+		@media(max-width: $sm) {
+			grid-column: 7 / span 6;
+		}
+	}
+}
+
+aside.catalog-section {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}

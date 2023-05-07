@@ -1,0 +1,18 @@
+<ul class="link-tabs@@if(context.class){ @@class}">
+	@@loop('blocks/button/button.html', [{
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.firstActive){ active}",
+	"style": "tab",
+	"text": "Все"
+	}, {
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.secondActive){ active}",
+	"style": "tab",
+	"text": "Активные"
+	}, {
+	"listItem": true,
+	"class": "link-tabs__btn @@if(context.thirdActive){ active}",
+	"style": "tab",
+	"text": "Завершенные"
+	}])
+</ul>

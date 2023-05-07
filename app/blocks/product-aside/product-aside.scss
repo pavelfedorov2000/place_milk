@@ -1,0 +1,10 @@
+.product-aside {
+	@include sticky(0);
+	@include padding-y(36px);
+	@include row-grid(45px);
+	align-content: start;
+}
+
+.aside-banners {
+	@include row-grid(18px);
+}

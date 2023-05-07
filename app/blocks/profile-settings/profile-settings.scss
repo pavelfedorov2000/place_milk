@@ -1,0 +1,16 @@
+.profile-settings {
+	display: grid;
+	grid-template-columns: 1fr 186px;
+	align-items: flex-start;
+
+	&__form {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+	.lk-page {
+		&__nav-btns {
+			grid-column: 1 / -1;
+		}
+	}
+}
