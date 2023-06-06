@@ -1,30 +1,23 @@
 <ul class="small-menu@@if(context.class){ @@class}">
-	<li class="small-menu__item">
-		@@include('blocks/button/button.html', {
-		"href": "#",
-		"class": "small-menu__link",
-		"transparent": true,
-		"icon": "down-arrow",
-		"icon_position_right": true,
-		"text": "Покупателям"
-		})
-	</li>
-	<li class="small-menu__item">
-		@@include('blocks/button/button.html', {
-		"href": "#",
+	@@loop('blocks/button/button.html', [{
+        "href": "#",
+        "listItem": true,
+        "class": "small-menu__link",
+        "transparent": true,
+        "icon": "down-arrow",
+        "icon_position_right": true,
+        "text": "Покупателям"
+	}, {
+        "href": "#",
 		"class": "small-menu__link",
 		"transparent": true,
 		"icon": "down-arrow",
 		"icon_position_right": true,
 		"text": "Поставщикам"
-		})
-	</li>
-	<li class="small-menu__item">
-		@@include('blocks/button/button.html', {
-		"href": "#",
+    }, {
+        "href": "#",
 		"class": "small-menu__link",
 		"transparent": true,
 		"text": "Частые вопросы"
-		})
-	</li>
+    }])
 </ul>

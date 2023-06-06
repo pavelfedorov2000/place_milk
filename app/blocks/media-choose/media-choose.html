@@ -3,18 +3,18 @@
 		class="media-choose__input" type="file" accept="image/png, image/jpeg, image/jpg">
 	<span class="media-choose__box@@if(context.round){ media-choose__box--round}">
 		@@if(context.logo){
-		<span>Logo</span>
+		    <span>Logo</span>
 		}
 		@@if(!context.logo){
-		<svg class="icon">
-			<use xlink:href="assets/images/sprite.svg#gallery"></use>
-		</svg>
+            <svg class="icon">
+                <use xlink:href="assets/images/sprite.svg#gallery"></use>
+            </svg>
 		}
 	</span>
 	@@if(context.text){
-	<div class="media-choose__text">
-		<p>Нажмите на кнопку или перетащите фото в эту область</p>
-		<p>@@text</p>
-	</div>
+        <div class="media-choose__text">
+            <p>Нажмите на кнопку или перетащите фото в эту область</p>
+            <p>@@text</p>
+        </div>
 	}
 </label>

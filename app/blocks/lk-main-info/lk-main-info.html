@@ -14,20 +14,20 @@
 				<input id="catalog_category" class="input lk-main-info__input" placeholder="Введите название раздела ">
 				<div class="lk-main-info__radios">
 					@@include('blocks/radio/radio.html', {
-					"name": "catalog_category_radio",
-					"isChecked": true,
-					"text": "Футболки",
-					"btn": "trash"
+                        "name": "catalog_category_radio",
+                        "isChecked": true,
+                        "text": "Футболки",
+                        "btn": "trash"
 					})
 					@@include('blocks/radio/radio.html', {
-					"name": "catalog_category_radio",
-					"text": "Одежда ",
-					"btn": "trash"
+                        "name": "catalog_category_radio",
+                        "text": "Одежда ",
+                        "btn": "trash"
 					})
 					@@include('blocks/radio/radio.html', {
-					"name": "catalog_category_radio",
-					"text": "Мужчинам",
-					"btn": "trash"
+                        "name": "catalog_category_radio",
+                        "text": "Мужчинам",
+                        "btn": "trash"
 					})
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 					<span class="lk-main-info__discount-sum">75 000 ₽ / шт. </span>
 				</div>
 				<div class="select lk-main-info__discount-select">
-					<div class="select__title">Добавить</div>
+					<div class="select__toggle">Добавить</div>
 					<div class="select__content">
 						<input id="addDiscount0" class="select__input" type="radio" name="addDiscount" checked />
 						<label for="addDiscount0" tabindex="0" class="select__label"

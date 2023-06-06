@@ -6,19 +6,19 @@
 			@@loop('blocks/news-detail/news-detail.html', "../resources/assets/news-detail.json")
 
 			@@include('blocks/aside-news/aside-news.html', {
-			"title": "Другие новости",
-			"item": "news-card",
-			"array": "other-news"
+                "title": "Другие новости",
+                "item": "news-card",
+                "array": "other-news"
 			})
 		</div>
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "goods": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
 	@@include('blocks/footer/footer.html')
 </div>

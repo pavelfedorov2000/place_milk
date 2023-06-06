@@ -3,9 +3,14 @@
 	@@include("blocks/header/header.html")
 	<main class="page text-page">
 		<div class="container">
-			<div class="page-top">
-				<h1 class="title">Новости</h1>
-			</div>
+            @@include('blocks/title_container/title_container.html', {
+                "class": "page-top",
+                "title": {
+                    "class": "title",
+                    "level": "1",
+                    "text": "Новости"
+                }
+            })
 			<ul class="grid-row news">
 				@@loop('blocks/news-card/news-card.html', "../resources/assets/news.json")
 			</ul>
@@ -13,12 +18,12 @@
 		</div>
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "goods": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
 	@@include('blocks/footer/footer.html')
 </div>

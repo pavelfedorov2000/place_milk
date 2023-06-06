@@ -81,13 +81,13 @@ input {
 
 .input {
 	border: 0.5px solid rgba(70, 70, 70, 0.55);
-	border-radius: $brs-card;
+	border-radius: var(--brs-card);
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 300;
 
 	&::placeholder {
-		color: rgba($color-default, 0.6);
+		color: rgba(var(--color-default), 0.6);
 	}
 
 	&--border {
@@ -106,7 +106,7 @@ input {
 .input-wrap {
 	position: relative;
 	background: var(--accent);
-	border-radius: $brs-card;
+	border-radius: var(--brs-card);
 	min-width: 77px;
 	min-height: 28px;
 }

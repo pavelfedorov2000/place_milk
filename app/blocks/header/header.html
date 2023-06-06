@@ -2,52 +2,50 @@
 	<div class="container">
 		<div class="header__inner">
 			@@include('blocks/small-menu/small-menu.html', {
-			"class": "header__menu"
+			    "class": "header__menu"
 			})
 			@@include('blocks/select-language/select-language.html', {
-			"class": "header__lang"
+			    "class": "header__lang"
 			})
 			@@include('blocks/button/button.html', {
-			"style": "burger",
-			"class": "header__burger jsOpenMenu",
-			"sprite": "menu",
-			"ariaExpanded": true,
-			"ariaLabel": "Развернуть выпадающее меню"
+                "style": "burger",
+                "class": "header__burger jsOpenMenu",
+                "sprite": "menu",
+                "ariaExpanded": true,
+                "ariaLabel": "Развернуть выпадающее меню"
 			})
 			<a class="logo header__logo" href="#">
 				<img class="logo__img" src="assets/images/logo/logo.svg" alt="Логотип Place Milk">
 			</a>
 			@@include('blocks/search-form/search-form.html', {
-			"class": "header__search"
+			    "class": "header__search"
 			})
 			<div class="btns header__actions">
-				@@include('blocks/button/button.html', {
-				"transparent": true,
-				"class": "header__action",
-				"icon": "user",
-				"text": "Войти"
-				})
-				@@include('blocks/button/button.html', {
-				"href": "#",
-				"transparent": true,
-				"class": "header__action",
-				"icon": "like-heart",
-				"text": "Избранное",
-				"count": {
-				"first": "1",
-				"second": "1"
-				}
-				})
-				@@include('blocks/button/button.html', {
-				"href": "#",
-				"transparent": true,
-				"class": "header__action",
-				"icon": "shop-cart",
-				"text": "Корзина",
-				"count": {
-				"first": "1"
-				}
-				})
+				@@loop('blocks/button/button.html', [{
+                    "transparent": true,
+                    "class": "header__action",
+                    "icon": "user",
+                    "text": "Войти"
+				}, {
+                    "href": "#",
+                    "transparent": true,
+                    "class": "header__action",
+                    "icon": "like-heart",
+                    "text": "Избранное",
+                    "count": {
+                        "first": "1",
+                        "second": "1"
+                    }
+				}, {
+                    "href": "#",
+                    "transparent": true,
+                    "class": "header__action",
+                    "icon": "shop-cart",
+                    "text": "Корзина",
+                    "count": {
+                        "first": "1"
+                    }
+				}])
 			</div>
 		</div>
 	</div>

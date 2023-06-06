@@ -19,7 +19,7 @@
 		@include round(30px);
 		display: grid;
 		place-items: center;
-		transition: $transition all;
+		transition: var(--transition) all;
 
 		&.active {
 			background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
@@ -35,7 +35,7 @@
 			width: 10px;
 			height: 10px;
 			fill: var(--black);
-			transition: $transition fill;
+			transition: var(--transition) fill;
 		}
 
 		@media (any-hover: hover) {

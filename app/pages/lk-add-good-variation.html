@@ -12,42 +12,42 @@
 				<div class="lk-page__top">
 					<h1 class="title">Добавление товара</h1>
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__back-btn",
-					"style": "bg-blue",
-					"sprite": "back-arrow",
-					"text": "Каталог"
+                        "href": "#",
+                        "class": "lk-page__back-btn",
+                        "style": "bg-blue",
+                        "sprite": "back-arrow",
+                        "text": "Каталог"
 					})
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__help-btn",
-					"style": "bg-blue",
-					"sprite": "info",
-					"text": "Помощь"
+                        "href": "#",
+                        "class": "lk-page__help-btn",
+                        "style": "bg-blue",
+                        "sprite": "info",
+                        "text": "Помощь"
 					})
 				</div>
 				<div class="span-9 lk-page__body">
 					@@include('blocks/scroll-nav/scroll-nav.html', {
-					"active": "fourth",
-					"class": "lk-page__road-tabs"
+                        "active": "fourth",
+                        "class": "lk-page__road-tabs"
 					})
 					@@include('blocks/good-variation/good-variation.html')
 					<div class="lk-page__nav-btns">
 						@@loop('blocks/button/button.html', [{
-						"class": "lk-page__nav-btn",
-						"style": "bg-gradient",
-						"text": "Сохранить"
+                            "class": "lk-page__nav-btn",
+                            "style": "bg-gradient",
+                            "text": "Сохранить"
 						}, {
-						"class": "lk-page__nav-btn lk-page__nav-btn--back",
-						"style": "bg-pink",
-						"text": "Назад",
-						"icon": "arrow-back"
+                            "class": "lk-page__nav-btn lk-page__nav-btn--back",
+                            "style": "bg-pink",
+                            "text": "Назад",
+                            "icon": "arrow-back"
 						}, {
-						"class": "lk-page__nav-btn lk-page__nav-btn--next",
-						"style": "bg-pink",
-						"text": "Далее",
-						"icon": "arrow-more",
-						"icon_position_right": true
+                            "class": "lk-page__nav-btn lk-page__nav-btn--next",
+                            "style": "bg-pink",
+                            "text": "Далее",
+                            "icon": "arrow-more",
+                            "icon_position_right": true
 						}])
 					</div>
 				</div>

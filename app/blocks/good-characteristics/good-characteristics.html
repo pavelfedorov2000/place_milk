@@ -72,7 +72,7 @@
 		<div class="lk-page__fields-group">
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Цвет</div>
+					<div class="select__toggle">Цвет</div>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>
@@ -95,7 +95,7 @@
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Размер</div>
+					<div class="select__toggle">Размер</div>
 					<div class="select__content">
 						<input id="size0" class="select__input" type="radio" name="size" checked />
 						<label for="size0" tabindex="0" class="select__label" data-value="Размер">Размер</label>
@@ -116,7 +116,7 @@
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Модель</div>
+					<div class="select__toggle">Модель</div>
 					<div class="select__content">
 						<input id="model0" class="select__input" type="radio" name="model" checked />
 						<label for="model0" tabindex="0" class="select__label" data-value="Модель">Модель</label>
@@ -130,14 +130,14 @@
 				</div>
 				<input class="input lk-page__field" placeholder="Введите название ">
 				@@include('blocks/button/button.html', {
-				"class": "lk-page__action-btn",
-				"style": "action-red",
-				"sprite": "trash"
+                    "class": "lk-page__action-btn",
+                    "style": "action-red",
+                    "sprite": "trash"
 				})
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Материал</div>
+					<div class="select__toggle">Материал</div>
 					<div class="select__content">
 						<input id="material0" class="select__input" type="radio" name="material" checked />
 						<label for="material0" tabindex="0" class="select__label" data-value="Материал">Материал</label>
@@ -151,14 +151,14 @@
 				</div>
 				<input class="input lk-page__field" placeholder="Введите название ">
 				@@include('blocks/button/button.html', {
-				"class": "lk-page__action-btn",
-				"style": "action-red",
-				"sprite": "trash"
+                    "class": "lk-page__action-btn",
+                    "style": "action-red",
+                    "sprite": "trash"
 				})
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Сезон</div>
+					<div class="select__toggle">Сезон</div>
 					<div class="select__content">
 						<input id="season0" class="select__input" type="radio" name="season" checked />
 						<label for="season0" tabindex="0" class="select__label" data-value="Сезон">Сезон</label>
@@ -174,13 +174,13 @@
 				</div>
 				<input class="input lk-page__field" placeholder="Введите название ">
 				@@loop('blocks/button/button.html', [{
-				"class": "lk-page__action-btn",
-				"style": "action-red",
-				"sprite": "trash"
+                    "class": "lk-page__action-btn",
+                    "style": "action-red",
+                    "sprite": "trash"
 				}, {
-				"class": "lk-page__action-btn",
-				"style": "action-pink",
-				"sprite": "plus"
+                    "class": "lk-page__action-btn",
+                    "style": "action-pink",
+                    "sprite": "plus"
 				}])
 			</div>
 		</div>

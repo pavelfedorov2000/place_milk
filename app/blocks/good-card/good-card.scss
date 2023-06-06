@@ -75,7 +75,7 @@
 
 	&__add-variation-btn {
 		padding: 6px 12.75px;
-		border-radius: $brs-card;
+		border-radius: var(--brs-card);
 	}
 
 	&__check-all {
@@ -108,7 +108,7 @@
 
 		&--back,
 		&--next {
-			border-radius: $brs-card;
+			border-radius: var(--brs-card);
 		}
 
 		&--back {
@@ -141,7 +141,7 @@
 	&__field {
 		width: 187px;
 
-		.select__title {
+		.select__toggle {
 			padding: 7px 20px 7px 10px;
 			font-size: 12px;
 			line-height: 14px;
@@ -286,7 +286,7 @@
 	align-items: flex-start;
 	background-color: var(--white);
 	box-shadow: $bsh-2;
-	border-radius: $brs-card;
+	border-radius: var(--brs-card);
 	// .characteristics-card__content
 
 	&__content {

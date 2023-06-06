@@ -34,8 +34,8 @@
 				min-width: 25px;
 				height: auto;
 				background: var(--accent);
-				color: $color-default;
-				border-radius: $brs;
+				color: var(--color-default);
+				border-radius: var(--brs);
 
 				#{$this} {
 					&__value {
@@ -52,7 +52,7 @@
 					bottom: 1px;
 					left: 1px;
 					background-color: var(--white);
-					border-radius: $brs;
+					border-radius: var(--brs);
 				}
 			}
 		}

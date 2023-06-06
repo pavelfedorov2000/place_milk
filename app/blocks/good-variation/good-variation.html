@@ -5,7 +5,7 @@
 			<div class="lk-page__fields-item">
 				<span class="lk-page__label">Вариация</span>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Цвет</div>
+					<div class="select__toggle">Цвет</div>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>
@@ -24,9 +24,9 @@
 				<label for="variation_value" class="lk-page__label">Значение вариации</label>
 				<input class="input lk-page__field" id="variation_value" placeholder="Введите значение">
 				@@include('blocks/button/button.html', {
-				"style": "action-pink",
-				"class": "lk-page__plus-btn",
-				"sprite": "plus"
+                    "style": "action-pink",
+                    "class": "lk-page__plus-btn",
+                    "sprite": "plus"
 				})
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 			<div class="lk-page__fields-item">
 				<label for="variation" class="lk-page__label">Вариация</label>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Цвет</div>
+					<div class="select__toggle">Цвет</div>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>
@@ -54,16 +54,16 @@
 				<input type="color" name="variation_color" id="variation_color">
 				<!-- <input class="input lk-page__field" id="variation_value" placeholder="Введите значение"> -->
 				@@include('blocks/button/button.html', {
-				"style": "action-pink",
-				"class": "lk-page__plus-btn",
-				"sprite": "plus"
+                    "style": "action-pink",
+                    "class": "lk-page__plus-btn",
+                    "sprite": "plus"
 				})
 			</div>
 		</div>
 		@@include('blocks/button/button.html', {
-		"class": "lk-page__add-variation-btn",
-		"style": "bg-pink",
-		"text": "Добавить вариацию"
+            "class": "lk-page__add-variation-btn",
+            "style": "bg-pink",
+            "text": "Добавить вариацию"
 		})
 	</div>
 </fieldset>

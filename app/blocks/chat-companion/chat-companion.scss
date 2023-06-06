@@ -8,7 +8,7 @@
 	;
 	gap: 4px 9px;
 	text-align: left;
-	transition: $transition box-shadow;
+	transition: var(--transition) box-shadow;
 
 	&.active {
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);

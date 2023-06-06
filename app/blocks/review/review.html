@@ -4,8 +4,8 @@
 			<div class="review__avatar">О</div>
 			<div class="review__author">Олег А.</div>
 			@@include('blocks/rating/rating.html', {
-			"class": "review__rating",
-			"stars": true
+                "class": "review__rating",
+                "stars": true
 			})
 			<time class="review__datetime" datetime="2023-02-01T16:19">01 Февраля, 16:19</time>
 			<div class="review__city">Москва</div>
@@ -15,33 +15,33 @@
 				подойдет в качестве базовой вещи в коллекции. Из минусов, очень долгая доставка, но результат того стоит
 			</p>
 			@@include('blocks/button/button.html', {
-			"style": "bg-pink",
-			"class": "review__btn",
-			"text": "Ответить"
+                "style": "bg-pink",
+                "class": "review__btn",
+                "text": "Ответить"
 			})
 		</div>
 		@@if(context.aside == 'true') {
-		<div class="review__aside">
-			@@include('blocks/rating/rating.html', {
-			"class": "review__aside-rate",
-			"style": "bg",
-			"total": "4.9"
-			})
-			<dl class="review-stats review-stats--orientation_col">
-				<div class="review-stats__item">
-					<dt class="review-stats__item-title">Качество товара</dt>
-					<dd class="review-stats__item-num">5.0</dd>
-				</div>
-				<div class="review-stats__item">
-					<dt class="review-stats__item-title">Скорость отправки </dt>
-					<dd class="review-stats__item-num">4.8</dd>
-				</div>
-				<div class="review-stats__item">
-					<dt class="review-stats__item-title">Консультация</dt>
-					<dd class="review-stats__item-num">4.7</dd>
-				</div>
-			</dl>
-		</div>
+            <div class="review__aside">
+                @@include('blocks/rating/rating.html', {
+                    "class": "review__aside-rate",
+                    "style": "bg",
+                    "total": "4.9"
+                })
+                <dl class="review-stats review-stats--orientation_col">
+                    <div class="review-stats__item">
+                        <dt class="review-stats__item-title">Качество товара</dt>
+                        <dd class="review-stats__item-num">5.0</dd>
+                    </div>
+                    <div class="review-stats__item">
+                        <dt class="review-stats__item-title">Скорость отправки </dt>
+                        <dd class="review-stats__item-num">4.8</dd>
+                    </div>
+                    <div class="review-stats__item">
+                        <dt class="review-stats__item-title">Консультация</dt>
+                        <dd class="review-stats__item-num">4.7</dd>
+                    </div>
+                </dl>
+            </div>
 		}
 	</article>
 </li>

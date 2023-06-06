@@ -2,7 +2,7 @@
 	$this: &;
 
 	padding: 2px 5px;
-	border-radius: $brs;
+	border-radius: var(--brs);
 	border: 0.5px solid var(--red);
 
 	&__text {
@@ -14,7 +14,7 @@
 	&--style {
 		&_2 {
 			border-color: var(--black);
-			border-radius: $brs-card;
+			border-radius: var(--brs-card);
 
 			#{$this} {
 				&__text {

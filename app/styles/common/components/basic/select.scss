@@ -4,8 +4,8 @@
 	position: relative;
 
 	&[data-state="active"] {
-		.select {
-			&__title {
+		#{$this} {
+			&__toggle {
 				&::after {
 					transform: rotate(180deg);
 				}
@@ -18,11 +18,11 @@
 		}
 	}
 
-	&__title {
+	&__toggle {
 		cursor: pointer;
 		padding: 6px 25px 6px 15px;
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
-		border-radius: $brs-card;
+		border-radius: var(--brs-card);
 		font-weight: 300;
 
 		&::after {
@@ -33,7 +33,7 @@
 			width: 11px;
 			height: 10px;
 			background-image: url(../images/icons/drop-arrow.svg);
-			transition: $transition transform;
+			transition: var(--transition) transform;
 		}
 	}
 
@@ -48,8 +48,8 @@
 		width: 100%;
 		background-color: var(--white);
 		box-shadow: $bsh-2;
-		border-radius: $brs-card;
-		transition: $transition all;
+		border-radius: var(--brs-card);
+		transition: var(--transition) all;
 		opacity: 0;
 		z-index: 30;
 		pointer-events: none;
@@ -90,17 +90,17 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			opacity: 0;
-			transition: $transition opacity;
+			transition: var(--transition) opacity;
 		}
 	}
 
 	&--style {
 		&_border {
 			#{$this} {
-				&__title {
+				&__toggle {
 					background: transparent;
 					border: 1px solid rgba(70, 70, 70, 0.55);
-					color: rgba($color-default, 0.6);
+					color: rgba(var(--color-default), 0.6);
 				}
 			}
 		}

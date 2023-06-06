@@ -3,7 +3,7 @@ h2,
 	font-size: 28px;
 	line-height: calc(33 / 28 * 100%);
 	font-weight: 400;
-	color: $color-default;
+	color: var(--color-default);
 }
 
 .title {

@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     app.productCard.init();
     app.mediaBlock.init();
+    app.select.init();
     //app.slider.init();
     //app.popup.init();
     document.querySelectorAll('[data-section]').forEach((btn) => {
@@ -36,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     animatedItems.forEach((item) => observer.observe(item)); */
 
     // Custom js select
-    const selectItem = document.querySelectorAll('.select');
+    /* const selectItem = document.querySelectorAll('.select');
     // Toggle menu
     selectItem.forEach((select) => {
         const selectTitle = select.querySelector('.select__title');
@@ -56,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 select.setAttribute('data-state', '');
             });
         })
-    });
+    }); */
 
     //js
     /* const overlay = document.querySelector('.overlay');

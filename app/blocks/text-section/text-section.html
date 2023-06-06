@@ -1,8 +1,13 @@
 <section class="text-section">
 	<div class="container">
-		<div class="section-top">
-			<h2 class="title">Широкий ассортимент и высокое качество</h2>
-		</div>
+        @@include('blocks/title_container/title_container.html', {
+            "class": "section-top",
+            "title": {
+                "class": "title",
+                "level": "2",
+                "text": "Широкий ассортимент и высокое качество"
+            }
+        })
 		<p class="text-section__text">
 			Интернет-магазин PlaceMik – это доступные цены, широкий, регулярно обновляемый ассортимент. В
 			онлайн-каталоге PlaceMik представлено около 35 000 ведущих брендов женской, мужской и детской одежды

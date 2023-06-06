@@ -18,7 +18,7 @@
 	display: grid;
 	grid-template-columns: 296px 1fr;
 	grid-template-rows: 1fr auto 28px;
-	border-radius: $brs-card;
+	border-radius: var(--brs-card);
 	overflow: hidden;
 	// .article-card__img
 
@@ -27,7 +27,7 @@
 		grid-row: 1 / -1;
 
 		img {
-			border-radius: $brs-card;
+			border-radius: var(--brs-card);
 			transition: 0.8s linear transform;
 		}
 	}

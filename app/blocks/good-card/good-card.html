@@ -1,8 +1,8 @@
 <li>
 	<article class="good-card">
 		@@include('blocks/checkbox/checkbox.html', {
-		@@if(context.isChecked){"checked": "@@isChecked",}
-		"class": "good-card__check"
+            @@if(context.isChecked){"checked": "@@isChecked",}
+            "class": "good-card__check"
 		})
 		<picture class="good-card__img">
 			<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
@@ -37,18 +37,16 @@
 			<div class="good-card__text"><b>3</b></div>
 		</div>
 		<div class="good-card__btns">
-			@@include('blocks/button/button.html', {
-			"style": "action-green",
-			"text": "On"
-			})
-			@@include('blocks/button/button.html', {
-			"style": "action-purple",
-			"icon": "pencil"
-			})
-			@@include('blocks/button/button.html', {
-			"style": "action-red",
-			"sprite": "trash"
-			})
+			@@loop('blocks/button/button.html', [{
+                "style": "action-green",
+                "text": "On"
+			}, {
+                "style": "action-purple",
+                "icon": "pencil"
+			}, {
+                "style": "action-red",
+                "sprite": "trash"
+			}])
 		</div>
 	</article>
 </li>

@@ -13,7 +13,7 @@
 		font-size: 12px;
 		line-height: 14px;
 		font-weight: 300;
-		transition: $transition all;
+		transition: var(--transition) all;
 
 		@media (any-hover: hover) {
 			&:hover {

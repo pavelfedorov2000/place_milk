@@ -1,13 +1,14 @@
 <div class="select-language@@if(context.class){ @@class}">
-	<svg class="icon select-language__flag">
-		<use xlink:href="assets/images/sprite.svg#rus"></use>
-	</svg>
+    @@include('blocks/sprite/sprite.html', {
+        "class": "select-language__flag",
+        "icon": "rus"
+    })
 	<span class="select-language__text">Русский</span>
 	<span class="select-language__currency">₽</span>
 	@@include('blocks/button/button.html', {
-	"transparent": true,
-	"class": "select-language__drop",
-	"icon": "down-arrow",
-	"ariaExpanded": true
+        "transparent": true,
+        "class": "select-language__drop",
+        "icon": "down-arrow",
+        "ariaExpanded": true
 	})
 </div>

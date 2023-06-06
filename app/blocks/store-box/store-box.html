@@ -1,10 +1,14 @@
 <article class="store-box@@if(context.class){ @@class}">
 	@@include('blocks/bookmark/bookmark.html', {
-	"class": "store-box__mark",
-	"text": "Official partner "
+        "class": "store-box__mark",
+        "text": "Official partner "
 	})
 	<div class="store-box__content">
-		<h2 class="store-box__title">@@title</h2>
+        @@include('blocks/title/title.html', {
+            "class": "store-box__title",
+            "level": "2",
+            "text": "@@title"
+        })
 		<div class="store-box__item">
 			@@include('blocks/rating/rating.html', {
 			"class": "store-box__rating",
@@ -13,10 +17,11 @@
 			<span>Рейтинг магазина</span>
 		</div>
 		@@include('blocks/button/button.html', {
-		"transparent": true,
-		"class": "store-box__item",
-		"icon": "chat",
-		"text": "Написать продавцу"
+            "href": "#",
+            "transparent": true,
+            "class": "store-box__item",
+            "icon": "chat",
+            "text": "Написать продавцу"
 		})
 	</div>
 </article>

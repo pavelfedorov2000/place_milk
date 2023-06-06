@@ -6,40 +6,40 @@
 			<div class="grid-row lk-page__grid">
 				<div class="span-3 lk-page__nav">
 					@@include('blocks/aside-nav/aside-nav.html', {
-					"firstActive": true,
-					"disputes": true,
-					"wishes": true
+                        "firstActive": true,
+                        "disputes": true,
+                        "wishes": true
 					})
 				</div>
 				<div class="lk-page__top">
 					<h1 class="title">Заказы</h1>
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__help-btn",
-					"style": "bg-blue",
-					"sprite": "info",
-					"text": "Помощь"
+                        "href": "#",
+                        "class": "lk-page__help-btn",
+                        "style": "bg-blue",
+                        "sprite": "info",
+                        "text": "Помощь"
 					})
 				</div>
 				<div class="span-9 lk-page__body">
 					@@include('blocks/link-tabs/link-tabs-orders-2.html', {
-					"firstActive": true,
-					"class": "lk-page__tabs"
+                        "firstActive": true,
+                        "class": "lk-page__tabs"
 					})
 					<div class="lk-page__filters">
 						<form class="search-block lk-page__search" action="#">
 							<input class="search-block__input">
 							@@include('blocks/button/button.html', {
-							"class": "search-block__btn",
-							"transparent": true,
-							"sprite": "search"
+                                "class": "search-block__btn",
+                                "transparent": true,
+                                "sprite": "search"
 							})
 						</form>
 					</div>
 
 					@@include('blocks/lk-goods/lk-goods.html', {
-					"item": "card",
-					"array": "user-orders"
+                        "item": "card",
+                        "array": "user-orders"
 					})
 					@@include('blocks/pagination/pagination.html')
 				</div>

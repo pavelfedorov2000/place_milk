@@ -6,11 +6,11 @@
 				<b class="lk-page__label">Логотип</b>
 				<div class="media-block">
 					@@include('blocks/media-choose/media-choose.html', {
-					"single": true,
-					"imgType": "logo",
-					"size": "small",
-					"round": true,
-					"logo": true
+                        "single": true,
+                        "imgType": "logo",
+                        "size": "small",
+                        "round": true,
+                        "logo": true
 					})
 				</div>
 			</label>
@@ -26,17 +26,17 @@
 				<b class="lk-page__label">Добавить обои</b>
 				<div class="media-block">
 					@@include('blocks/media-choose/media-choose.html', {
-					"single": true,
-					"imgType": "walls",
-					"size": "small",
-					"text": "Изображение в формате PNG, JPEG."
+                        "single": true,
+                        "imgType": "walls",
+                        "size": "small",
+                        "text": "Изображение в формате PNG, JPEG."
 					})
 				</div>
 			</div>
 			<div class="lk-page__fields-item">
 				<b class="lk-page__label">Выбрать язык</b>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Русский</div>
+					<div class="select__toggle">Русский</div>
 					<div class="select__content">
 						<input id="language0" class="select__input" type="radio" name="language" checked />
 						<label for="language0" tabindex="0" class="select__label" data-value="Русский">Русский</label>
@@ -49,7 +49,7 @@
 			<div class="lk-page__fields-item">
 				<b class="lk-page__label">Выбрать валюту</b>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__title">Российский рубль (₽)</div>
+					<div class="select__toggle">Российский рубль (₽)</div>
 					<div class="select__content">
 						<input id="currency0" class="select__input" type="radio" name="currency" checked />
 						<label for="currency0" tabindex="0" class="select__label"

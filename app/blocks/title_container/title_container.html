@@ -1,0 +1,28 @@
+<@@if(context.tag){@@tag}@@if(!context.tag){div} class="title-container@@if(context.orientation){ title-container--orientation_@@orientation}@@if(context.class){ @@class}">
+    @@include('blocks/title/title.html', {
+        "class": "@@title.class",
+        "level": "@@title.level",
+        "text": "@@title.text",
+        @@if(context.count){
+            "count": {
+                "style": "@@title.count.style",
+                "class": "@@title.count.class",
+                "value": "@@title.count.value"
+            }
+        }
+    })
+
+    @@if(context.badge){
+        @@include('blocks/badge/badge.html', {
+            "style": "@@badge.style",
+            "text": "@@badge.text"
+        })
+    }
+
+    @@if(context.count){
+        @@include('blocks/count/count.html', {
+            "style": "@@count.style",
+            "text": "@@count.value"
+        })
+    }
+</@@if(context.tag){@@tag}@@if(!context.tag){div}>

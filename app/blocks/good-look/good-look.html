@@ -5,7 +5,7 @@
 			<div class="lk-page__fields-item">
 				<span class="lk-page__label">Значение вида товара</span>
 				<div class="select lk-page__field">
-					<div class="select__title">Цвет</div>
+					<div class="select__toggle">Цвет</div>
 					<div class="select__content">
 						<input id="goodColor0" class="select__input" type="radio" name="goodColor" checked />
 						<label for="goodColor0" tabindex="0" class="select__label" data-value="Цвет ">Цвет</label>
@@ -21,8 +21,8 @@
 			<div class="lk-page__fields-item">
 				<label for="good_search" class="lk-page__label">Поиск товара</label>
 				@@include('blocks/search-block/search-block.html', {
-				"id": "good_search",
-				"class": "lk-page__field"
+                    "id": "good_search",
+                    "class": "lk-page__field"
 				})
 			</div>
 			@@include('blocks/good-look-item/good-look-item.html')

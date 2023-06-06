@@ -1,7 +1,12 @@
 <aside class="aside-news">
-	<div class="section-top">
-		<h2 class="title">@@title</h2>
-	</div>
+    @@include('blocks/title_container/title_container.html', {
+        "class": "section-top",
+        "title": {
+            "class": "title",
+            "level": "2",
+            "text": "@@title"
+        }
+    })
 	<div class="grid-row">
 		@@loop('blocks/@@item/@@item.html', "../resources/assets/@@array.json")
 	</div>

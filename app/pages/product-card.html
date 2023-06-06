@@ -36,20 +36,25 @@
 			@@include('blocks/product-card/product-card.html')
 		</div>
 		@@include('blocks/catalog-section/catalog-section.html', {
-		"id": "collection-goods",
-		"swiper": "collection-slider",
-		"title": "Товары в коллекции",
-		"goods": "collection-goods",
-		"with": "bg",
-		"withoutBtn": true
+            "id": "collection-goods",
+            "swiper": "collection-slider",
+            "title": "Товары в коллекции",
+            "goods": "collection-goods",
+            "with": "bg",
+            "withoutBtn": true
 		})
 		<div class="container">
 			<div class="grid-row">
 				<div class="span-8 product-content">
 					<section id="characteristics" class="product-section">
-						<div class="section-top">
-							<h2 class="title">Характеристики</h2>
-						</div>
+                        @@include('blocks/title_container/title_container.html', {
+                            "class": "section-top",
+                            "title": {
+                                "class": "title",
+                                "level": "2",
+                                "text": "Характеристики"
+                            }
+                        })
 						<dl class="leader product-section__leader leader--style_dots">
 							<div class="leader__item">
 								<dt><span>Сезон</span></dt>
@@ -91,9 +96,14 @@
 						</p>
 					</section>
 					<section id="description" class="product-section">
-						<div class="section-top">
-							<h2 class="title">Описание</h2>
-						</div>
+                        @@include('blocks/title_container/title_container.html', {
+                            "class": "section-top",
+                            "title": {
+                                "class": "title",
+                                "level": "2",
+                                "text": "Описание"
+                            }
+                        })
 						<div class="text-block product-section__text">
 							<p>
 								Лёгкая футболка свободного силуэта изготовлена из высококачественной кулирки (100 %
@@ -129,41 +139,42 @@
 								(длина изделия и др.) в карточке товара даны для 48 размера.
 							</p>
 						</div>
-						<picture class="product-section__img">
-							<source type="image/webp" srcset="assets/images/content/sizes-table.webp">
-							<img src="assets/images/content/sizes-table.jpg" alt="таблица размеров" width="734"
-								height="263" loading="lazy">
-						</picture>
-						<picture class="product-section__img">
-							<source type="image/webp" srcset="assets/images/content/slider.webp">
-							<img src="assets/images/content/slider.jpg" alt="галерея" width="742" height="364"
-								loading="lazy">
-						</picture>
+                        @@loop('blocks/img/img.html', [{
+                            "class": "product-section__img",
+                            "src": "assets/images/content/sizes-table",
+                            "width": "734",
+                            "height": "263"
+                        }, {
+                            "class": "product-section__img",
+                            "src": "assets/images/content/slider",
+                            "width": "742",
+                            "height": "364"
+                        }])
 					</section>
 					@@include('blocks/reviews-block/reviews-block.html', {
-					"titleLevel": "h2"
+					    "titleLevel": "2"
 					})
 				</div>
 				@@include('blocks/product-aside/product-aside.html')
 			</div>
 		</div>
 		@@loop('blocks/catalog-section/catalog-section.html', [{
-		"title": "Другие товары магазина",
-		"goods": "other-section-goods",
-		"withoutBtn": true
+            "title": "Другие товары магазина",
+            "goods": "other-section-goods",
+            "withoutBtn": true
 		}, {
-		"title": "Другие товары раздела",
-		"goods": "other-shop-goods",
-		"withoutBtn": true
+            "title": "Другие товары раздела",
+            "goods": "other-shop-goods",
+            "withoutBtn": true
 		}])
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "goods": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
 	@@include("blocks/footer/footer.html")
 </div>

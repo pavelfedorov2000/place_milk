@@ -1,25 +1,28 @@
 <section id="reviews" class="reviews-block">
-	<div class="section-top">
-		<@@titleLevel class="title">
-			Отзывы о товаре
-			@@include('blocks/count/count.html', {
-			"style": "border",
-			"class": "title__count",
-			"valueFirst": "10"
-			})
-		</@@titleLevel>
-	</div>
+	@@include('blocks/title_container/title_container.html', {
+        "class": "section-top",
+        "title": {
+            "class": "title",
+            "level": "@@titleLevel",
+            "text": "Отзывы о товаре",
+            "count": {
+                "style": "border",
+                "class": "title__count",
+                "value": "10"
+            }
+        }
+    })
 	@@include('blocks/buyers-photos/buyers-photos.html')
 	<div class="reviews-block__actions">
 		@@include('blocks/button/button.html', {
-		"class": "reviews-block__btn",
-		"text": "Написать отзыв"
+            "class": "reviews-block__btn",
+            "text": "Написать отзыв"
 		})
 		@@include('blocks/checkbox/checkbox.html', {
-		"text": "Только с фото"
+		    "text": "Только с фото"
 		})
 		<div class="select reviews-block__select select--style_border">
-			<div class="select__title">Сначала с высокой оценкой</div>
+			<div class="select__toggle">Сначала с высокой оценкой</div>
 			<div class="select__content">
 				<input id="reviewsSort0" class="select__input" type="radio" name="reviewsSort" checked />
 				<label for="reviewsSort0" tabindex="0" class="select__label"
@@ -34,19 +37,19 @@
 	</div>
 	<ul class="reviews-list">
 		@@include('blocks/review/review.html', {
-		"aside": "@@reviewAside"
+		    "aside": "@@reviewAside"
 		})
 		@@include('blocks/review/review.html', {
-		"aside": "@@reviewAside"
+		    "aside": "@@reviewAside"
 		})
 		@@include('blocks/review/review.html', {
-		"aside": "@@reviewAside"
+		    "aside": "@@reviewAside"
 		})
 		@@include('blocks/review/review.html', {
-		"aside": "@@reviewAside"
+		    "aside": "@@reviewAside"
 		})
 		@@include('blocks/review/review.html', {
-		"aside": "@@reviewAside"
+		    "aside": "@@reviewAside"
 		})
 	</ul>
 </section>

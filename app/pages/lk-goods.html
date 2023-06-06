@@ -6,28 +6,28 @@
 			<div class="grid-row lk-page__grid">
 				<div class="span-3 lk-page__nav">
 					@@include('blocks/aside-nav/aside-nav.html', {
-					"secondActive": true,
-					"reviews": true
+                        "secondActive": true,
+                        "reviews": true
 					})
 				</div>
 				<div class="lk-page__top">
 					<h1 class="title">Товары</h1>
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__help-btn",
-					"style": "bg-blue",
-					"sprite": "info",
-					"text": "Помощь"
+                        "href": "#",
+                        "class": "lk-page__help-btn",
+                        "style": "bg-blue",
+                        "sprite": "info",
+                        "text": "Помощь"
 					})
 				</div>
 				<div class="span-9 lk-page__body">
 					@@include('blocks/link-tabs/link-tabs.html', {
-					"firstActive": true,
-					"class": "lk-page__tabs"
+                        "firstActive": true,
+                        "class": "lk-page__tabs"
 					})
 					<div class="lk-page__filters">
 						<div class="select lk-page__select">
-							<div class="select__title">Футболки</div>
+							<div class="select__toggle">Футболки</div>
 							<div class="select__content">
 								<input id="goodType0" class="select__input" type="radio" name="goodType" checked />
 								<label for="goodType0" tabindex="0" class="select__label"
@@ -40,53 +40,53 @@
 						<form class="search-block lk-page__search" action="#">
 							<input class="search-block__input">
 							@@include('blocks/button/button.html', {
-							"class": "search-block__btn",
-							"transparent": true,
-							"sprite": "search"
+                                "class": "search-block__btn",
+                                "transparent": true,
+                                "sprite": "search"
 							})
 						</form>
 						@@include('blocks/button/button.html', {
-						"class": "lk-page__add-good-btn",
-						"text": "Добавить товар"
+                            "class": "lk-page__add-good-btn",
+                            "text": "Добавить товар"
 						})
 					</div>
 					<div class="lk-page__check-all">
 						@@include('blocks/checkbox/checkbox.html', {
-						"text": "Выбрать все"
+						    "text": "Выбрать все"
 						})
 					</div>
 					<ul class="lk-goods">
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 						@@include('blocks/good-card/good-card.html')
 						@@include('blocks/good-card/good-card.html', {
-						"isChecked": true
+						    "isChecked": true
 						})
 					</ul>
 					@@include('blocks/pagination/pagination.html')

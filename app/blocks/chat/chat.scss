@@ -4,7 +4,7 @@
 	padding: 12px 12px 8px 12px;
 	background: var(--white);
 	box-shadow: $bsh-2;
-	border-radius: 0 $brs-card $brs-card $brs-card;
+	border-radius: 0 var(--brs-card) var(--brs-card) var(--brs-card);
 	font-weight: 300;
 	// .chat-message__text
 
@@ -121,7 +121,7 @@
 		width: 100%;
 		background-color: var(--white);
 		border: none;
-		border-radius: $brs-card;
+		border-radius: var(--brs-card);
 		font-size: 14px;
 		line-height: calc(18 / 14 * 100%);
 		font-weight: 300;
@@ -143,6 +143,6 @@
 
 	&__submit {
 		padding: 6px 18.5px;
-		border-radius: $brs-card;
+		border-radius: var(--brs-card);
 	}
 }
