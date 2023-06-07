@@ -1,18 +1,20 @@
 <aside class="span-4 product-aside">
 	<div class="aside-banners">
 		<a href="#" class="aside-banners__item">
-			<picture>
-				<source type="image/webp" srcset="assets/images/content/banners/banner-05.webp">
-				<img src="assets/images/content/banners/banner-05.jpg" alt="баннер" width="407" height="144"
-					loading="lazy">
-			</picture>
+            @@include('blocks/img/img.html', {
+                "src": "assets/images/content/banners/banner-05",
+                "alt": "баннер",
+                "width": "407",
+                "height": "144"
+            })
 		</a>
 		<a href="#" class="aside-banners__item">
-			<picture>
-				<source type="image/webp" srcset="assets/images/content/banners/banner-06.webp">
-				<img src="assets/images/content/banners/banner-06.jpg" alt="баннер" width="407" height="144"
-					loading="lazy">
-			</picture>
+			@@include('blocks/img/img.html', {
+                "src": "assets/images/content/banners/banner-06",
+                "alt": "баннер",
+                "width": "407",
+                "height": "144"
+            })
 		</a>
 	</div>
 	@@include('blocks/review-card/review-card.html')

@@ -1,44 +1,35 @@
 <nav class="scroll-nav@@if(context.class){ @@class}">
 	<ul class="scroll-nav__list">
-		<li>
-			@@include('blocks/button/button.html', {
-			"transparent": true,
-			"class": "scroll-nav__btn@@if(context.active == 'first'){ active}",
-			"text": "Основная информация",
-			"dot": true
-			})
-		</li>
-		<li>
-			@@include('blocks/button/button.html', {
-			"transparent": true,
+		@@loop('blocks/button/button.html', [{
+            "listItem": true,
+            "transparent": true,
+            "class": "scroll-nav__btn@@if(context.active == 'first'){ active}",
+            "text": "Основная информация",
+            "dot": true
+        }, {
+            "listItem": true,
+            "transparent": true,
 			"class": "scroll-nav__btn@@if(context.active == 'second'){ active}",
 			"text": "Медиа",
 			"dot": true
-			})
-		</li>
-		<li>
-			@@include('blocks/button/button.html', {
-			"transparent": true,
+        }, {
+            "listItem": true,
+            "transparent": true,
 			"class": "scroll-nav__btn@@if(context.active == 'third'){ active}",
 			"text": "Вид товара ",
 			"dot": true
-			})
-		</li>
-		<li>
-			@@include('blocks/button/button.html', {
-			"transparent": true,
+        }, {
+            "listItem": true,
+            "transparent": true,
 			"class": "scroll-nav__btn@@if(context.active == 'fourth'){ active}",
 			"text": "Вариации товара",
 			"dot": true
-			})
-		</li>
-		<li>
-			@@include('blocks/button/button.html', {
-			"transparent": true,
+        }, {
+            "listItem": true,
+            "transparent": true,
 			"class": "scroll-nav__btn@@if(context.active == 'fifth'){ active}",
 			"text": "Характеристики",
 			"dot": true
-			})
-		</li>
+        }])
 	</ul>
 </nav>

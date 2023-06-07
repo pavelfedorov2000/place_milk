@@ -7,7 +7,12 @@
                 "class": "review__rating",
                 "stars": true
 			})
-			<time class="review__datetime" datetime="2023-02-01T16:19">01 Февраля, 16:19</time>
+            @@include('blocks/datetime/datetime.html', {
+                "class": "review__datetime",
+                "formattedDate": "2023-02-01",
+                "time": "16:19",
+                "date": "01 Февраля, 16:19"
+            })
 			<div class="review__city">Москва</div>
 			<p class="review__text">
 				Отличная футболка, принт супер! Очень хорошее качество, советую присмотреться к данной модели, она
@@ -28,17 +33,17 @@
                     "total": "4.9"
                 })
                 <dl class="review-stats review-stats--orientation_col">
-                    <div class="review-stats__item">
-                        <dt class="review-stats__item-title">Качество товара</dt>
-                        <dd class="review-stats__item-num">5.0</dd>
+                    <div class="review-stats__item review-stat">
+                        <dt class="review-stat__property">Качество товара</dt>
+                        <dd class="review-stat__value">5.0</dd>
                     </div>
-                    <div class="review-stats__item">
-                        <dt class="review-stats__item-title">Скорость отправки </dt>
-                        <dd class="review-stats__item-num">4.8</dd>
+                    <div class="review-stats__item review-stat">
+                        <dt class="review-stat__property">Скорость отправки </dt>
+                        <dd class="review-stat__value">4.8</dd>
                     </div>
-                    <div class="review-stats__item">
-                        <dt class="review-stats__item-title">Консультация</dt>
-                        <dd class="review-stats__item-num">4.7</dd>
+                    <div class="review-stats__item review-stat">
+                        <dt class="review-stat__property">Консультация</dt>
+                        <dd class="review-stat__value">4.7</dd>
                     </div>
                 </dl>
             </div>

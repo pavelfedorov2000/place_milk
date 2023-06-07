@@ -7,9 +7,9 @@ body {
 	font-weight: 400;
 	color: var(--color-default);
 
-	@media(max-width: $lg) {
-		overflow-x: hidden;
-	}
+	@include media('767', max) {
+        overflow-x: hidden;
+    }
 
 	&._lock {
 		overflow-y: hidden;

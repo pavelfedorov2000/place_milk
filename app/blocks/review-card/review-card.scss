@@ -97,29 +97,6 @@
 	display: flex;
 	justify-content: center;
 	gap: 33px;
-	// .review-stats__item
-
-	&__item {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-		text-align: center;
-		gap: 3px;
-		font-size: 12px;
-		line-height: 14px;
-	}
-
-	// .review-stats__item-title
-
-	&__item-title {
-		font-weight: 300;
-	}
-
-	// .review-stats__item-num
-
-	&__item-num {
-		font-weight: 500;
-	}
 
 	&--orientation {
 		&_col {
@@ -133,5 +110,23 @@
 				}
 			}
 		}
+	}
+}
+
+.review-stat {
+    display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	text-align: center;
+	gap: 3px;
+	font-size: 12px;
+	line-height: 14px;
+
+	&__property {
+		font-weight: 300;
+	}
+
+	&__value {
+		font-weight: 500;
 	}
 }

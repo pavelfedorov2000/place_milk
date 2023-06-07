@@ -3,9 +3,15 @@
 	@@include('blocks/layout/layout.html')
 	<main class="page">
 		<div class="container">
-			<div class="page-top">
-				<h1 class="title">Наши статьи</h1>
-			</div>
+            @@include('blocks/title_container/title_container.html', {
+                "tag": "header",
+                "class": "page-top",
+                "title": {
+                    "class": "title",
+                    "level": "1",
+                    "text": "Наши статьи"
+                }
+            })
 			<ul class="grid-row articles">
 				@@loop('blocks/article-card/article-card.html', "../resources/assets/articles.json")
 			</ul>
@@ -13,12 +19,12 @@
 		</div>
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "goods": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
 </div>
 @@include("blocks/link/link.html")

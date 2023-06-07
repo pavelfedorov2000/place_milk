@@ -4,9 +4,15 @@
 	<main class="page">
 		<div class="container">
 			<article class="text-content">
-				<header class="page-top">
-					<h1 class="title">Главные тренды весны 2021</h1>
-				</header>
+                @@include('blocks/title_container/title_container.html', {
+                    "tag": "header",
+                    "class": "page-top",
+                    "title": {
+                        "class": "title",
+                        "level": "1",
+                        "text": "Главные тренды весны 2021"
+                    }
+                })
 				<picture>
 					<source type="image/webp" srcset="assets/images/content/articles/banner.webp">
 					<img src="assets/images/content/articles/banner.jpg" alt="фото" width="1280" height="406"

@@ -2,12 +2,17 @@
 	checkbox--style_@@style}">
 	<input class="checkbox__input" type="checkbox" @@if(context.checked){checked}>
 	@@if(context.beforeText){
-	<@@if(context.boldText){b}@@if(!context.boldText){span} class="checkbox__text">@@beforeText
-	</@@if(context.boldText){b}@@if(!context.boldText){span}>
+	    <@@if(context.boldText){b}@@if(!context.boldText){span} class="checkbox__text">
+            @@beforeText
+	    </@@if(context.boldText){b}@@if(!context.boldText){span}>
 	}
 	<span class="checkbox__style"></span>
+    @@if(context.color) {
+        <span class="checkbox__color@@if(context.color == '#fff'){ checkbox__color--white}" style="background: @@color;"></span>
+    }
 	@@if(context.text){
-	<@@if(context.boldText){b}@@if(!context.boldText){span} class="checkbox__text">@@text
-	</@@if(context.boldText){b}@@if(!context.boldText){span}>
+        <@@if(context.boldText){b}@@if(!context.boldText){span} class="checkbox__text">
+            @@text
+        </@@if(context.boldText){b}@@if(!context.boldText){span}>
 	}
 </label>

@@ -57,6 +57,40 @@
 		}
 	}
 
+    &__color {
+        margin-right: 11.25px;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        &--white {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border-radius: 50%;
+                background: var(--accent);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                bottom: 1px;
+                left: 1px;
+                border-radius: 50%;
+                background-color: var(--white);
+            }
+        }
+    }
+
 	&__text {
 		font-size: 12px;
 		line-height: 14px;

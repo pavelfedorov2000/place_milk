@@ -1,3 +1,34 @@
 .aside-filters {
-  // your code
+    @include sticky(30px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include media('767', max) {
+        position: fixed;
+        top: -150%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+.aside-filter {
+    >* {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__title {
+        display: block;
+        font-size: 18px;
+        line-height: calc(21 / 18 * 100%);
+        font-weight: 500;
+    }
+
+    &__checks {
+        @include row-grid(15px);
+    }
 }

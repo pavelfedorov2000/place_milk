@@ -1,7 +1,7 @@
-app.yourScriptName = {
-  name: 'yourScriptName',
-  description: 'your script description',
-  init() {
-    // your code
-  },
+app.asideFilters = {
+    name: 'asideFilters',
+    description: 'your script description',
+    init() {
+        // your code
+    },
 };

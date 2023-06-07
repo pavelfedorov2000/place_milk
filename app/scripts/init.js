@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     app.productCard.init();
     app.mediaBlock.init();
     app.select.init();
+    app.asideFilters.init();
 
     document.querySelectorAll('[data-section]').forEach((btn) => {
         btn.addEventListener('click', () => {

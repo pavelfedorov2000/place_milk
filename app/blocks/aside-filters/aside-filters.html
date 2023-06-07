@@ -1,3 +1,131 @@
 <div class="aside-filters">
-  <!--your code-->
+    <fieldset class="aside-filters__item aside-filter">
+        @@include('blocks/title/title.html', {
+            "class": "aside-filter__title",
+            "tag": "legend",
+            "text": "Бренды"
+        })
+        @@include('blocks/search-block/search-block.html', {
+            "class": "aside-filter__search"
+        })
+        <div class="aside-filter__checks">
+            @@loop('blocks/checkbox/checkbox.html', [{
+                "text": "Mango"
+            }, {
+                "text": "Hugo"
+            }, {
+                "text": "Cuess"
+            }, {
+                "text": "Marple"
+            }, {
+                "text": "Adidas"
+            }])
+        </div>
+        @@include('blocks/button/button.html', {
+            "class": "aside-filter__more",
+            "style": "more",
+            "transparent": true,
+            "text": "Посмотреть все",
+            "sprite": "drop-arrow",
+            "icon_position_right": true
+        })
+    </fieldset>
+    <fieldset class="aside-filters__item aside-filter">
+        @@include('blocks/title/title.html', {
+            "class": "aside-filter__title",
+            "tag": "legend",
+            "text": "Сезон"
+        })
+        @@include('blocks/search-block/search-block.html', {
+            "class": "aside-filter__search"
+        })
+        <div class="aside-filter__checks">
+            @@loop('blocks/checkbox/checkbox.html', [{
+                "text": "На любой сезон"
+            }, {
+                "text": "Осень"
+            }, {
+                "text": "Демисезон"
+            }, {
+                "text": "Зима"
+            }, {
+                "text": "Лето"
+            }])
+        </div>
+        @@include('blocks/button/button.html', {
+            "class": "aside-filter__more",
+            "style": "more",
+            "transparent": true,
+            "text": "Посмотреть все",
+            "sprite": "drop-arrow",
+            "icon_position_right": true
+        })
+    </fieldset>
+    <fieldset class="aside-filters__item aside-filter">
+        @@include('blocks/title/title.html', {
+            "class": "aside-filter__title",
+            "tag": "legend",
+            "text": "Цвет"
+        })
+        @@include('blocks/search-block/search-block.html', {
+            "class": "aside-filter__search"
+        })
+        <div class="aside-filter__checks">
+            @@loop('blocks/checkbox/checkbox.html', [{
+                "text": "Белый",
+                "color": "#fff"
+            }, {
+                "text": "Черный",
+                "color": "#000"
+            }, {
+                "text": "Синий",
+                "color": "#0000FF"
+            }, {
+                "text": "Градиент",
+                "color": "linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%)"
+            }, {
+                "text": "Красный",
+                "color": "#FF4343"
+            }])
+        </div>
+        @@include('blocks/button/button.html', {
+            "class": "aside-filter__more",
+            "style": "more",
+            "transparent": true,
+            "text": "Посмотреть все",
+            "sprite": "drop-arrow",
+            "icon_position_right": true
+        })
+    </fieldset>
+    <fieldset class="aside-filters__item aside-filter">
+        @@include('blocks/title/title.html', {
+            "class": "aside-filter__title",
+            "tag": "legend",
+            "text": "Материал"
+        })
+        @@include('blocks/search-block/search-block.html', {
+            "class": "aside-filter__search"
+        })
+        <div class="aside-filter__checks">
+            @@loop('blocks/checkbox/checkbox.html', [{
+                "text": "Полиэстер"
+            }, {
+                "text": "Осень"
+            }, {
+                "text": "Демисезон"
+            }, {
+                "text": "Хлопок"
+            }, {
+                "text": "Лето"
+            }])
+        </div>
+        @@include('blocks/button/button.html', {
+            "class": "aside-filter__more",
+            "style": "more",
+            "transparent": true,
+            "text": "Посмотреть все",
+            "sprite": "drop-arrow",
+            "icon_position_right": true
+        })
+    </fieldset>
 </div>

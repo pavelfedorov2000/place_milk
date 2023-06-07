@@ -1,129 +1,143 @@
 <div class="product-card">
 	<div class="grid-row">
-		<div class="span-7">
+		<div class="span-7 span-lg-6">
 			<div class="product-card__gallery">
 				<div class="swiper product-card__slider">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/boy.webp">
-								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
-									height="656" loading="lazy">
-							</picture>
+                            @@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/boy",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
-								<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото"
-									width="656" height="656" loading="lazy">
-							</picture>
+							@@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/catalog-goods/boy-01",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/boy.webp">
-								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
-									height="656" loading="lazy">
-							</picture>
+							@@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/boy",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/boy.webp">
-								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
-									height="656" loading="lazy">
-							</picture>
+							@@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/boy",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/boy.webp">
-								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
-									height="656" loading="lazy">
-							</picture>
+							@@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/boy",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 						<div class="swiper-slide">
-							<picture>
-								<source type="image/webp" srcset="assets/images/content/boy.webp">
-								<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="656"
-									height="656" loading="lazy">
-							</picture>
+							@@include('blocks/img/img.html', {
+                                "contain": true,
+                                "src": "assets/images/content/boy",
+                                "width": "656",
+                                "height": "656"
+                            })
 						</div>
 					</div>
 				</div>
 				<div id="thumbs-slider" class="slider-wrap">
 					<div class="btns slider-arrows btns--arrows">
 						@@loop('blocks/button/button.html', [{
-						"style": "swiper",
-						"class": "swiper-button-prev",
-						"icon": "arrow-left"
+                            "style": "swiper",
+                            "class": "swiper-button-prev",
+                            "icon": "arrow-left"
 						}, {
-						"style": "swiper",
-						"class": "swiper-button-next",
-						"icon": "arrow-right"
+                            "style": "swiper",
+                            "class": "swiper-button-next",
+                            "icon": "arrow-right"
 						}])
 					</div>
 					<div class="product-card__thumbs swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/boy.webp">
-									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
-										height="100" loading="lazy">
-								</picture>
+                                @@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/boy",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
-									<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg"
-										alt="фото" width="100" height="100" loading="lazy">
-								</picture>
+								@@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/catalog-goods/boy-01",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/boy.webp">
-									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
-										height="100" loading="lazy">
-								</picture>
+								@@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/boy",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/boy.webp">
-									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
-										height="100" loading="lazy">
-								</picture>
+								@@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/boy",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/boy.webp">
-									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
-										height="100" loading="lazy">
-								</picture>
+								@@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/boy",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="assets/images/content/boy.webp">
-									<img class="img-contain" src="assets/images/content/boy.jpg" alt="фото" width="100"
-										height="100" loading="lazy">
-								</picture>
+								@@include('blocks/img/img.html', {
+                                    "contain": true,
+                                    "src": "assets/images/content/boy",
+                                    "width": "100",
+                                    "height": "100"
+                                })
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="span-5 product-card__content">
+		<div class="span-5 span-lg-6 product-card__content">
 			<dl class="leader product-card__articul leader--style_2">
 				<div class="leader__item">
 					<dt>Артикул:</dt>
 					<dd><b>123654785</b></dd>
 				</div>
 			</dl>
-			<h1 class="title product-card__title">
-				Футболка с дизайнерским принтом Graphic Hypnotize
-			</h1>
+            @@include('blocks/title/title.html', {
+                "level": "1",
+                "class": "title product-card__title",
+                "text": "Футболка с дизайнерским принтом Graphic Hypnotize"
+            })
 			<div class="product-card__info">
 				@@include('blocks/rating/rating.html', {
-				"class": "product-card__rating",
-				"stars": true,
-				"text": "14 отзывов"
+                    "class": "product-card__rating",
+                    "stars": true,
+                    "text": "14 отзывов"
 				})
 				<div class="product-card__info-property">
 					@@include('blocks/icons/like-heart.html')
@@ -132,7 +146,7 @@
 				<dl class="leader leader--style_2">
 					<div class="leader__item">
 						<dt><b>В наличии:</b></dt>
-						<dd><b>155</b></dd>
+						<dd>155</dd>
 					</div>
 				</dl>
 			</div>
@@ -162,21 +176,42 @@
 					</div>
 				</dl>
 				<div class="product-card__sizes">
-
+                    @@loop('blocks/radio/radio.html', [{
+                        "style": "size",
+                        "text": "S",
+                        "name": "SIZE",
+                        "isChecked": true
+                    }, {
+                        "style": "size",
+                        "text": "M",
+                        "name": "SIZE",
+                    }, {
+                        "style": "size",
+                        "text": "L",
+                        "name": "SIZE",
+                    }, {
+                        "style": "size",
+                        "text": "XL",
+                        "name": "SIZE",
+                    }, {
+                        "style": "size",
+                        "text": "XXL",
+                        "name": "SIZE",
+                    }])
 				</div>
 			</div>
 			<div class="product-card__btns">
 				@@include('blocks/counter/counter.html', {
-				"class": "product-card__counter",
-				"value": "133"
+                    "class": "product-card__counter",
+                    "value": "133"
 				})
 				@@loop('blocks/button/button.html', [{
-				"class": "product-card__btn",
-				"style": "bg-gradient",
-				"text": "Купить сейчас"
+                    "class": "product-card__btn",
+                    "style": "bg-gradient",
+                    "text": "Купить сейчас"
 				}, {
-				"class": "product-card__btn",
-				"text": "Добавить в корзину"
+                    "class": "product-card__btn",
+                    "text": "В корзину"
 				}])
 			</div>
 			<dl class="leader product-card__leader">
@@ -197,52 +232,52 @@
 			</dl>
 			<div class="product-card__scroll-btns">
 				@@loop('blocks/button/button.html', [{
-				"data": {
-				"attr": "section",
-				"value": "characteristics"
-				},
-				"style": "border",
-				"class": "product-card__scroll-btn",
-				"text": "Характеристики"
-				}, {
-				"data": {
-				"attr": "section",
-				"value": "description"
-				},
-				"style": "border",
-				"class": "product-card__scroll-btn",
-				"text": "Описание"
-				}, {
-				"data": {
-				"attr": "section",
-				"value": "reviews"
-				},
-				"style": "border",
-				"class": "product-card__scroll-btn",
-				"text": "Отзывы"
+                    "data": {
+                        "attr": "section",
+                        "value": "characteristics"
+                    },
+                    "style": "border",
+                    "class": "product-card__scroll-btn",
+                    "text": "Характеристики"
+                }, {
+                    "data": {
+                        "attr": "section",
+                        "value": "description"
+                    },
+                    "style": "border",
+                    "class": "product-card__scroll-btn",
+                    "text": "Описание"
+                }, {
+                    "data": {
+                        "attr": "section",
+                        "value": "reviews"
+                    },
+                    "style": "border",
+                    "class": "product-card__scroll-btn",
+                    "text": "Отзывы"
 				}])
 			</div>
 			@@include('blocks/store-box/store-box.html', {
-			"class": "product-card__box",
-			"title": "Marple Store"
+                "class": "product-card__box",
+                "title": "Marple Store"
 			})
 			<ul class="product-card__features">
 				<li class="product-card__feature">
-					<svg class="icon">
-						<use xlink:href="assets/images/sprite.svg#delivery-box"></use>
-					</svg>
+                    @@include('blocks/sprite/sprite.html', {
+                        "icon": "delivery-box"
+                    })
 					<span>Доставка до дверей</span>
 				</li>
 				<li class="product-card__feature">
-					<svg class="icon">
-						<use xlink:href="assets/images/sprite.svg#shield"></use>
-					</svg>
+                    @@include('blocks/sprite/sprite.html', {
+                        "icon": "shield"
+                    })
 					<span>Гарантия возврата</span>
 				</li>
 				<li class="product-card__feature">
-					<svg class="icon">
-						<use xlink:href="assets/images/sprite.svg#credit-card"></use>
-					</svg>
+					@@include('blocks/sprite/sprite.html', {
+                        "icon": "credit-card"
+                    })
 					<span>Оплата Online</span>
 				</li>
 			</ul>

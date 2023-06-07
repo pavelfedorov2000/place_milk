@@ -3,6 +3,7 @@ app.productCard = {
     description: 'your script description',
     init() {
         const productCardThumbs = new Swiper(".product-card__thumbs", {
+            loop: true,
             slidesPerView: 'auto',
             spaceBetween: 22,
             speed: 1000,

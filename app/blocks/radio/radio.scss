@@ -57,4 +57,57 @@
 		line-height: 16px;
 		font-weight: 300;
 	}
+
+    &--style {
+        &_size {
+            #{$this} {
+                &__style {
+                    padding: 6px 9.5px;
+                    min-width: 28px;
+                    width: auto;
+                    height: auto;
+                    border-radius: var(--brs-card);
+
+                    &::before {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: auto;
+                        height: auto;
+                        border-radius: var(--brs-card);
+                        transform: none;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 1px;
+                        right: 1px;
+                        bottom: 1px;
+                        left: 1px;
+                        background: var(--white);
+                        border-radius: var(--brs-card);
+                    }
+                }
+
+                &__input {
+                    &:checked ~ {
+                        #{$this} {
+                            &__style {
+                                border-color: var(--white);
+                            }
+                        }
+                    }
+                }
+
+                &__text {
+                    position: relative;
+                    z-index: 2;
+                    padding: 0;
+                    background: transparent;
+                }
+            }
+        }
+    }
 }

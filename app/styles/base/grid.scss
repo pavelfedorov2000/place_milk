@@ -11,9 +11,9 @@
 	flex-direction: column;
 	min-height: 100vh;
 
-	@media(max-width: $lg) {
-		overflow-x: hidden;
-	}
+	@include media('767', max) {
+        overflow-x: hidden;
+    }
 }
 
 .page {
@@ -26,10 +26,9 @@
 }
 
 .grid-row {
-	display: grid;
-	gap: var(--gap);
-
     @include media('768', min) {
+        display: grid;
+	    gap: var(--gap);
         grid-template-columns: repeat(12, 1fr);
     }
 
@@ -57,22 +56,24 @@
 	}
 }
 
-.span-2 {
-	grid-column: span 2;
-
-	&+.span-3 {
-		display: flex;
-		justify-content: center;
-
-		>* {
-			@media(min-width: $xl) {
-				max-width: 188px;
-			}
-		}
-	}
-}
-
 .span {
+    $this: &;
+
+    &-2 {
+        grid-column: span 2;
+    
+        &+#{$this}-3 {
+            display: flex;
+            justify-content: center;
+    
+            >* {
+                @media(min-width: $xl) {
+                    max-width: 188px;
+                }
+            }
+        }
+    }
+
     &-3 {
         @include media('768', min) {
             grid-column: span 3;

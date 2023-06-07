@@ -1,6 +1,7 @@
 .slider {
 	&-wrap {
 		position: relative;
+        width: 100%;
 	}
 
 	&-arrows {
@@ -19,7 +20,6 @@
 }
 
 .swiper-button {
-
 	&-prev,
 	&-next {
 		margin: 0;
@@ -44,7 +44,7 @@
 	}
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+/* .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
 	display: flex;
 	justify-content: center;
@@ -60,14 +60,4 @@
 	&:not(:last-child) {
 		margin-right: 1.65rem;
 	}
-}
-
-/* .swiper-pagination-current,
-.swiper-pagination-total {
-    &:before {
-        content: '0'; // если хотим нумерацию 01, 02, 03, ...
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
 } */

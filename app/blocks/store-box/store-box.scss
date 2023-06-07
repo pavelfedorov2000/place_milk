@@ -7,6 +7,10 @@
 	background-color: rgba(#AEC1E4, 0.3);
 	box-shadow: $bsh;
 
+    @include media('1024', max) {
+        padding: 9px 18px 13px 56px;
+    }
+
 	&__mark {
 		position: absolute;
 		top: 0;
@@ -19,6 +23,10 @@
 		align-items: flex-end;
 		justify-content: space-between;
 		gap: 15px;
+
+        @include media('1024', max) {
+            flex-wrap: wrap;
+        }
 	}
 
 	// .store-box__title
@@ -28,6 +36,10 @@
 		line-height: calc(19 / 16 * 100%);
 		font-weight: 500;
 		text-transform: uppercase;
+
+        @include media('1024', max) {
+            width: 100%;
+        }
 	}
 
 	// .store-box__item

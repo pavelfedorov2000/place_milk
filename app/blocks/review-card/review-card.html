@@ -1,9 +1,9 @@
 <div class="review-card card">
 	<div class="review-card__rate">
 		@@include('blocks/rating/rating.html', {
-		"class": "review-card__rate-total",
-		"style": "bg",
-		"total": "4.9"
+            "class": "review-card__rate-total",
+            "style": "bg",
+            "total": "4.9"
 		})
 		<div class="review-card__rate-descr">
 			На основании 28 отзывов
@@ -37,21 +37,21 @@
 		</li>
 	</ol>
 	<dl class="review-card__stats review-stats">
-		<div class="review-stats__item">
-			<dt class="review-stats__item-title">Скорость отправки </dt>
-			<dd class="review-stats__item-num">4.8</dd>
+		<div class="review-stats__item review-stat">
+			<dt class="review-stat__proprty">Скорость отправки </dt>
+			<dd class="review-stat__value">4.8</dd>
 		</div>
-		<div class="review-stats__item">
-			<dt class="review-stats__item-title">Консультация</dt>
-			<dd class="review-stats__item-num">4.9</dd>
+		<div class="review-stats__item review-stat">
+			<dt class="review-stat__proprty">Консультация</dt>
+			<dd class="review-stat__value">4.9</dd>
 		</div>
-		<div class="review-stats__item">
-			<dt class="review-stats__item-title">Качество товара</dt>
-			<dd class="review-stats__item-num">4.9</dd>
+		<div class="review-stats__item review-stat">
+			<dt class="review-stat__proprty">Качество товара</dt>
+			<dd class="review-stat__value">4.9</dd>
 		</div>
 	</dl>
 	@@include('blocks/button/button.html', {
-	"class": "review-card__btn",
-	"text": "Написать отзыв"
+        "class": "review-card__btn",
+        "text": "Написать отзыв"
 	})
 </div>

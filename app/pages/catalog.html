@@ -13,7 +13,11 @@
 					@@include('blocks/aside-filters/aside-filters.html')
 				</div>
 				<div class="span-9 catalog__body">
-					<h1 class="title">Мужчинам</h1>
+                    @@include('blocks/title/title.html', {
+                        "class": "title",
+                        "level": "1",
+                        "text": "Мужчинам"
+                    })
 					@@include('blocks/catalog-sort/catalog-sort.html')
 					<ul class="catalog-list">
 						@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/catalog-goods.json")
@@ -32,6 +36,7 @@
         "with": "bg",
         "withoutBtn": true
 	})
+    @@include('blocks/footer/footer.html')
 </div>
 @@include("blocks/link/link.html")
 </body>
