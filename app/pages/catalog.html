@@ -1,12 +1,12 @@
 @@include("blocks/head/head.html", {"title": "Каталог"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page">
 		<div class="container">
 			@@include('blocks/breadcrumbs/breadcrumbs.html', {
-			"firstPage": "Каталог",
-			"prevPage": "Одежда, обувь и аксессуары",
-			"currentPage": "Мужчинам"
+                "firstPage": "Каталог",
+                "prevPage": "Одежда, обувь и аксессуары",
+                "currentPage": "Мужчинам"
 			})
 			<div class="grid-row catalog">
 				<div class="span-3">
@@ -25,12 +25,12 @@
 		@@include('blocks/text-section/text-section.html')
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "goods": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
 </div>
 @@include("blocks/link/link.html")

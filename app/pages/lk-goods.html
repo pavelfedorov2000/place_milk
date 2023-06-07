@@ -1,6 +1,6 @@
 @@include("blocks/head/head.html", {"title": "ЛК Товары"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page lk-page">
 		<div class="container">
 			<div class="grid-row lk-page__grid">
@@ -27,7 +27,7 @@
 					})
 					<div class="lk-page__filters">
 						<div class="select lk-page__select">
-							<div class="select__toggle">Футболки</div>
+							<button class="select__toggle" type="button" aria-expanded="false">Футболки</button>
 							<div class="select__content">
 								<input id="goodType0" class="select__input" type="radio" name="goodType" checked />
 								<label for="goodType0" tabindex="0" class="select__label"

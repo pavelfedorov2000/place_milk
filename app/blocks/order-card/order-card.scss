@@ -2,7 +2,10 @@
 	$this: &;
 
 	display: grid;
-	grid-template-columns: 187px 1fr;
+	
+    @include media('1201', min) {
+        grid-template-columns: 187px 1fr;
+    }
 
 	.order-card {
 		display: grid;
@@ -64,10 +67,39 @@
 	&__aside {
 		padding: 22px 21px;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        @include media('1200', max) {
+            padding: 12px 12px 12 16px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        @include media('767', max) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
 	}
+    
+    &__aside-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+
+        @include media('1200', max) {
+            gap: 8px;
+        }
+
+        @include media('767', max) {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
 
 	&__aside-btns {
 		gap: 10px;
@@ -102,13 +134,33 @@
 		text-align: center;
 	}
 
+    &__status-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;
+
+        @include media('1200', max) {
+            flex-direction: row;
+            gap: 8px;
+            text-align: left;
+        }
+    }
+
 	&__status {
-		align-self: start;
+        @include media('1200', max) {
+            justify-self: end;
+        }
+
+        @include media('767', max) {
+            justify-self: start;
+        }
 	}
 
-	&__status-subtext {
+	/* &__status-subtext {
 		text-align: left;
-	}
+	} */
 
 	// .order-card__code
 
@@ -133,6 +185,11 @@
 		grid-template-columns: 1fr auto;
 		align-items: flex-start;
 		gap: 60px;
+
+        @include media('1200', max) {
+            padding: 25px 10px 20px 20px;
+            gap: 20px;
+        }
 	}
 
 	// .order-card__content
@@ -157,6 +214,15 @@
 		gap: 5px 50px;
 		font-size: 16px;
 		line-height: calc(19 / 16 * 100%);
+
+        @include media('1200', max) {
+            column-gap: 20px;
+        }
+
+        @include media('767', max) {
+            align-self: start;
+            margin-top: 15px;
+        }
 	}
 
 	// .order-card__total-key
@@ -225,8 +291,17 @@
 
 .order-good {
 	display: grid;
-	grid-template-columns: 80px 1fr auto;
+	grid-template-columns: auto 1fr auto;
 	gap: 36px;
+
+    @include media('1024', max) {
+        gap: 15px 25px;
+    }
+
+    @include media('767', max) {
+        grid-template-columns: auto 1fr;
+    }
+
 	// .order-good__img
 
 	&__img {
@@ -234,6 +309,11 @@
 		height: 80px;
 		object-fit: cover;
 		border: 1px solid var(--black);
+
+        @include media('1024', max) {
+            width: 60px;
+            height: 60px;
+        }
 	}
 
 	// .order-good__content
@@ -275,6 +355,15 @@
 	&__nums {
 		display: flex;
 		gap: 4px 36px;
+
+        @include media('1024', max) {
+            margin-left: -25px;
+        }
+
+        @include media('767', max) {
+            margin-left: 0;
+            grid-column: 1 / -1;
+        }
 	}
 
 	// .order-good__num

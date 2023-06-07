@@ -1,13 +1,20 @@
 <li @@if(context.class){class="@@class" }>
 	<article class="news-card">
 		@@if(context.src){
-		<picture class="news-card__img">
-			<source type="image/webp" srcset="@@src.webp">
-			<img class="img-cover" src="@@src.jpg" alt="фото" width="296" height="260" loading="lazy">
-		</picture>
+            @@include('blocks/img/img.html', {
+                "class": "news-card__img",
+                "cover": true,
+                "src": "@@src",
+                "width": "296",
+                "height": "260"
+            })
 		}
 		<div class="news-card__content">
-			<time class="news-card__date" datetime="@@datetime">@@date</time>
+            @@include('blocks/datetime/datetime.html', {
+                "class": "news-card__date",
+                "formattedDate": "@@datetime",
+                "date": "@@date"
+            })
 			<a href="#" class="full-link news-card__title">@@title</a>
 			<p>@@text</p>
 		</div>

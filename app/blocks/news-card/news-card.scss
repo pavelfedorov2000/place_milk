@@ -9,14 +9,9 @@
 	&__img {
 		position: relative;
 		display: block;
-		padding-bottom: 87.4%;
+		aspect-ratio: 296 / 260;
 
 		img {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
 			border-radius: var(--brs-card) var(--brs-card) 0 0;
 		}
 	}
@@ -52,70 +47,96 @@
 .news {
 	padding-bottom: 50px;
 	row-gap: 18px;
-	grid-template-areas:
+
+    @include media('768', min) {
+        grid-template-areas:
+		'news-1 news-1 news-1 news-1 news-2 news-2 news-2 news-2 news-3 news-3 news-3 news-3'
+		'news-1 news-1 news-1 news-1 news-2 news-2 news-2 news-2 news-5 news-5 news-5 news-5'
+        'news-6 news-6 news-6 news-6 news-8 news-8 news-8 news-8 news-5 news-5 news-5 news-5'
+        'news-7 news-7 news-7 news-7 news-8 news-8 news-8 news-8 news-10 news-10 news-10 news-10'
+		'news-11 news-11 news-11 news-11 news-12 news-12 news-12 news-12 news-10 news-10 news-10 news-10'
+        'news-11 news-11 news-11 news-11 news-12 news-12 news-12 news-12 news-13 news-13 news-13 news-13'
+	    ;
+    }
+
+    @include media('1025', min) {
+        grid-template-areas:
 		'news-1 news-1 news-1 news-2 news-2 news-2 news-3 news-3 news-3 news-4 news-4 news-4'
 		'news-1 news-1 news-1 news-2 news-2 news-2 news-5 news-5 news-5 news-4 news-4 news-4'
 		'news-6 news-6 news-6 news-8 news-8 news-8 news-5 news-5 news-5 news-9 news-9 news-9'
 		'news-7 news-7 news-7 news-8 news-8 news-8 news-10 news-10 news-10 news-9 news-9 news-9'
 		'news-11 news-11 news-11 news-12 news-12 news-12 news-10 news-10 news-10 news-14 news-14 news-14'
 		'news-11 news-11 news-11 news-12 news-12 news-12 news-13 news-13 news-13 news-14 news-14 news-14'
-	;
+	    ;
+    }
 
 	&__card {
-		&-1 {
-			grid-area: news-1;
-		}
+		@include media('768', min) {
+            &-1 {
+                grid-area: news-1;
+            }
 
-		&-2 {
-			grid-area: news-2;
-		}
+            &-2 {
+                grid-area: news-2;
+            }
 
-		&-3 {
-			grid-area: news-3;
-		}
+            &-3 {
+                grid-area: news-3;
+            }
 
-		&-4 {
-			grid-area: news-4;
-		}
+            &-4 {
+                grid-area: news-4;
+            }
 
-		&-5 {
-			grid-area: news-5;
-		}
+            &-5 {
+                grid-area: news-5;
+            }
 
-		&-6 {
-			grid-area: news-6;
-		}
+            &-6 {
+                grid-area: news-6;
+            }
 
-		&-7 {
-			grid-area: news-7;
-		}
+            &-7 {
+                grid-area: news-7;
+            }
 
-		&-8 {
-			grid-area: news-8;
-		}
+            &-8 {
+                grid-area: news-8;
+            }
 
-		&-9 {
-			grid-area: news-9;
-		}
+            &-9 {
+                grid-area: news-9;
+            }
 
-		&-10 {
-			grid-area: news-10;
-		}
+            &-10 {
+                grid-area: news-10;
+            }
 
-		&-11 {
-			grid-area: news-11;
-		}
+            &-11 {
+                grid-area: news-11;
+            }
 
-		&-12 {
-			grid-area: news-12;
-		}
+            &-12 {
+                grid-area: news-12;
+            }
 
-		&-13 {
-			grid-area: news-13;
-		}
+            &-13 {
+                grid-area: news-13;
+            }
 
-		&-14 {
-			grid-area: news-14;
-		}
+            &-14 {
+                grid-area: news-14;
+            }
+        }
+
+        &-4,
+        &-9,
+        &-14 {
+            display: none;
+
+            @include media('1025', min) {
+                display: block;
+            }
+        }
 	}
 }

@@ -1,6 +1,6 @@
 @@include("blocks/head/head.html", {"title": "ЛК Заказы"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page lk-page">
 		<div class="container">
 			<div class="grid-row lk-page__grid">
@@ -35,7 +35,6 @@
 							})
 						</form>
 					</div>
-
 					@@include('blocks/lk-goods/lk-goods.html', {
                         "item": "order-card",
                         "array": "orders"

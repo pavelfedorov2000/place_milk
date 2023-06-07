@@ -1,22 +1,22 @@
 @@include("blocks/head/head.html", {"title": "Настройки профиля"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page lk-page">
 		<div class="container">
 			<div class="grid-row lk-page__grid">
 				<div class="span-3 lk-page__nav">
 					@@include('blocks/aside-nav/aside-nav.html', {
-					"fifthActive": true
+					    "fifthActive": true
 					})
 				</div>
 				<div class="lk-page__top">
 					<h1 class="title">Настройки профиля</h1>
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__help-btn",
-					"style": "bg-blue",
-					"sprite": "info",
-					"text": "Помощь"
+                        "href": "#",
+                        "class": "lk-page__help-btn",
+                        "style": "bg-blue",
+                        "sprite": "info",
+                        "text": "Помощь"
 					})
 				</div>
 				<div class="span-9 lk-page__body profile-settings">
@@ -24,62 +24,62 @@
 						<ol class="scroll-nav__list">
 							<li>
 								@@include('blocks/button/button.html', {
-								"data": {
-								"attr": "scroll",
-								"value": "profile-info"
-								},
-								"transparent": true,
-								"class": "scroll-nav__btn active",
-								"text": "О магазине",
-								"dot": true
+                                    "data": {
+                                        "attr": "scroll",
+                                        "value": "profile-info"
+                                    },
+                                    "transparent": true,
+                                    "class": "scroll-nav__btn active",
+                                    "text": "О магазине",
+                                    "dot": true
 								})
 							</li>
 							<li>
 								@@include('blocks/button/button.html', {
-								"data": {
-								"attr": "scroll",
-								"value": "profile-contacts"
-								},
-								"transparent": true,
-								"class": "scroll-nav__btn",
-								"text": "Контакты",
-								"dot": true
+                                    "data": {
+                                        "attr": "scroll",
+                                        "value": "profile-contacts"
+                                    },
+                                    "transparent": true,
+                                    "class": "scroll-nav__btn",
+                                    "text": "Контакты",
+                                    "dot": true
 								})
 							</li>
 							<li>
 								@@include('blocks/button/button.html', {
-								"data": {
-								"attr": "scroll",
-								"value": "profile-requisites"
-								},
-								"transparent": true,
-								"class": "scroll-nav__btn",
-								"text": "Реквизиты",
-								"dot": true
+                                    "data": {
+                                        "attr": "scroll",
+                                        "value": "profile-requisites"
+                                    },
+                                    "transparent": true,
+                                    "class": "scroll-nav__btn",
+                                    "text": "Реквизиты",
+                                    "dot": true
 								})
 							</li>
 							<li>
 								@@include('blocks/button/button.html', {
-								"data": {
-								"attr": "scroll",
-								"value": "profile-notifications"
-								},
-								"transparent": true,
-								"class": "scroll-nav__btn",
-								"text": "Уведомления",
-								"dot": true
-								})
+                                    "data": {
+                                        "attr": "scroll",
+                                        "value": "profile-notifications"
+                                    },
+                                    "transparent": true,
+                                    "class": "scroll-nav__btn",
+                                    "text": "Уведомления",
+                                    "dot": true
+                                    })
 							</li>
 							<li>
 								@@include('blocks/button/button.html', {
-								"data": {
-								"attr": "scroll",
-								"value": "profile-security"
-								},
-								"transparent": true,
-								"class": "scroll-nav__btn",
-								"text": "Безопасность",
-								"dot": true
+                                    "data": {
+                                        "attr": "scroll",
+                                        "value": "profile-security"
+                                    },
+                                    "transparent": true,
+                                    "class": "scroll-nav__btn",
+                                    "text": "Безопасность",
+                                    "dot": true
 								})
 							</li>
 						</ol>
@@ -87,9 +87,9 @@
 					@@include('blocks/profile-settings/profile-settings.html')
 					<div class="lk-page__nav-btns">
 						@@include('blocks/button/button.html', {
-						"class": "lk-page__nav-btn",
-						"style": "bg-gradient",
-						"text": "Сохранить"
+                            "class": "lk-page__nav-btn",
+                            "style": "bg-gradient",
+                            "text": "Сохранить"
 						})
 					</div>
 				</div>

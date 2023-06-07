@@ -2,7 +2,11 @@
 	<div class="container">
 		<div class="footer__main">
 			<section class="footer__col">
-				<span class="footer__title">Покупателям</span>
+                @@include('blocks/title/title.html', {
+                    "tag": "span",
+                    "class": "footer__title",
+                    "text": "Покупателям"
+                })
 				<ul class="footer__menu">
 					@@loop('blocks/button/button.html', [{
                         "href": "#",
@@ -38,7 +42,11 @@
 				</ul>
 			</section>
 			<section class="footer__col">
-				<span class="footer__title">Поставщикам</span>
+                @@include('blocks/title/title.html', {
+                    "tag": "span",
+                    "class": "footer__title",
+                    "text": "Поставщикам"
+                })
 				<ul class="footer__menu">
 					@@loop('blocks/button/button.html', [{
 						"href": "#",
@@ -62,7 +70,11 @@
 				</ul>
 			</section>
 			<section class="footer__col">
-				<span class="footer__title">О компании</span>
+                @@include('blocks/title/title.html', {
+                    "tag": "span",
+                    "class": "footer__title",
+                    "text": "О компании"
+                })
 				<ul class="footer__menu">
 					@@loop('blocks/button/button.html', [{
 						"href": "#",
@@ -105,9 +117,13 @@
 			</section>
 		</div>
 		<div class="footer__bottom">
-			<a class="logo footer__logo" href="#">
-				<img class="logo__img" src="assets/images/logo/logo-white.svg" alt="Логотип">
-			</a>
+            @@include('blocks/logo/logo.html', {
+                "class": "footer__logo",
+                "src": "assets/images/logo/logo-white",
+                "alt": "Логотип Place Milk",
+                "width": "151",
+                "height": "35"
+            })
 			<div class="footer__copyright">© PlaceMik.ru, 2021</div>
 		</div>
 	</div>

@@ -4,36 +4,58 @@
             @@if(context.isChecked){"checked": "@@isChecked",}
             "class": "good-card__check"
 		})
-		<picture class="good-card__img">
-			<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
-			<img class="img-contain" src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото" width="60"
-				height="60" loading="lazy">
-		</picture>
+        @@include('blocks/img/img.html', {
+            "class": "good-card__img",
+            "src": "assets/images/content/catalog-goods/boy-01",
+            "contain": true,
+            "width": "60",
+            "height": "60"
+        })
 		<div class="good-card__col">
-			<div class="good-card__title">Наименование товара</div>
+            @@include('blocks/title/title.html', {
+                "class": "good-card__title",
+                "tag": "div",
+                "text": "Наименование товара"
+            })
 			<div class="good-card__text">
 				<b>Футболка с дизайнерским принтом Super Shape 01</b>
 			</div>
 		</div>
 		<div class="good-card__col">
-			<div class="good-card__title">Артикул</div>
+            @@include('blocks/title/title.html', {
+                "class": "good-card__title",
+                "tag": "div",
+                "text": "Артикул"
+            })
 			<div class="good-card__text"><b>123654785</b></div>
 		</div>
 		<div class="good-card__col">
-			<div class="good-card__title">Раздел каталога</div>
+            @@include('blocks/title/title.html', {
+                "class": "good-card__title",
+                "tag": "div",
+                "text": "Раздел каталога"
+            })
 			<div class="good-card__text">
 				Одежда, обувь и аксессуары / Мужчинам / Футболки и майки/ Футболки / <b>Marple</b>
 			</div>
 		</div>
 		<div class="good-card__col">
-			<div class="good-card__title">Цена</div>
+            @@include('blocks/title/title.html', {
+                "class": "good-card__title",
+                "tag": "div",
+                "text": "Цена"
+            })
 			<div class="prices good-card__prices prices--orientation_col">
 				<div class="new-price">1 999 ₽</div>
 				<div class="old-price">2 499 ₽</div>
 			</div>
 		</div>
 		<div class="good-card__col">
-			<div class="good-card__title">Связанные товары</div>
+            @@include('blocks/title/title.html', {
+                "class": "good-card__title",
+                "tag": "div",
+                "text": "Связанные товары"
+            })
 			<div class="good-card__text"><b>3</b></div>
 		</div>
 		<div class="good-card__btns">

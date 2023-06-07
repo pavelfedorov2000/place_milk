@@ -4,19 +4,36 @@
 	padding: 10px 0 64px;
 
 	&__grid {
-		grid-template-rows: repeat(2, auto);
-		row-gap: 20px;
+		@include media('768', min) {
+            grid-template-rows: repeat(2, auto);
+		    row-gap: 20px;
+        }
+
+        @include media('767', max) {
+            display: block;
+        }
 	}
 
 	&__nav {
-		grid-row: 2 / -1;
+		@include media('768', min) {
+            grid-row: 2 / -1;
+        }
 	}
 
 	&__top {
-		grid-column: 4 / -1;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        @include media('768', min) {
+            grid-column: 4 / -1;
+        }
+
+        @include media('767', max) {
+            margin-bottom: 20px;
+        }
 	}
 
 	&__title {
@@ -236,6 +253,7 @@
 	// .good-card__img
 
 	&__img {
+        width: 60px;
 		min-width: 60px;
 		height: 60px;
 		align-self: center;

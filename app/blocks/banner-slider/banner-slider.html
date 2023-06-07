@@ -1,23 +1,43 @@
 <div class="swiper banner-slider@@if(context.class){ @@class}">
 	<div class="btns banner-slider__arrows btns--arrows">
 		@@include('blocks/button/button.html', {
-		"style": "swiper",
-		"class": "swiper-button-prev",
-		"icon": "arrow-left"
+            "style": "swiper",
+            "class": "swiper-button-prev",
+            "icon": "arrow-left"
 		})
 		@@include('blocks/button/button.html', {
-		"style": "swiper",
-		"class": "swiper-button-next",
-		"icon": "arrow-right"
+            "style": "swiper",
+            "class": "swiper-button-next",
+            "icon": "arrow-right"
 		})
 	</div>
 	<div class="swiper-wrapper">
 		<a href="#" class="swiper-slide">
-			<picture class="banner-slider__img">
-				<source type="image/webp" srcset="assets/images/content/banners/banner.webp">
-				<img class="img-cover" src="assets/images/content/banners/banner.jpg" alt="баннер" width="953"
-					height="351" loading="lazy">
-			</picture>
+            @@include('blocks/img/img.html', {
+                "class": "banner-slider__img",
+                "src": "assets/images/content/banners/banner",
+                "alt": "баннер",
+                "width": "953",
+                "height": "351"
+            })
+		</a>
+        <a href="#" class="swiper-slide">
+            @@include('blocks/img/img.html', {
+                "class": "banner-slider__img",
+                "src": "assets/images/content/banners/banner",
+                "alt": "баннер",
+                "width": "953",
+                "height": "351"
+            })
+		</a>
+        <a href="#" class="swiper-slide">
+            @@include('blocks/img/img.html', {
+                "class": "banner-slider__img",
+                "src": "assets/images/content/banners/banner",
+                "alt": "баннер",
+                "width": "953",
+                "height": "351"
+            })
 		</a>
 	</div>
 </div>

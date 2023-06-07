@@ -1,13 +1,27 @@
 .aside-nav {
-	@include sticky(50px);
+	display: none;
+
+    @include media('768', min) {
+        display: block;
+        @include sticky(50px);
+    }
 
 	&__list {
 		@include row-grid(16px);
+
+        @include media('1024', max) {
+            row-gap: 10px;
+        }
 	}
 
 	&__link {
 		font-size: 16px;
 		line-height: calc(19 / 16 * 100%);
+
+        @include media('1024', max) {
+            font-size: 14px;
+            line-height: calc(16 / 14 * 100%);
+        }
 
 		&.active {
 			font-weight: 500;

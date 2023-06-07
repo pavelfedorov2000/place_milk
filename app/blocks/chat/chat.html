@@ -1,7 +1,7 @@
 <div class="chat">
 	<div class="chat__aside chat-aside">
 		@@include('blocks/search-block/search-block.html', {
-		"class": "chat-aside__search"
+		    "class": "chat-aside__search"
 		})
 		<div class="chat-aside__items">
 			@@loop('blocks/chat-companion/chat-companion.html', "../resources/assets/chat.json")
@@ -75,18 +75,18 @@
 			<div class="chat-send__bottom">
 				<div class="btns chat-send__icons">
 					@@loop('blocks/button/button.html', [{
-					"transparent": true,
-					"sprite": "gallery"
+                        "transparent": true,
+                        "sprite": "gallery"
 					}, {
-					"transparent": true,
-					"sprite": "happy"
+                        "transparent": true,
+                        "sprite": "happy"
 					}])
 				</div>
 				@@include('blocks/button/button.html', {
-				"type": "submit",
-				"class": "chat-send__submit",
-				"style": "bg-gradient",
-				"text": "Отправить"
+                    "type": "submit",
+                    "class": "chat-send__submit",
+                    "style": "bg-gradient",
+                    "text": "Отправить"
 				})
 			</div>
 		</form>

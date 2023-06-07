@@ -4,6 +4,14 @@
 	display: flex;
 	gap: 20px;
 
+    @include media('1024', max) {
+        gap: 5px;
+    }
+
+    @include media('767', max) {
+        overflow-x: auto;
+    }
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -16,5 +24,9 @@
 
 	&__btn {
 		padding: 5px 24px;
+
+        @include media('767', max) {
+            white-space: nowrap;
+        }
 	}
 }

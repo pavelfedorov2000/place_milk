@@ -1,9 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
+    app.burger.init();
+    app.bannerSlider.init();
     app.productCard.init();
     app.mediaBlock.init();
     app.select.init();
-    //app.slider.init();
-    //app.popup.init();
+
     document.querySelectorAll('[data-section]').forEach((btn) => {
         btn.addEventListener('click', () => {
             window.scrollTo({

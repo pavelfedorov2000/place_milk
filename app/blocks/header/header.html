@@ -1,25 +1,29 @@
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
-			@@include('blocks/small-menu/small-menu.html', {
-			    "class": "header__menu"
-			})
-			@@include('blocks/select-language/select-language.html', {
-			    "class": "header__lang"
-			})
+			<div class="header__menu">
+                @@include('blocks/small-menu/small-menu.html')
+            </div>
+			<div class="header__lang">
+                @@include('blocks/select-language/select-language.html')
+            </div>
 			@@include('blocks/button/button.html', {
                 "style": "burger",
                 "class": "header__burger jsOpenMenu",
                 "sprite": "menu",
                 "ariaExpanded": true,
-                "ariaLabel": "Развернуть выпадающее меню"
+                "ariaLabel": "Развернуть выпадающее меню",
 			})
-			<a class="logo header__logo" href="#">
-				<img class="logo__img" src="assets/images/logo/logo.svg" alt="Логотип Place Milk">
-			</a>
-			@@include('blocks/search-form/search-form.html', {
-			    "class": "header__search"
-			})
+            @@include('blocks/logo/logo.html', {
+                "class": "header__logo",
+                "src": "assets/images/logo/logo",
+                "alt": "Логотип Place Milk",
+                "width": "188",
+                "height": "63"
+            })
+			<div class="header__search">
+                @@include('blocks/search-form/search-form.html')
+            </div>
 			<div class="btns header__actions">
 				@@loop('blocks/button/button.html', [{
                     "transparent": true,
@@ -49,6 +53,4 @@
 			</div>
 		</div>
 	</div>
-
-	@@include('blocks/dropdown-menu/dropdown-menu.html')
 </header>

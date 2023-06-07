@@ -1,48 +1,54 @@
 <article class="card order-card order-card--style_wrap">
 	<header class="order-card__header">
-		<div class="order-card__title">
-			@@title
-		</div>
-		<time class="order-card__date" datetime="@@datetime">@@date</time>
+		@@include('blocks/title/title.html', {
+            "class": "order-card__title",
+            "tag": "div",
+            "text": "@@title"
+        })
+        @@include('blocks/datetime/datetime.html', {
+            "class": "order-card__date",
+            "formattedDate": "@@datetime",
+            "date": "@@date"
+        })
 		<div class="order-card__total">
 			<div class="order-card__total-key">Сумма</div>
 			<div class="order-card__total-value">@@total</div>
 		</div>
 		@@include('blocks/button/button.html', {
-		"class": "order-card__trash-btn",
-		"style": "action-red",
-		"sprite": "trash"
+            "class": "order-card__trash-btn",
+            "style": "action-red",
+            "sprite": "trash"
 		})
 	</header>
 	<ul class="order-card__goods">
 		@@include('blocks/order-card/order-card.html', {
-		"brand": "@@brand",
-		"price": "@@price",
-		"quantity": "@@quantity",
-		"sum": "@@sum",
-		"status": {
-		"code": "@@status.code",
-		"text": "@@status.text"
-		},
-		"deleteButton": true,
-		"secondGood": "@@secondGood",
-		"thirdGood": "@@thirdGood",
-		"subcard": true
+            "brand": "@@brand",
+            "price": "@@price",
+            "quantity": "@@quantity",
+            "sum": "@@sum",
+            "status": {
+                "code": "@@status.code",
+                "text": "@@status.text"
+            },
+            "deleteButton": true,
+            "secondGood": "@@secondGood",
+            "thirdGood": "@@thirdGood",
+            "subcard": true
 		})
 		@@if(context.secondCard) {
-		@@include('blocks/order-card/order-card.html', {
-		"brand": "@@secondCard.brand",
-		"returnButton": true,
-		"price": "@@secondCard.price",
-		"quantity": "@@secondCard.quantity",
-		"sum": "@@secondCard.sum",
-		"status": {
-		"code": "@@secondCard.status.code",
-		"text": "@@secondCard.status.text",
-		},
-		"code": "@@secondCard.code",
-		"subcard": true,
-		})
+            @@include('blocks/order-card/order-card.html', {
+                "brand": "@@secondCard.brand",
+                "returnButton": true,
+                "price": "@@secondCard.price",
+                "quantity": "@@secondCard.quantity",
+                "sum": "@@secondCard.sum",
+                "status": {
+                    "code": "@@secondCard.status.code",
+                    "text": "@@secondCard.status.text",
+                },
+                "code": "@@secondCard.code",
+                "subcard": true,
+            })
 		}
 	</ul>
 </article>

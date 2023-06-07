@@ -168,6 +168,11 @@
 			svg {
 				width: 30px;
 				height: 30px;
+
+                @include media('1024', max) {
+                    width: 16px;
+                    height: 16px;
+                }
 			}
 		}
 
@@ -287,7 +292,6 @@
 		}
 
 		&_action {
-
 			&-gray,
 			&-pink,
 			&-red,
@@ -396,6 +400,7 @@
 	&--transparent {
 		box-shadow: none;
 		justify-content: flex-start;
+        text-align: left;
 		background: transparent;
 
 		&::before {

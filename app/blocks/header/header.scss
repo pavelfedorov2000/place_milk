@@ -3,46 +3,83 @@
 	padding: 15px 0 18px;
 	box-shadow: $bsh;
 
-	@media(max-width: $lg) {
-		height: var(--header-height-mob);
-	}
+	@include media('1024', max) {
+        height: var(--header-height-mob);
+    }
 
 	// .header__inner
 
 	&__inner {
 		display: grid;
-		grid-template-columns: repeat(2, auto) 1fr auto;
+		grid-template-columns: auto auto 1fr auto;
 		grid-template-areas:
 			'. . menu lang'
 			'burger logo search actions'
 		;
 		gap: 10px 32px;
 		align-items: center;
+
+        @include media('1024', max) {
+            gap: 5px 14px;
+        }
+
+        @include media('767', max) {
+            grid-template-columns: auto auto 1fr;
+            grid-template-areas: 'burger logo actions';
+            gap: 15px;
+        }
 	}
 
 	&__menu {
-		grid-area: menu;
+		display: none;
+
+        @include media('768', min) {
+            display: block;
+            grid-area: menu;
+        }
 	}
 
 	&__lang {
-		grid-area: lang;
-		justify-self: end;
+		display: none;
+
+        @include media('768', min) {
+            display: flex;
+            grid-area: lang;
+		    justify-self: end;
+        }
 	}
 
 	&__burger {
 		grid-area: burger;
 		width: 77px;
 		height: 77px;
+
+        @include media('1024', max) {
+            width: 40px;
+            height: 40px;
+        }
 	}
 
 	// .header__logo
 
 	&__logo {
 		grid-area: logo;
+        width: 188px;
+        height: 63px;
+
+        @include media('1024', max) {
+            width: 120px;
+            height: 40px;
+        }
 	}
 
 	&__search {
-		grid-area: search;
+		display: none;
+
+        @include media('768', min) {
+            display: block;
+            grid-area: search;
+        }
 	}
 
 	// .header__actions
@@ -50,6 +87,16 @@
 	&__actions {
 		grid-area: actions;
 		gap: 50px;
+
+        @include media('1024', max) {
+            margin-left: 16px;
+            gap: 32px;
+        }
+
+        @include media('767', max) {
+            gap: 25px;
+            justify-self: end;
+        }
 	}
 
 	&__action {
@@ -60,6 +107,18 @@
 			margin-bottom: 5px;
 			width: 26px;
 			height: 26px;
+
+            @include media('1024', max) {
+                margin-bottom: 0;
+                width: 24px;
+                height: 24px;
+            }
 		}
+
+        .btn__text {
+            @include media('1024', max) {
+                display: none;
+            }
+        }
 	}
 }

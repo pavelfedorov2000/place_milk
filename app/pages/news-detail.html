@@ -1,6 +1,6 @@
 @@include("blocks/head/head.html", {"title": "Страница новости"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page">
 		<div class="container">
 			@@loop('blocks/news-detail/news-detail.html', "../resources/assets/news-detail.json")

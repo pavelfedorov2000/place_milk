@@ -1,6 +1,6 @@
 @@include("blocks/head/head.html", {"title": "ЛК Добавление характеристик"})
 <div class="wrapper">
-	@@include("blocks/header/header.html")
+	@@include('blocks/layout/layout.html')
 	<main class="page lk-page">
 		<div class="container">
 			<div class="grid-row lk-page__grid">
@@ -12,36 +12,36 @@
 				<div class="lk-page__top">
 					<h1 class="title">Добавление товара</h1>
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__back-btn",
-					"style": "bg-blue",
-					"sprite": "back-arrow",
-					"text": "Каталог"
+                        "href": "#",
+                        "class": "lk-page__back-btn",
+                        "style": "bg-blue",
+                        "sprite": "back-arrow",
+                        "text": "Каталог"
 					})
 					@@include('blocks/button/button.html', {
-					"href": "#",
-					"class": "lk-page__help-btn",
-					"style": "bg-blue",
-					"sprite": "info",
-					"text": "Помощь"
+                        "href": "#",
+                        "class": "lk-page__help-btn",
+                        "style": "bg-blue",
+                        "sprite": "info",
+                        "text": "Помощь"
 					})
 				</div>
 				<div class="span-9 lk-page__body">
 					@@include('blocks/scroll-nav/scroll-nav.html', {
-					"active": "fifth",
-					"class": "lk-page__road-tabs"
+                        "active": "fifth",
+                        "class": "lk-page__road-tabs"
 					})
 					@@include('blocks/good-characteristics/good-characteristics.html')
 					<div class="lk-page__nav-btns">
 						@@loop('blocks/button/button.html', [{
-						"class": "lk-page__nav-btn",
-						"style": "bg-gradient",
-						"text": "Сохранить"
+                            "class": "lk-page__nav-btn",
+                            "style": "bg-gradient",
+                            "text": "Сохранить"
 						}, {
-						"class": "lk-page__nav-btn lk-page__nav-btn--back",
-						"style": "bg-pink",
-						"text": "Назад",
-						"icon": "arrow-back"
+                            "class": "lk-page__nav-btn lk-page__nav-btn--back",
+                            "style": "bg-pink",
+                            "text": "Назад",
+                            "icon": "arrow-back"
 						}])
 					</div>
 				</div>

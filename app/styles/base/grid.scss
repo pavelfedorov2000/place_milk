@@ -27,8 +27,11 @@
 
 .grid-row {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
 	gap: var(--gap);
+
+    @include media('768', min) {
+        grid-template-columns: repeat(12, 1fr);
+    }
 
 	&--items {
 		&_5 {
@@ -69,52 +72,66 @@
 	}
 }
 
-.span-3 {
-	grid-column: span 3;
-}
+.span {
+    &-3 {
+        @include media('768', min) {
+            grid-column: span 3;
+        }
+    }
 
-.span-4 {
-	grid-column: span 4;
-}
+    &-4 {
+        @include media('768', min) {
+            grid-column: span 4;
+        }
+    }
 
-.span-5 {
-	grid-column: span 5;
-}
+    &-5 {
+        @include media('768', min) {
+            grid-column: span 5;
+        }
+    }
 
-.span-7 {
-	grid-column: span 7;
-}
+    &-7 {
+        @include media('768', min) {
+            grid-column: span 7;
+        }
+    }
 
-.span-8 {
-	grid-column: span 8;
-}
+    &-8 {
+        @include media('768', min) {
+            grid-column: span 8;
+        }
+    }
 
-.span-9 {
-	grid-column: span 9;
-}
+    &-9 {
+        @include media('768', min) {
+            grid-column: span 9;
+        }
+    }
 
-.span-xl-4 {
-	@media(max-width: $xl) {
-		grid-column: span 3;
-	}
-}
+    &-xl-4 {
+        @include media('1200', max) {
+            grid-column: span 3;
+        }
+    }
 
-.span-lg-3 {
-	@media(max-width: $lg) {
-		grid-column: span 4;
-	}
-}
+    &-lg-3 {
+        @include media('1024', max) {
+            grid-column: span 4;
+        }
+    }
 
-.span-lg-6 {
-	@media(max-width: $lg) {
-		grid-column: span 6;
-	}
-}
+    &-lg-6 {
+        @include media('1024', max) {
+            grid-column: span 6;
+        }
+    }
 
-.span-md-2 {
-	@media(max-width: $md) {
-		grid-column: span 6;
-	}
+    &-md-2 {
+        @include media('767', max) {
+            grid-column: span 6;
+        }
+    }
 }
 
 .section-top {

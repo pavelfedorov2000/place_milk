@@ -1,39 +1,44 @@
 <li @@if(context.class){class="@@class" }>
 	<article class="catalog-card card@@if(context.style){ catalog-card--style_@@style}">
 		@@if(context.sale){
-		@@include('blocks/badge/badge.html', {
-		"class": "catalog-card__badge",
-		"text": "@@sale"
-		})
+            @@include('blocks/badge/badge.html', {
+                "class": "catalog-card__badge",
+                "text": "@@sale"
+            })
 		}
-		<picture class="catalog-card__img">
-			<source type="image/webp" srcset="assets/images/content/catalog-goods/@@src.webp">
-			<img class="img-cover" src="assets/images/content/catalog-goods/@@src.jpg" alt="фото" width="160"
-				height="160" loading="lazy">
-		</picture>
+        @@include('blocks/img/img.html', {
+            "class": "catalog-card__img",
+            "cover": true,
+            "src": "assets/images/content/catalog-goods/@@src",
+            "width": "160",
+            "height": "160"
+        })
 		@@if(context.sale){
-		<div class="prices catalog-card__prices">
-			<div class="new-price">@@newPrice</div>
-			<div class="old-price">@@oldPrice</div>
-		</div>
+            <div class="prices catalog-card__prices">
+                <div class="new-price">@@newPrice</div>
+                <div class="old-price">@@oldPrice</div>
+            </div>
 		}
 		@@if(!context.sale){
-		<div class="price catalog-card__price">@@price</div>
+		    <div class="price catalog-card__price">@@price</div>
 		}
 		@@if(context.rating){
-		@@include('blocks/rating/rating.html', {
-		"class": "catalog-card__rating",
-		"total": "4.9",
-		"text": "14 отзывов"
-		})
+            @@include('blocks/rating/rating.html', {
+                "class": "catalog-card__rating",
+                "total": "4.9",
+                "text": "14 отзывов"
+            })
 		}
-		<div class="catalog-card__title">
-			<a href="#" class="full-link">@@title.text</a>
-		</div>
+        @@include('blocks/title/title.html', {
+            "class": "catalog-card__title",
+            "tag": "div",
+            "fullLink": true,
+            "text": "@@title.text"
+        })
 		@@include('blocks/button/button.html', {
-		"class": "catalog-card__btn",
-		"style": "bg-gradient",
-		"text": "В корзину"
+            "class": "catalog-card__btn",
+            "style": "bg-gradient",
+            "text": "В корзину"
 		})
 	</article>
 </li>

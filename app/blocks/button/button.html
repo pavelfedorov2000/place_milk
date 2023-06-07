@@ -6,12 +6,12 @@
         'submit'){submit}@@if(context.type ==
         'reset'){reset}@@if(!context.type){button}" }
             @@if(context.isDisabled){disabled}@@if(context.ariaExpanded){aria-expanded="false"
-            }@@if(context.ariaLabel){aria-label="@@ariaLabel" } @@if(context.data){ data-@@data.attr="@@data.value" }>
+            }@@if(context.controls){aria-controls="@@controls"}@@if(context.ariaLabel){aria-label="@@ariaLabel" } @@if(context.data){ data-@@data.attr="@@data.value" }>
             @@if(!context.icon_position_right){
                 @@if(context.sprite){
-                    <svg class="icon">
-                        <use xlink:href="assets/images/sprite.svg#@@sprite"></use>
-                    </svg>
+                    @@include('blocks/sprite/sprite.html', {
+                        "icon": "@@sprite"
+                    })
                 }
                 @@if(context.icon){
                     @@include('blocks/icons/@@icon.html')
@@ -22,9 +22,11 @@
             }
             @@if(context.icon_position_right){
                 @@if(context.sprite){
-                    <svg class="icon">
-                        <use xlink:href="assets/images/sprite.svg#@@sprite"></use>
-                    </svg>
+                    @@if(context.sprite){
+                        @@include('blocks/sprite/sprite.html', {
+                            "icon": "@@sprite"
+                        })
+                    }
                 }
                 @@if(context.icon){
                     @@include('blocks/icons/@@icon.html')
