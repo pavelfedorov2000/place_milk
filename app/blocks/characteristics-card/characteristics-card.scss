@@ -3,7 +3,7 @@
 	display: grid;
 	align-items: flex-start;
 	background-color: var(--white);
-	box-shadow: $bsh-2;
+	box-shadow: var(--bsh-2);
 	border-radius: var(--brs-card);
 
     @include media('1025', min) {

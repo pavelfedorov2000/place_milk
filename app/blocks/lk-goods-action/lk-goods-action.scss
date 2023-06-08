@@ -1,0 +1,15 @@
+.lk-goods-action {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    &__select {
+        min-width: 182px;
+    }
+
+    &__btn {
+        padding: 8px 12.5px;
+        border-radius: var(--brs-card);
+    }
+}

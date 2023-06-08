@@ -59,7 +59,7 @@
 
 	@media (any-hover: hover) {
 		&:hover {
-			box-shadow: $bsh;
+			box-shadow: var(--bsh);
 		}
 	}
 }

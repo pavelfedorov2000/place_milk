@@ -9,8 +9,10 @@
 	justify-content: center;
 	gap: 5px;
 	background: var(--accent);
-	box-shadow: $bsh;
+	box-shadow: var(--bsh);
 	font-family: var(--main-font);
+    font-size: var(--base-font);
+    line-height: calc(16px / var(--base-font) * 100%);
 	text-align: center;
 	color: var(--black);
 	transition: var(--transition) all;
@@ -106,6 +108,7 @@
 
 			&-blue {
 				background: rgba(174, 193, 228, 0.3);
+                box-shadow: none;
 
 				&::before {
 					display: none;
@@ -113,6 +116,7 @@
 
 				@media (any-hover: hover) {
 					&:hover {
+                        box-shadow: var(--bsh);
 						color: var(--black);
 					}
 				}
@@ -352,7 +356,7 @@
 
 				@media (any-hover: hover) {
 					&:hover {
-						box-shadow: $bsh;
+						box-shadow: var(--bsh);
 
 						&::before {
 							opacity: 1;

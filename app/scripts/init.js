@@ -16,10 +16,14 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     function checkAll() {
-        const checkAll = document.querySelector('.lk-page__check-all').querySelector('.checkbox__input');
-        const goods = checkAll.closest('.lk-page').querySelector('.lk-goods').querySelectorAll('.good-card');
+        const checkAll = document.querySelector('.lk-page__check-all');
 
         if (!checkAll) return;
+
+        const checkAllInput = checkAll.querySelector('.checkbox__input');
+        const goods = checkAll.closest('.lk-page').querySelector('.lk-goods').querySelectorAll('.good-card');
+
+        if (!checkAllInput) return;
 
         checkAll.addEventListener('change', () => {
             const isChecked = checkAll.checked;

@@ -17,7 +17,7 @@
 			padding: 12px 16px;
 			grid-template-columns: 1fr;
 			gap: 16px;
-			box-shadow: $bsh-2;
+			box-shadow: var(--bsh-2);
 
 			#{$this} {
 				&__title {

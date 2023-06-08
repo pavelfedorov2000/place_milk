@@ -5,7 +5,7 @@
 	display: flex;
 	align-items: center;
 	background-color: rgba(#AEC1E4, 0.3);
-	box-shadow: $bsh;
+	box-shadow: var(--bsh);
 
     @include media('1024', max) {
         padding: 9px 18px 13px 56px;

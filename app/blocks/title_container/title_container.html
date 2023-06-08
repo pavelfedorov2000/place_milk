@@ -25,4 +25,24 @@
             "text": "@@count.value"
         })
     }
+
+    @@if(context.backBtn){
+        @@include('blocks/button/button.html', {
+            "href": "#",
+            "class": "lk-page__back-btn",
+            "style": "bg-blue",
+            "sprite": "back-arrow",
+            "text": "Каталог"
+        })
+    }
+
+    @@if(context.infoBtn){
+        @@include('blocks/button/button.html', {
+            "href": "#",
+            "class": "lk-page__help-btn",
+            "style": "bg-blue",
+            "sprite": "info",
+            "text": "Помощь"
+        })
+    }
 </@@if(context.tag){@@tag}@@if(!context.tag){div}>

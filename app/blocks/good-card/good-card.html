@@ -6,7 +6,7 @@
 		})
         @@include('blocks/img/img.html', {
             "class": "good-card__img",
-            "src": "assets/images/content/catalog-goods/boy-01",
+            "src": "@@img",
             "contain": true,
             "width": "60",
             "height": "60"
@@ -18,7 +18,7 @@
                 "text": "Наименование товара"
             })
 			<div class="good-card__text">
-				<b>Футболка с дизайнерским принтом Super Shape 01</b>
+				<b>@@good</b>
 			</div>
 		</div>
 		<div class="good-card__col good-card__col--articul">
@@ -27,7 +27,7 @@
                 "tag": "div",
                 "text": "Артикул"
             })
-			<div class="good-card__text"><b>123654785</b></div>
+			<div class="good-card__text"><b>@@articul</b></div>
 		</div>
 		<div class="good-card__col good-card__col--category">
             @@include('blocks/title/title.html', {
@@ -36,7 +36,7 @@
                 "text": "Раздел каталога"
             })
 			<div class="good-card__text">
-				Одежда, обувь и аксессуары / Мужчинам / Футболки и майки/ Футболки / <b>Marple</b>
+				@@catalogPath <b>@@brand</b>
 			</div>
 		</div>
 		<div class="good-card__col good-card__col--price">
@@ -46,8 +46,8 @@
                 "text": "Цена"
             })
 			<div class="prices good-card__prices prices--orientation_col">
-				<div class="new-price good-card__price">1 999 ₽</div>
-				<div class="old-price good-card__old-price">2 499 ₽</div>
+				<div class="new-price good-card__price">@@price ₽</div>
+				<div class="old-price good-card__old-price">@@oldPrice ₽</div>
 			</div>
 		</div>
 		<div class="good-card__col good-card__col--related-goods">
@@ -56,7 +56,7 @@
                 "tag": "div",
                 "text": "Связанные товары"
             })
-			<div class="good-card__text"><b>3</b></div>
+			<div class="good-card__text"><b>@@relatedGoods</b></div>
 		</div>
 		<div class="good-card__btns">
 			@@loop('blocks/button/button.html', [{

@@ -41,7 +41,7 @@
 		@media (any-hover: hover) {
 			&:hover {
 				background-color: var(--white);
-				box-shadow: $bsh;
+				box-shadow: var(--bsh);
 			}
 		}
 	}

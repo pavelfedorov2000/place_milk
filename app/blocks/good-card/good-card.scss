@@ -40,6 +40,12 @@
         }
 	}
 
+    &__top-title {
+        @include media('500', max) {
+            width: 100%;
+        }
+    }
+
     &__body {
         @include media('768', min) {
             grid-column: 4 / span 9;
@@ -68,8 +74,11 @@
 
 	&__back-btn {
 		margin-right: auto;
-		margin-left: 23px;
 		padding: 9.5px 16px;
+
+        @include media('501', min) {
+            margin-left: 23px;
+        }
 	}
 
 	&__help-btn {
@@ -160,19 +169,40 @@
 		margin-top: 75px;
 		display: flex;
 		justify-content: space-between;
+        flex-wrap: wrap;
 		gap: 15px;
+
+        @include media('1024', max) {
+            gap: 10px;
+        }
 	}
 
 	&__nav-btn {
 		padding: 15.5px 60px;
 
+        @include media('1024', max) {
+            padding: 12px 40px;
+        }
+
+        &:first-child {
+            @include media('500', max) {
+                width: 100%;
+            }
+        }
+
 		&--back,
 		&--next {
 			border-radius: var(--brs-card);
+
+            @include media('500', max) {
+                width: calc(50% - 15px / 2);
+            }
 		}
 
 		&--back {
-			margin-left: auto;
+			@include media('501', min) {
+                margin-left: auto;
+            }
 		}
 	}
 
@@ -210,8 +240,10 @@
 	&__field {
 		width: 187px;
 
-        @include media('500', max) {
-            width: 100%;
+        &:only-child {
+            @include media('500', max) {
+                width: 100%;
+            }
         }
 
 		.select__toggle {
@@ -232,8 +264,10 @@
         }
 	}
 
-	&__field+&__field {
-		margin-left: 32px;
+	&__field + &__field {
+		@include media('768', min) {
+            margin-left: 17px;
+        }
 	}
 
 	&__fields-items {
@@ -243,10 +277,12 @@
 	&__fields-item {
 		display: flex;
 		align-items: center;
+        gap: 15px;
 
         @include media('500', max) {
-            flex-direction: column;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            /* flex-direction: column;
+            align-items: flex-start; */
         }
 
 		&--start {
@@ -273,12 +309,8 @@
 		}
 	}
 
-	&__action-btn {
-		margin-left: 15px;
-	}
-
-	&__action-btn+&__action-btn {
-		margin-left: 20px;
+	&__action-btn + &__action-btn {
+		margin-left: 5px;
 	}
 
 	&__plus-btn {
@@ -287,17 +319,17 @@
 
 	&__label {
 		min-width: 148px;
-		margin-right: 70px;
+		margin-right: 55px;
 		font-weight: 300;
 
         @include media('1024', max) {
-            margin-right: 25px;
+            margin-right: 10px;
             min-width: 130px;
         }
 
         @include media('500', max) {
+            width: 100%;
             margin-right: 0;
-            margin-bottom: 15px;
         }
 	}
 
@@ -308,6 +340,10 @@
 	&__notifications {
 		width: 350px;
 		@include row-grid(33px);
+
+        @include media('500', max) {
+            width: 100%;
+        }
 	}
 
 	input#{$this}__field {
@@ -318,7 +354,7 @@
 .good-card {
 	padding: 7px 34px 12px 18px;
 	background-color: var(--white);
-	box-shadow: $bsh-2;
+	box-shadow: var(--bsh-2);
 	display: grid;
     grid-template-areas: 'check img good articul category price relatedGoods btns';
 	grid-template-columns: repeat(2, auto) minmax(calc(159 / 952 * 100%), 0.6fr) max-content minmax(calc(243 / 952 * 100%), 0.9fr) max-content 13% auto;

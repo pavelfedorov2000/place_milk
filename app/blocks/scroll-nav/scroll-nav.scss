@@ -4,7 +4,15 @@
 	&__list {
 		position: relative;
 		display: flex;
-		justify-content: space-between;
+
+        @include media('768', min) {
+            justify-content: space-between;
+        }
+
+        @include media('767', max) {
+            gap: 15px;
+            overflow-x: auto;
+        }
 
 		&::after {
 			content: '';
@@ -14,6 +22,10 @@
 			right: 0;
 			height: 3px;
 			background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+
+            @include media('767', max) {
+                width: 1000%;
+            }
 		}
 	}
 
@@ -24,6 +36,10 @@
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 300;
+
+        @include media('767', max) {
+            white-space: nowrap;
+        }
 
 		&::before {
 			display: none;
@@ -44,7 +60,7 @@
 		@include sticky(20px);
 		padding: 24px 30px;
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
-		box-shadow: $bsh-2;
+		box-shadow: var(--bsh-2);
 
         @include media('1025', min) {
             grid-column: -2 / -1;

@@ -1,4 +1,24 @@
 <div class="aside-filters">
+    <fieldset class="aside-filters__item aside-filter range">
+        @@include('blocks/title/title.html', {
+            "class": "aside-filter__title",
+            "tag": "legend",
+            "text": "Цена, ₽"
+        })
+        <div id="range-slider"></div>
+        <div class="range__values">
+            <div class="range__value range__value--from">
+                <span class="range__value-text">
+                    от <span></span>
+                </span>
+            </div>
+            <div class="range__value range__value--to">
+                <span class="range__value-text">
+                    до <span></span>
+                </span>
+            </div>
+        </div>
+    </fieldset>
     <fieldset class="aside-filters__item aside-filter">
         @@include('blocks/title/title.html', {
             "class": "aside-filter__title",

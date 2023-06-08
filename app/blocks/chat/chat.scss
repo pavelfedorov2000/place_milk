@@ -3,7 +3,7 @@
 	grid-template-columns: 1fr auto 12px;
 	padding: 12px 12px 8px 12px;
 	background: var(--white);
-	box-shadow: $bsh-2;
+	box-shadow: var(--bsh-2);
 	border-radius: 0 var(--brs-card) var(--brs-card) var(--brs-card);
 	font-weight: 300;
 	// .chat-message__text

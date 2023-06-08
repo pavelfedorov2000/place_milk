@@ -1,0 +1,27 @@
+<div class="lk-page__filters">
+	@@if(context.select == 'true'){
+        <div class="select lk-page__select select--style_border-gradient">
+            <button class="select__toggle" type="button" aria-expanded="false">
+                <span class="select__toggle-text">Футболки</span>
+            </button>
+            <div class="select__content">
+                <input id="goodType0" class="select__input" type="radio" name="goodType" checked />
+                <label for="goodType0" tabindex="0" class="select__label"
+                    data-value="Футболки">Футболки</label>
+                <input id="goodType1" class="select__input" type="radio" name="goodType" />
+                <label for="goodType1" tabindex="0" class="select__label"
+                    data-value="Чехлы">Чехлы</label>
+            </div>
+        </div>
+    }
+    @@include('blocks/search-block/search-block.html', {
+        "class": "lk-page__search",
+        @@if(context.search){"placeholder": "@@search.placeholder"}
+    })
+	@@if(context.btn == 'true'){
+        @@include('blocks/button/button.html', {
+            "class": "lk-page__add-good-btn",
+            "text": "Добавить товар"
+        })
+    }
+</div>

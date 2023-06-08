@@ -1,0 +1,22 @@
+<div class="lk-goods-action">
+    <div class="select lk-goods-action__select select--style_border-gradient">
+		<button class="select__toggle" type="button" aria-expanded="false">
+            <span class="select__toggle-text">
+                Действие с выбранными
+            </span>
+        </button>
+		<div class="select__content">
+			<input id="goodsAction0" class="select__input" type="radio" name="goodsAction" checked />
+			<label for="goodsAction0" tabindex="0" class="select__label"
+				data-value="Действие с выбранными">Действие с выбранными</label>
+			<input id="goodsAction1" class="select__input" type="radio" name="goodsAction" />
+			<label for="goodsAction1" tabindex="0" class="select__label"
+				data-value="Удалить">Удалить</label>
+		</div>
+	</div>
+    @@include('blocks/button/button.html', {
+        "class": "lk-goods-action__btn",
+        "style": "bg-pink",
+        "text": "Применить"
+    })
+</div>

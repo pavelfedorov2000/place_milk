@@ -32,3 +32,75 @@
         @include row-grid(15px);
     }
 }
+
+.range {
+    &__values {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    &__value {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        background: var(--accent);
+        border-radius: var(--brs-card);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            left: 1px;
+            background-color: var(--white);
+            border-radius: var(--brs-card);
+        }
+
+        &-text {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.noUi {
+    $this: &;
+
+    &-target {
+        background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+        border: none;
+        box-shadow: none;
+    }
+
+    &-connect {
+        background: var(--accent);
+    }
+
+    &-handle {
+        background: var(--accent);
+        border-radius: 50%;
+        border: none;
+        box-shadow: none;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    &-horizontal {
+        height: 2px;
+
+        #{$this} {
+            &-handle {
+                top: -7px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
