@@ -11,7 +11,7 @@
             "width": "60",
             "height": "60"
         })
-		<div class="good-card__col">
+		<div class="good-card__col good-card__col--good">
             @@include('blocks/title/title.html', {
                 "class": "good-card__title",
                 "tag": "div",
@@ -21,7 +21,7 @@
 				<b>Футболка с дизайнерским принтом Super Shape 01</b>
 			</div>
 		</div>
-		<div class="good-card__col">
+		<div class="good-card__col good-card__col--articul">
             @@include('blocks/title/title.html', {
                 "class": "good-card__title",
                 "tag": "div",
@@ -29,7 +29,7 @@
             })
 			<div class="good-card__text"><b>123654785</b></div>
 		</div>
-		<div class="good-card__col">
+		<div class="good-card__col good-card__col--category">
             @@include('blocks/title/title.html', {
                 "class": "good-card__title",
                 "tag": "div",
@@ -39,18 +39,18 @@
 				Одежда, обувь и аксессуары / Мужчинам / Футболки и майки/ Футболки / <b>Marple</b>
 			</div>
 		</div>
-		<div class="good-card__col">
+		<div class="good-card__col good-card__col--price">
             @@include('blocks/title/title.html', {
                 "class": "good-card__title",
                 "tag": "div",
                 "text": "Цена"
             })
 			<div class="prices good-card__prices prices--orientation_col">
-				<div class="new-price">1 999 ₽</div>
-				<div class="old-price">2 499 ₽</div>
+				<div class="new-price good-card__price">1 999 ₽</div>
+				<div class="old-price good-card__old-price">2 499 ₽</div>
 			</div>
 		</div>
-		<div class="good-card__col">
+		<div class="good-card__col good-card__col--related-goods">
             @@include('blocks/title/title.html', {
                 "class": "good-card__title",
                 "tag": "div",

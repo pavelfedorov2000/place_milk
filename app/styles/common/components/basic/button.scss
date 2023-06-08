@@ -18,10 +18,10 @@
 	&::before {
 		content: '';
 		position: absolute;
-		top: 1.5px;
-		right: 1.5px;
-		bottom: 1.5px;
-		left: 1.5px;
+		top: 2px;
+		right: 2px;
+		bottom: 2px;
+		left: 2px;
 		z-index: 2;
 		background-color: var(--white);
 		transition: var(--transition) opacity;
@@ -363,7 +363,7 @@
 
 			&-gray {
 				background: transparent;
-				border: 1px solid rgba(var(--color-default), 0.6);
+				border: 1px solid rgba(var(--black-rgb), 0.6);
 				box-shadow: none;
 				font-size: 12px;
 				line-height: 14px;

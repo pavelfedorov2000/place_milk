@@ -1,11 +1,17 @@
 <fieldset>
-	<legend class="lk-page__title">Вариация товара</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "Вариация товара"
+    })
 	<div class="lk-page__fields">
 		<div class="lk-page__fields-group">
 			<div class="lk-page__fields-item">
 				<span class="lk-page__label">Вариация</span>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Цвет</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Цвет</span>
+                    </button>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>
@@ -34,7 +40,9 @@
 			<div class="lk-page__fields-item">
 				<label for="variation" class="lk-page__label">Вариация</label>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Цвет</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Цвет</span>
+                    </button>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>

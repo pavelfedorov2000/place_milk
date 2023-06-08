@@ -10,45 +10,39 @@
 		</div>
 	</div>
 	<ol class="review-card__metrics review-metrics" reversed>
-		<li class="review-metric">
-			<div class="review-metric__text">5 звёзд</div>
-			<span class="review-metric__bar"><span style="width: 70%;"></span></span>
-			<div class="review-metric__value">27</div>
-		</li>
-		<li class="review-metric">
-			<div class="review-metric__text">4 звезды</div>
-			<span class="review-metric__bar"><span style="width: 10%;"></span></span>
-			<div class="review-metric__value">1</div>
-		</li>
-		<li class="review-metric">
-			<div class="review-metric__text">3 звезды</div>
-			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
-			<div class="review-metric__value">0</div>
-		</li>
-		<li class="review-metric">
-			<div class="review-metric__text">2 звезды</div>
-			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
-			<div class="review-metric__value">0</div>
-		</li>
-		<li class="review-metric">
-			<div class="review-metric__text">1 звезда</div>
-			<span class="review-metric__bar"><span style="width: 0%;"></span></span>
-			<div class="review-metric__value">0</div>
-		</li>
+        @@loop('blocks/review-metric/review-metric.html', [{
+            "stars": "5 звёзд",
+            "progress": "70",
+            "value": "27"
+        }, {
+            "stars": "4 звезды",
+            "progress": "10",
+            "value": "1"
+        }, {
+            "stars": "3 звезды",
+            "progress": "0",
+            "value": "0"
+        }, {
+            "stars": "2 звезды",
+            "progress": "0",
+            "value": "0"
+        }, {
+            "stars": "1 звезда",
+            "progress": "0",
+            "value": "0"
+        }])
 	</ol>
 	<dl class="review-card__stats review-stats">
-		<div class="review-stats__item review-stat">
-			<dt class="review-stat__proprty">Скорость отправки </dt>
-			<dd class="review-stat__value">4.8</dd>
-		</div>
-		<div class="review-stats__item review-stat">
-			<dt class="review-stat__proprty">Консультация</dt>
-			<dd class="review-stat__value">4.9</dd>
-		</div>
-		<div class="review-stats__item review-stat">
-			<dt class="review-stat__proprty">Качество товара</dt>
-			<dd class="review-stat__value">4.9</dd>
-		</div>
+        @@loop('blocks/review-stat/review-stat.html', [{
+            "property": "Скорость отправки",
+            "value": "4.8"
+        }, {
+            "property": "Консультация",
+            "value": "4.9"
+        }, {
+            "property": "Качество товара",
+            "value": "4.9"
+        }])
 	</dl>
 	@@include('blocks/button/button.html', {
         "class": "review-card__btn",

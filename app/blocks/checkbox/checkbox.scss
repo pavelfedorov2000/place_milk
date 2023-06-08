@@ -26,6 +26,7 @@
 					width: 19px;
 					height: 18px;
 					background-image: url(../images/icons/check.svg);
+                    background-size: contain;
 				}
 
 				&::after {
@@ -45,16 +46,15 @@
 	&__style {
 		position: relative;
 		flex-shrink: 0;
-		margin-right: 10px;
 		width: 20px;
 		height: 20px;
 		border: 1px solid rgba(#000, 0.6);
 		border-radius: var(--brs-card);
 		transition: .3s border-color, .3s background-color;
 
-		&:first-child:last-child {
-			margin-right: 0;
-		}
+		&:not(:last-child) {
+            margin-right: 10px;
+        }
 	}
 
     &__color {
@@ -104,6 +104,12 @@
 	&--style {
 		&_2 {
 			justify-content: space-between;
+
+            @include media('500', max) {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                gap: 10px;
+            }
 
 			#{$this} {
 				&__text {

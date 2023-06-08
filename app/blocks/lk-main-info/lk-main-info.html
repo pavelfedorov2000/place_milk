@@ -1,5 +1,9 @@
 <fieldset class="lk-main-info">
-	<legend class="lk-page__title">Основная информация</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "Основная информация"
+    })
 	<div class="lk-main-info__fields">
 		<div class="lk-main-info__field">
 			<label class="lk-main-info__label" for="good_name">Название товара</label>
@@ -56,7 +60,9 @@
 					<span class="lk-main-info__discount-sum">75 000 ₽ / шт. </span>
 				</div>
 				<div class="select lk-main-info__discount-select">
-					<div class="select__toggle">Добавить</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Добавить</span>
+                    </button>
 					<div class="select__content">
 						<input id="addDiscount0" class="select__input" type="radio" name="addDiscount" checked />
 						<label for="addDiscount0" tabindex="0" class="select__label"

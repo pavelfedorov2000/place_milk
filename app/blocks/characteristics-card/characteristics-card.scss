@@ -1,3 +1,129 @@
 .characteristics-card {
-  // your code
+	padding: 15px 20px 20px 45px;
+	display: grid;
+	align-items: flex-start;
+	background-color: var(--white);
+	box-shadow: $bsh-2;
+	border-radius: var(--brs-card);
+
+    @include media('1025', min) {
+        grid-template-columns: 1fr auto;
+	    column-gap: 45px;
+    }
+
+    @include media('1024', max) {
+        position: relative;
+        padding: 8px 9px;
+    }
+	// .characteristics-card__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .characteristics-card__title
+
+	&__title {
+		margin-bottom: 5px;
+		font-size: 22px;
+		line-height: calc(26 / 22 * 100%);
+		font-weight: 400;
+
+        @include media('1024', max) {
+            margin-bottom: 12px;
+        }
+	}
+
+	// .characteristics-card__item
+
+	&__item {
+		display: flex;
+		align-items: baseline;
+		column-gap: 65px;
+
+        @include media('1024', max) {
+            gap: 16px;
+        }
+
+        @include media('500', max) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+
+            @include media('1024', max) {
+                margin-bottom: 20px;
+            }
+		}
+	}
+
+	&__badges {
+		gap: 18px 14px;
+
+        @include media('1024', max) {
+            max-width: 300px;
+            gap: 16px 12px;
+        }
+	}
+
+	&__badge {
+		padding: 6px 29px;
+
+        @include media('1024', max) {
+            padding: 5px 10px;
+        }
+	}
+
+	// .characteristics-card__item-title
+
+	&__item-title {
+		min-width: 107px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+	}
+
+	// .characteristics-card__categories
+
+	&__categories {
+		@include row-grid(10px);
+	}
+
+	// .characteristics-card__category
+
+	&__category {
+		p {
+			font-size: 11px;
+			line-height: calc(16 / 11 * 100%);
+		}
+	}
+
+	// .characteristics-card__category-title
+
+	&__category-title {
+		font-size: 16px;
+		line-height: calc(19 / 16 * 100%);
+	}
+
+	// .characteristics-card__btns
+
+	&__btns {
+		flex-direction: column;
+		gap: 16.5px;
+
+        @include media('1024', max) {
+            position: absolute;
+            top: 9px;
+            right: 17px;
+            gap: 4px;
+        }
+	}
+
+	&__action-btn {
+		width: 28px;
+		height: 28px;
+	}
 }

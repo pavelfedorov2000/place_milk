@@ -1,21 +1,25 @@
 <div class="good-look-item">
 	<div class="good-look-good">
-		<picture class="good-look-good__img">
-			<source type="image/webp" srcset="assets/images/content/catalog-goods/boy-01.webp">
-			<img src="assets/images/content/catalog-goods/boy-01.jpg" alt="фото" width="40" height="40" loading="lazy">
-		</picture>
+        @@include('blocks/img/img.html', {
+            "class": "good-look-good__img",
+            "src": "assets/images/content/catalog-goods/boy-01",
+            "width": "40",
+            "height": "40"
+        })
 		<div class="good-look-good__articul">
 			Артикул: <b>123654785</b>
 		</div>
-		<div class="good-look-good__title">
-			Футболка с дизайнерским принтом Super Shape 01
-		</div>
+        @@include('blocks/title/title.html', {
+            "class": "good-look-good__title",
+            "tag": "div",
+            "text": "Футболка с дизайнерским принтом Super Shape 01"
+        })
 		<div class="prices good-look-good__price">
 			<div class="price">1 999 ₽</div>
 		</div>
 		@@include('blocks/button/button.html', {
-		"style": "action-red",
-		"sprite": "trash"
+            "style": "action-red",
+            "sprite": "trash"
 		})
 	</div>
 	<label class="good-look-item__field">

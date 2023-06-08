@@ -83,7 +83,7 @@
 							<div class="order-good__num">@@sum</div>
 						</div>
 					</li>
-					@@if(context.secondGood == 'true'){
+					@@if(context.secondGood){
                         <li class="order-good">
                             @@include('blocks/img/img.html', {
                                 "class": "order-good__img",
@@ -113,7 +113,7 @@
                             </div>
                         </li>
 					}
-					@@if(context.thirdGood == 'true'){
+					@@if(context.thirdGood){
                         <li class="order-good">
                             @@include('blocks/img/img.html', {
                                 "class": "order-good__img",

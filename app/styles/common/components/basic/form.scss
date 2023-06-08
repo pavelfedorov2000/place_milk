@@ -87,7 +87,7 @@ input {
 	font-weight: 300;
 
 	&::placeholder {
-		color: rgba(var(--color-default), 0.6);
+		color: rgba(var(--black-rgb), 0.6);
 	}
 
 	&--border {

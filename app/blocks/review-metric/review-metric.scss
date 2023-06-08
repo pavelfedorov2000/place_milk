@@ -1,0 +1,28 @@
+.review-metric {
+	display: grid;
+	grid-template-columns: minmax(51px, auto) 1fr minmax(18px, auto);
+	gap: 9px;
+	align-items: center;
+	font-size: 12px;
+	line-height: 14px;
+
+	&__text {
+		font-weight: 300;
+	}
+
+	&__bar {
+		position: relative;
+		height: 4px;
+		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+		border-radius: var(--brs);
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: var(--accent);
+			border-radius: var(--brs);
+		}
+	}
+}

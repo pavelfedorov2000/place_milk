@@ -1,9 +1,17 @@
 <div class="lk-page__fields">
 	<fieldset>
-		<legend class="lk-page__title">Группы характеристик</legend>
+        @@include('blocks/title/title.html', {
+            "class": "lk-page__title",
+            "tag": "legend",
+            "text": "Группы характеристик"
+        })
 		<div class="lk-page__fields-group">
 			<fieldset class="lk-page__fields-item">
-				<legend class="lk-page__subtitle">Футболки дизайнерские</legend>
+                @@include('blocks/title/title.html', {
+                    "class": "lk-page__subtitle",
+                    "tag": "legend",
+                    "text": "Футболки дизайнерские"
+                })
 				<div class="lk-page__fields-items">
 					<label class="lk-page__fields-item">
 						<span class="lk-page__label">Цвет</span>
@@ -24,7 +32,11 @@
 				</div>
 			</fieldset>
 			<fieldset class="lk-page__fields-item">
-				<legend class="lk-page__subtitle">Футболки хлопок</legend>
+                @@include('blocks/title/title.html', {
+                    "class": "lk-page__subtitle",
+                    "tag": "legend",
+                    "text": "Футболки хлопок"
+                })
 				<div class="lk-page__fields-items">
 					<label class="lk-page__fields-item">
 						<span class="lk-page__label">Цвет</span>
@@ -45,7 +57,11 @@
 				</div>
 			</fieldset>
 			<fieldset class="lk-page__fields-item">
-				<legend class="lk-page__subtitle">Футболки мужские</legend>
+                @@include('blocks/title/title.html', {
+                    "class": "lk-page__subtitle",
+                    "tag": "legend",
+                    "text": "Футболки мужские"
+                })
 				<div class="lk-page__fields-items">
 					<label class="lk-page__fields-item">
 						<span class="lk-page__label">Цвет</span>
@@ -68,11 +84,17 @@
 		</div>
 	</fieldset>
 	<fieldset>
-		<legend class="lk-page__title">Характеристики</legend>
+        @@include('blocks/title/title.html', {
+            "class": "lk-page__title",
+            "tag": "legend",
+            "text": "Характеристики"
+        })
 		<div class="lk-page__fields-group">
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Цвет</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Цвет</span>
+                    </button>
 					<div class="select__content">
 						<input id="variationColor0" class="select__input" type="radio" name="variationColor" checked />
 						<label for="variationColor0" tabindex="0" class="select__label" data-value="Цвет">Цвет</label>
@@ -88,14 +110,16 @@
 				</div>
 				<input class="input lk-page__field" placeholder="Введите название ">
 				@@include('blocks/button/button.html', {
-				"class": "lk-page__action-btn",
-				"style": "action-red",
-				"sprite": "trash"
+                    "class": "lk-page__action-btn",
+                    "style": "action-red",
+                    "sprite": "trash"
 				})
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Размер</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Размер</span>
+                    </button>
 					<div class="select__content">
 						<input id="size0" class="select__input" type="radio" name="size" checked />
 						<label for="size0" tabindex="0" class="select__label" data-value="Размер">Размер</label>
@@ -109,14 +133,16 @@
 				</div>
 				<input class="input lk-page__field" placeholder="Введите название ">
 				@@include('blocks/button/button.html', {
-				"class": "lk-page__action-btn",
-				"style": "action-red",
-				"sprite": "trash"
+                    "class": "lk-page__action-btn",
+                    "style": "action-red",
+                    "sprite": "trash"
 				})
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Модель</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Модель</span>
+                    </button>
 					<div class="select__content">
 						<input id="model0" class="select__input" type="radio" name="model" checked />
 						<label for="model0" tabindex="0" class="select__label" data-value="Модель">Модель</label>
@@ -137,7 +163,9 @@
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Материал</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Материал</span>
+                    </button>
 					<div class="select__content">
 						<input id="material0" class="select__input" type="radio" name="material" checked />
 						<label for="material0" tabindex="0" class="select__label" data-value="Материал">Материал</label>
@@ -158,7 +186,9 @@
 			</div>
 			<div class="lk-page__fields-item">
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Сезон</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Сезон</span>
+                    </button>
 					<div class="select__content">
 						<input id="season0" class="select__input" type="radio" name="season" checked />
 						<label for="season0" tabindex="0" class="select__label" data-value="Сезон">Сезон</label>

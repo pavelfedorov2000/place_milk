@@ -15,7 +15,11 @@
 	}
 
 	&__nav {
-		@include media('768', min) {
+        @include media('768', min) {
+            grid-row: 1 / -1;
+        }
+
+		@include media('1025', min) {
             grid-row: 2 / -1;
         }
 	}
@@ -36,11 +40,23 @@
         }
 	}
 
+    &__body {
+        @include media('768', min) {
+            grid-column: 4 / span 9;
+        }
+    }
+
 	&__title {
 		margin-bottom: 22px;
 		font-size: 22px;
 		line-height: calc(26 / 22 * 100%);
 		font-weight: 400;
+
+        @include media('1024', max) {
+            margin-bottom: 11px;
+            font-size: 20px;
+            line-height: 23px;
+        }
 	}
 
 	&__subtitle {
@@ -62,17 +78,33 @@
 
 	&__tabs {
 		margin-bottom: 25px;
+
+        @include media('1024', max) {
+            margin-bottom: 16px;
+        }
 	}
 
 	&__filters {
 		margin-bottom: 25px;
 		display: grid;
 		grid-template-columns: 122px calc(374 / 952 * 100%) 1fr auto;
-		grid-template-areas:
-			'select search . btn'
-		;
+        grid-template-areas: 'select search . btn';
 		gap: 20px;
 		align-items: center;
+
+        @include media('1024', max) {
+            margin-bottom: 20px;
+            grid-template-columns: max-content 204px 1fr auto;
+            gap: 14px;
+        }
+
+        @include media('767', max) {
+            grid-template-areas:
+            'search search search'
+            'select . btn'
+            ;
+            grid-template-columns: max-content 1fr auto;
+        }
 	}
 
 	&__select {
@@ -85,10 +117,18 @@
 		grid-area: search;
 	}
 
-	&__add-good-btn {
-		padding: 12px 39.5px;
-		grid-area: btn;
+	&__add-btn {
+		padding: 14px 40.75px;
 	}
+
+    &__add-good-btn {
+        padding: 12px 42.7px;
+        grid-area: btn;
+
+        @include media('1024', max) {
+            padding: 10px 23px;
+        }
+    }
 
 	&__add-variation-btn {
 		padding: 6px 12.75px;
@@ -97,7 +137,10 @@
 
 	&__check-all {
 		margin-bottom: 12px;
-		margin-left: 20px;
+		
+        @include media('768', min) {
+            margin-left: 20px;
+        }
 	}
 
 	&__cards {
@@ -137,6 +180,11 @@
 		@include row-grid(25px);
 		justify-items: start;
 
+        @include media('500', max) {
+            display: flex;
+            flex-direction: column;
+        }
+
 		>* {
 			&:not(:last-child) {
 				position: relative;
@@ -150,6 +198,10 @@
 					width: 516px;
 					height: 2px;
 					background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+
+                    @include media('500', max) {
+                        width: 100%;
+                    }
 				}
 			}
 		}
@@ -157,6 +209,10 @@
 
 	&__field {
 		width: 187px;
+
+        @include media('500', max) {
+            width: 100%;
+        }
 
 		.select__toggle {
 			padding: 7px 20px 7px 10px;
@@ -167,7 +223,13 @@
 
 	&__text-field {
 		padding: 8px 14px;
-		width: 360px;
+		max-width: 360px;
+        flex-grow: 1;
+        
+        @include media('500', max) {
+            width: 100%;
+            min-width: 100%;
+        }
 	}
 
 	&__field+&__field {
@@ -181,6 +243,11 @@
 	&__fields-item {
 		display: flex;
 		align-items: center;
+
+        @include media('500', max) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
 		&--start {
 			align-items: flex-start;
@@ -222,6 +289,16 @@
 		min-width: 148px;
 		margin-right: 70px;
 		font-weight: 300;
+
+        @include media('1024', max) {
+            margin-right: 25px;
+            min-width: 130px;
+        }
+
+        @include media('500', max) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
 	}
 
 	b.lk-page__label {
@@ -243,20 +320,69 @@
 	background-color: var(--white);
 	box-shadow: $bsh-2;
 	display: grid;
-	grid-template-columns: auto 60px minmax(calc(159 / 952 * 100%), 0.6fr) max-content minmax(calc(243 / 952 * 100%), 0.9fr) max-content 13% auto;
+    grid-template-areas: 'check img good articul category price relatedGoods btns';
+	grid-template-columns: repeat(2, auto) minmax(calc(159 / 952 * 100%), 0.6fr) max-content minmax(calc(243 / 952 * 100%), 0.9fr) max-content 13% auto;
 	gap: 18px;
 
+    @include media('1024', max) {
+        grid-template-columns: repeat(2, auto) 1fr max-content calc(93 / 546 * 100%) max-content 75px auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    @include media('767', max) {
+        grid-template-columns: repeat(2, auto) repeat(3, 1fr) auto;
+        grid-template-areas:
+        'check img good articul category btns'
+        '. . price relatedGoods relatedGoods btns'
+        ;
+    }
+
+    @include media('500', max) {
+        grid-template-columns: repeat(2, auto) repeat(2, 1fr) auto;
+        grid-template-areas:
+        'check img good articul btns'
+        'price price category relatedGoods btns'
+        ;
+    }
+
 	&__check {
+        grid-area: check;
 		align-self: center;
+
+        .checkbox {
+            &__style {
+                @include media('1024', max) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            &__input:checked ~ .checkbox__style {
+                &::before {
+                    @include media('1024', max) {
+                        top: -1.45px;
+                        left: 1.4px;
+                        width: 15px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
 	}
 
 	// .good-card__img
 
 	&__img {
+        grid-area: img;
         width: 60px;
-		min-width: 60px;
 		height: 60px;
 		align-self: center;
+
+        @include media('1024', max) {
+            width: 40px;
+            height: 40px;
+        }
 	}
 
 	&__col {
@@ -264,12 +390,36 @@
 		font-size: 12px;
 		line-height: 14px;
 		font-weight: 300;
+
+        &--good {
+            grid-area: good;
+        }
+
+        &--articul {
+            grid-area: articul;
+        }
+
+        &--category {
+            grid-area: category;
+        }
+
+        &--price {
+            grid-area: price;
+        }
+
+        &--related-goods {
+            grid-area: relatedGoods;
+        }
 	}
 
 	// .good-card__title
 
 	&__title {
 		margin-bottom: 12px;
+
+        @include media('1024', max) {
+            margin-bottom: 3px;
+        }
 	}
 
 	// .good-card__text
@@ -284,103 +434,34 @@
 
 	&__prices {
 		gap: 5px;
+
+        @include media('1024', max) {
+            gap: 3px;
+        }
 	}
 
+    &__price {
+        @include media('1024', max) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    &__old-price {
+        @include media('1024', max) {
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+
 	&__btns {
+        grid-area: btns;
+        align-self: start;
 		@include row-grid(4px);
 
 		.btn {
 			width: 20px;
 			height: 20px;
 		}
-	}
-}
-
-.characteristics-card {
-	padding: 15px 20px 20px 45px;
-	display: grid;
-	grid-template-columns: 1fr auto;
-	column-gap: 45px;
-	align-items: flex-start;
-	background-color: var(--white);
-	box-shadow: $bsh-2;
-	border-radius: var(--brs-card);
-	// .characteristics-card__content
-
-	&__content {
-		display: flex;
-		flex-direction: column;
-	}
-
-	// .characteristics-card__title
-
-	&__title {
-		margin-bottom: 5px;
-		font-size: 22px;
-		line-height: calc(26 / 22 * 100%);
-		font-weight: 400;
-	}
-
-	// .characteristics-card__item
-
-	&__item {
-		display: flex;
-		align-items: flex-start;
-		column-gap: 65px;
-
-		&:not(:last-child) {
-			margin-bottom: 15px;
-		}
-	}
-
-	&__badges {
-		gap: 18px 14px;
-	}
-
-	&__badge {
-		padding: 6px 29px;
-	}
-
-	// .characteristics-card__item-title
-
-	&__item-title {
-		min-width: 107px;
-		font-size: 14px;
-		line-height: 16px;
-		font-weight: 400;
-	}
-
-	// .characteristics-card__categories
-
-	&__categories {
-		@include row-grid(10px);
-	}
-
-	// .characteristics-card__category
-
-	&__category {
-		p {
-			font-size: 11px;
-			line-height: calc(16 / 11 * 100%);
-		}
-	}
-
-	// .characteristics-card__category-title
-
-	&__category-title {
-		font-size: 16px;
-		line-height: calc(19 / 16 * 100%);
-	}
-
-	// .characteristics-card__btns
-
-	&__btns {
-		flex-direction: column;
-		gap: 16.5px;
-	}
-
-	&__action-btn {
-		width: 28px;
-		height: 28px;
 	}
 }

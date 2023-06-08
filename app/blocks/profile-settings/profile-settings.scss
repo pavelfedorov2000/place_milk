@@ -1,7 +1,11 @@
 .profile-settings {
-	display: grid;
-	grid-template-columns: 1fr 186px;
-	align-items: flex-start;
+    position: relative;
+
+	@include media('1025', min) {
+        display: grid;
+        grid-template-columns: 1fr 186px;
+        align-items: flex-start;
+    }
 
 	&__form {
 		grid-column: 1 / 2;

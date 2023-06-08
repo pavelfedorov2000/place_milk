@@ -1,0 +1,39 @@
+.review-stats {
+	$this: &;
+
+	display: flex;
+	justify-content: center;
+	gap: 33px;
+
+	&--orientation {
+		&_col {
+			@include row-grid(12px);
+
+			#{$this} {
+				&__item {
+					flex-direction: row;
+					gap: 8px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+.review-stat {
+    display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	text-align: center;
+	gap: 3px;
+	font-size: 12px;
+	line-height: 14px;
+
+	&__property {
+		font-weight: 300;
+	}
+
+	&__value {
+		font-weight: 500;
+	}
+}

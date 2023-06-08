@@ -1,8 +1,12 @@
 <fieldset>
-	<legend class="lk-page__title">Добавьте фотограции</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "Добавьте фотограции"
+    })
 	<div class="media-block">
 		@@include('blocks/media-choose/media-choose.html', {
-		"text": "до 5 изображений в формате PNG, JPEG."
+		    "text": "до 5 изображений в формате PNG, JPEG."
 		})
 	</div>
 </fieldset>

@@ -32,9 +32,17 @@
 						<li>
 							<article class="characteristics-card">
 								<div class="characteristics-card__content">
-									<h2 class="characteristics-card__title">Сезон</h2>
+                                    @@include('blocks/title/title.html', {
+                                        "level": "2",
+                                        "class": "characteristics-card__title",
+                                        "text": "Сезон"
+                                    })
 									<section class="characteristics-card__item">
-										<h3 class="characteristics-card__item-title">Характеристики</h3>
+                                        @@include('blocks/title/title.html', {
+                                            "level": "3",
+                                            "class": "characteristics-card__item-title",
+                                            "text": "Характеристики"
+                                        })
 										<div class="characteristics-card__item-content">
 											<div class="badges characteristics-card__badges">
 												@@loop('blocks/badge/badge.html', [{
@@ -70,7 +78,11 @@
 										</div>
 									</section>
 									<section class="characteristics-card__item">
-										<h3 class="characteristics-card__item-title">Разделы</h3>
+                                        @@include('blocks/title/title.html', {
+                                            "level": "3",
+                                            "class": "characteristics-card__item-title",
+                                            "text": "Разделы"
+                                        })
 										<div class="characteristics-card__item-content">
 											<div class="characteristics-card__categories">
 												<div class="characteristics-card__category">
@@ -107,9 +119,17 @@
 						<li>
 							<article class="characteristics-card">
 								<div class="characteristics-card__content">
-									<h2 class="characteristics-card__title">Сезон</h2>
+									@@include('blocks/title/title.html', {
+                                        "level": "2",
+                                        "class": "characteristics-card__title",
+                                        "text": "Сезон"
+                                    })
 									<section class="characteristics-card__item">
-										<h3 class="characteristics-card__item-title">Характеристики</h3>
+										@@include('blocks/title/title.html', {
+                                            "level": "3",
+                                            "class": "characteristics-card__item-title",
+                                            "text": "Характеристики"
+                                        })
 										<div class="characteristics-card__item-content">
 											<div class="badges characteristics-card__badges">
 												@@loop('blocks/badge/badge.html', [{
@@ -141,7 +161,11 @@
 										</div>
 									</section>
 									<section class="characteristics-card__item">
-										<h3 class="characteristics-card__item-title">Разделы</h3>
+										@@include('blocks/title/title.html', {
+                                            "level": "3",
+                                            "class": "characteristics-card__item-title",
+                                            "text": "Разделы"
+                                        })
 										<div class="characteristics-card__item-content">
 											<div class="characteristics-card__categories">
 												<div class="characteristics-card__category">

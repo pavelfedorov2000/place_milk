@@ -1,11 +1,17 @@
 <fieldset class="good-look">
-	<legend class="lk-page__title">Вид товара</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "Вид товара"
+    })
 	<div class="lk-page__fields">
 		<div class="lk-page__fields-group">
 			<div class="lk-page__fields-item">
 				<span class="lk-page__label">Значение вида товара</span>
 				<div class="select lk-page__field">
-					<div class="select__toggle">Цвет</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Цвет</span>
+                    </button>
 					<div class="select__content">
 						<input id="goodColor0" class="select__input" type="radio" name="goodColor" checked />
 						<label for="goodColor0" tabindex="0" class="select__label" data-value="Цвет ">Цвет</label>

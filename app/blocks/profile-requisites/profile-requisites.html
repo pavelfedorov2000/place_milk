@@ -1,8 +1,16 @@
 <fieldset id="profile-requisites">
-	<legend class="lk-page__title">Реквизиты</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "Реквизиты"
+    })
 	<div class="lk-page__fields-group">
 		<fieldset>
-			<legend class="lk-page__subtitle">Юридическое лицо</legend>
+            @@include('blocks/title/title.html', {
+                "class": "lk-page__subtitle",
+                "tag": "legend",
+                "text": "Юридическое лицо"
+            })
 			<div class="lk-page__fields-items">
 				<div class="lk-page__fields-item">
 					<span class="lk-page__label">Название Юр.лица</span>
@@ -23,7 +31,11 @@
 			</div>
 		</fieldset>
 		<fieldset>
-			<legend class="lk-page__subtitle">Банк</legend>
+            @@include('blocks/title/title.html', {
+                "class": "lk-page__subtitle",
+                "tag": "legend",
+                "text": "Банк"
+            })
 			<div class="lk-page__fields-items">
 				<div class="lk-page__fields-item">
 					<span class="lk-page__label">Название банка</span>

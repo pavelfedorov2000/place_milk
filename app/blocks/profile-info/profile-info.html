@@ -1,5 +1,9 @@
 <fieldset id="profile-info">
-	<legend class="lk-page__title">О магазине</legend>
+    @@include('blocks/title/title.html', {
+        "class": "lk-page__title",
+        "tag": "legend",
+        "text": "О магазине"
+    })
 	<div class="lk-page__fields-group">
 		<div class="lk-page__fields-items">
 			<label class="lk-page__fields-item">
@@ -36,7 +40,9 @@
 			<div class="lk-page__fields-item">
 				<b class="lk-page__label">Выбрать язык</b>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Русский</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Русский</span>
+                    </button>
 					<div class="select__content">
 						<input id="language0" class="select__input" type="radio" name="language" checked />
 						<label for="language0" tabindex="0" class="select__label" data-value="Русский">Русский</label>
@@ -49,7 +55,9 @@
 			<div class="lk-page__fields-item">
 				<b class="lk-page__label">Выбрать валюту</b>
 				<div class="select lk-page__field select--style_border">
-					<div class="select__toggle">Российский рубль (₽)</div>
+					<button class="select__toggle" type="button" aria-expanded="false">
+                        <span class="select__toggle-text">Российский рубль (₽)</span>
+                    </button>
 					<div class="select__content">
 						<input id="currency0" class="select__input" type="radio" name="currency" checked />
 						<label for="currency0" tabindex="0" class="select__label"
@@ -63,7 +71,11 @@
 			</div>
 		</div>
 		<fieldset id="profile-contacts">
-			<legend class="lk-page__subtitle">Контакты</legend>
+            @@include('blocks/title/title.html', {
+                "class": "lk-page__subtitle",
+                "tag": "legend",
+                "text": "Контакты"
+            })
 			<div class="lk-page__fields-items">
 				<div class="lk-page__fields-item">
 					<b class="lk-page__label">Телефон</b>

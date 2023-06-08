@@ -8,6 +8,7 @@ app.select = {
 
         selects.forEach((select) => {
             const selectToggle = select.querySelector('.select__toggle');
+            const selectToggleText = selectToggle.querySelector('.select__toggle-text');
             const selectLabels = select.querySelectorAll('.select__label');
 
             selectToggle.addEventListener('click', () => {
@@ -22,7 +23,7 @@ app.select = {
 
             selectLabels.forEach((label) => {
                 label.addEventListener('click', (e) => {
-                    selectToggle.textContent = e.target.textContent;
+                    selectToggleText.textContent = e.target.textContent;
                     select.setAttribute('data-state', '');
                     selectToggle.setAttribute('aria-expanded', false);
                 });

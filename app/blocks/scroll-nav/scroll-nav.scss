@@ -42,21 +42,41 @@
 
 	&--aside {
 		@include sticky(20px);
-		grid-column: -2 / -1;
 		padding: 24px 30px;
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
 		box-shadow: $bsh-2;
 
+        @include media('1025', min) {
+            grid-column: -2 / -1;
+        }
+
+        @include media('1024', max) {
+            width: 150px;
+            padding: 12px 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        @include media('767', max) {
+            display: none;
+        }
+
 		#{$this} {
 			&__list {
 				@include row-grid(11px);
+                justify-content: end;
 				justify-items: end;
+
+                @include media('1024', max) {
+                    row-gap: 4px;
+                }
 
 				&::after {
 					top: 2px;
 					left: auto;
 					bottom: 2px;
-					right: 7px;
+					right: 4px;
 					width: 2.5px;
 					height: auto;
 				}
@@ -67,6 +87,12 @@
 				justify-content: flex-end;
 				gap: 22px;
 				text-align: right;
+
+                @include media('1024', max) {
+                    gap: 11px;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
 			}
 		}
 	}

@@ -15,6 +15,32 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    function checkAll() {
+        const checkAll = document.querySelector('.lk-page__check-all').querySelector('.checkbox__input');
+        const goods = checkAll.closest('.lk-page').querySelector('.lk-goods').querySelectorAll('.good-card');
+
+        if (!checkAll) return;
+
+        checkAll.addEventListener('change', () => {
+            const isChecked = checkAll.checked;
+
+            goods.forEach((good) => {
+                const goodCheck = good.querySelector('.checkbox__input');
+
+                if (isChecked) {
+                    checkAll.removeAttribute('checked');
+                    goodCheck.setAttribute('checked', true);
+
+                } else {
+                    checkAll.setAttribute('checked', true);
+                    goodCheck.removeAttribute('checked');
+                }
+            });
+        });
+    }
+
+    checkAll();
+
     /* const animatedItems = document.querySelectorAll('.animated');
 
     const callback = (entries, observer) => {

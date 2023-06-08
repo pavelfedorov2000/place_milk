@@ -1,36 +1,40 @@
 <div class="file-upload@@if(context.class){ @@class}">
 	@@if(context.title){
-	<div class="file-upload__title">@@title</div>
+        @@include('blocks/title/title.html', {
+            "class": "file-upload__title",
+            "tag": "div",
+            "text": "@@title"
+        })
 	}
 	@@if(context.text){
-	<p>@@text</p>
+	    <p>@@text</p>
 	}
 	@@if(context.downloadBtn){
-	@@include('blocks/button/button.html', {
-	"class": "file-upload__download",
-	"transparent": true,
-	"icon": "download",
-	"text": "@@downloadBtn"
-	})
+        @@include('blocks/button/button.html', {
+            "class": "file-upload__download",
+            "transparent": true,
+            "icon": "download",
+            "text": "@@downloadBtn"
+        })
 	}
 	@@if(context.file){
-	<div class="file-upload__wrap">
-		<div class="file-upload__file">@@file</div>
-		@@include('blocks/button/button.html', {
-		"class": "file-upload__btn",
-		"style": "bg-gradient",
-		"text": "Загрузить файл"
-		})
-	</div>
+        <div class="file-upload__wrap">
+            <div class="file-upload__file">@@file</div>
+            @@include('blocks/button/button.html', {
+                "class": "file-upload__btn",
+                "style": "bg-gradient",
+                "text": "Загрузить файл"
+            })
+        </div>
 	}
 	@@if(context.progress){
-	<div class="file-upload__progress">
-		<div class="file-upload__bar">
-			<span style="width: @@progress"></span>
-		</div>
-		<p class="file-upload__progress-text">
-			Загрузка файла @@progress
-		</p>
-	</div>
+        <div class="file-upload__progress">
+            <div class="file-upload__bar">
+                <span style="width: @@progress"></span>
+            </div>
+            <p class="file-upload__progress-text">
+                Загрузка файла @@progress
+            </p>
+        </div>
 	}
 </div>

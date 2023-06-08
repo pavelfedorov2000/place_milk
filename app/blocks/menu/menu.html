@@ -1,104 +1,87 @@
 <nav class="menu@@if(context.class){ @@class}">
 	<div class="menu__heading">
-		<svg class="icon">
-			<use xlink:href="assets/images/sprite.svg#menu-dots"></use>
-		</svg>
+        @@include('blocks/sprite/sprite.html', {
+            "icon": "menu-dots"
+        })
 		<span class="menu__title">
 			Популярные категории
 		</span>
 	</div>
 	<div class="menu__body">
 		<ul class="menu__list">
-			<li>
-				@@include('blocks/button/button.html', {
+			@@loop('blocks/button/button.html', [{
 				"href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "laptop",
 				"text": "Компьютеры и оргтехника"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+			}, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "power-plug",
 				"text": "Электроника"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "microwave",
 				"text": "Бытовая техника"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "dress",
 				"text": "Одежда для женщин"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "t-shirt",
 				"text": "Одежда для мужчин"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "baby-boy",
 				"text": "Все для детей"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "steering-wheel",
 				"text": "Автотовары"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "lotus",
 				"text": "Красота и здоровье"
-				})
-			</li>
-			<li>
-				@@include('blocks/button/button.html', {
-				"href": "#",
+            }, {
+                "href": "#",
+                "listItem": true,
 				"transparent": true,
 				"class": "menu__list-item",
 				"icon": "ball",
 				"text": "Спорт и развлечения"
-				})
-			</li>
+            }])
 		</ul>
 		@@include('blocks/button/button.html', {
-		"href": "#",
-		"transparent": true,
-		"style": "more",
-		"class": "menu__more-btn",
-		"sprite": "drop-arrow",
-		"icon_position_right": true,
-		"text": "Все категории"
+            "href": "#",
+            "transparent": true,
+            "style": "more",
+            "class": "menu__more-btn",
+            "sprite": "drop-arrow",
+            "icon_position_right": true,
+            "text": "Все категории"
 		})
 	</div>
 </nav>

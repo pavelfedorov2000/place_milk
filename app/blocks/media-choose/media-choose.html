@@ -6,9 +6,9 @@
 		    <span>Logo</span>
 		}
 		@@if(!context.logo){
-            <svg class="icon">
-                <use xlink:href="assets/images/sprite.svg#gallery"></use>
-            </svg>
+            @@include('blocks/sprite/sprite.html', {
+                "icon": "gallery"
+            })
 		}
 	</span>
 	@@if(context.text){
