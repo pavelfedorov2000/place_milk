@@ -1,0 +1,38 @@
+@@include("blocks/head/head.html", {"title": "Главная без каталога"})
+<div class="wrapper">
+	@@include('blocks/layout/layout.html')
+	<main class="page">
+		@@include("blocks/promo/promo.html", {
+            "smallBanners": true
+        })
+		@@loop('blocks/catalog-section/catalog-section.html', [{
+            "title": "Успей купить",
+            "array": "sale-goods"
+		}, {
+            "title": "Новинки",
+            "array": "new-goods"
+		}, {
+            "title": "Магазины для вас",
+            "item": "shop-card",
+            "items": "4",
+            "array": "shops"
+		}, {
+            "title": "Рекомендуемые для вас товары",
+            "array": "recommended-goods"
+		}])
+		@@include('blocks/text-section/text-section.html')
+	</main>
+	@@include('blocks/catalog-section/catalog-section.html', {
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "array": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
+	})
+	@@include("blocks/footer/footer.html")
+</div>
+@@include("blocks/link/link.html")
+</body>
+
+</html>

@@ -6,6 +6,10 @@
 	gap: 11px;
 	justify-content: center;
 
+    @include media('500', max) {
+        gap: 5px;
+    }
+
 	// .pagination__list
 
 	&__list {

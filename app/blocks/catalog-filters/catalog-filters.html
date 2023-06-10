@@ -1,0 +1,45 @@
+<div class="catalog-filters">
+    <div class="catalog-filters__switchers switchers">
+        <div class="switcher">
+            <input class="switcher__input" type="checkbox" name="discounts" id="discounts">
+            <label for="discounts" class="switcher__content">
+                <span class="switcher__text">Скидки</span>
+                <span class="switcher__style"></span>
+            </label>
+        </div>
+        <div class="switcher">
+            <input class="switcher__input" type="checkbox" name="new" id="new" checked>
+            <label for="new" class="switcher__content">
+                <span class="switcher__text">Новинки</span>
+                <span class="switcher__style"></span>
+            </label>
+        </div>
+        <div class="switcher">
+            <input class="switcher__input" type="checkbox" name="free-delivery" id="free-delivery" checked>
+            <label for="free-delivery" class="switcher__content">
+                <span class="switcher__text">Бесплатная доставка</span>
+                <span class="switcher__style"></span>
+            </label>
+        </div>
+    </div>
+    <div class="catalog-filters__rating rating-filter">
+        @@include('blocks/checkbox/checkbox.html')
+        @@include('blocks/rating/rating.html', {
+            "stars": "4",
+            "text": "или более"
+        })
+    </div>
+    @@include('blocks/catalog-sort/catalog-sort.html')
+    <div class="catalog-filters__view catalog-view">
+        <span class="catalog-view__title">Вид:</span>
+        @@loop('blocks/button/button.html', [{
+            "class": "catalog-view__btn active",
+            "transparent": true,
+            "icon": "grid"
+        }, {
+            "class": "catalog-view__btn",
+            "transparent": true,
+            "icon": "list"
+        }])
+    </div>
+</div>

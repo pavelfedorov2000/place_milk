@@ -11,7 +11,7 @@
         })
 		@@if(!context.swiper){
             <ul class="grid-row@@if(context.items){ grid-row--items_@@items}">
-                @@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/@@goods.json")
+                @@loop('blocks/@@if(context.item){@@item}@@if(!context.item){catalog-card}/@@if(context.item){@@item}@@if(!context.item){catalog-card}.html', "../resources/assets/@@array.json")
             </ul>
 		}
 		@@if(context.swiper){
@@ -30,7 +30,7 @@
                 </div>
                 <div class="swiper @@swiper">
                     <ul class="swiper-wrapper">
-                        @@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/@@goods.json")
+                        @@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/@@array.json")
                     </ul>
                 </div>
             </div>

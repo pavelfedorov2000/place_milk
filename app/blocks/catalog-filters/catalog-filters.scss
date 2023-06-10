@@ -1,0 +1,106 @@
+.catalog-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__switchers {
+        flex-grow: 1;
+        column-gap: 48px;
+    }
+
+    &__sort {
+        flex-grow: 1;
+    }
+}
+
+.rating-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.catalog-view {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.switchers {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.switcher {
+    $this: &;
+
+    &__input {
+        width: 1px;
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		clip: rect(0 0 0 0);
+
+        & + #{$this} {
+            &__content {
+                #{$this}__style {
+                    position: relative;
+                    width: 37px;
+                    height: 18px;
+                    background: rgba(var(--black-rgb), 0.6);
+                    border-radius: var(--brs-card);
+                    cursor: pointer;
+
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        transition: var(--transition) all;
+                    }
+
+                    &:before {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 2.25px;
+                        z-index: 1;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: var(--brs-card);
+                        background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
+                    }
+
+                    &:after {
+                        top: 1px;
+                        right: 1px;
+                        bottom: 1px;
+                        left: 1px;
+                        background-color: var(--white);
+                        border-radius: var(--brs-card);
+                    }
+                }
+            }
+        }
+
+        &:checked + #{$this}__content {
+            #{$this} {
+                &__style {
+                    background: var(--accent);
+
+                    &::before {
+                        left: calc(100% - 15px - 2.25px);
+                        background: var(--accent);
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+}

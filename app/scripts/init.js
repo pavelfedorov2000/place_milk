@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     app.mediaBlock.init();
     app.select.init();
     app.asideFilters.init();
+    app.datepicker.init();
 
     document.querySelectorAll('[data-section]').forEach((btn) => {
         btn.addEventListener('click', () => {

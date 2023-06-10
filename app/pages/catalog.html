@@ -18,7 +18,7 @@
                         "level": "1",
                         "text": "Мужчинам"
                     })
-					@@include('blocks/catalog-sort/catalog-sort.html')
+					@@include('blocks/catalog-filters/catalog-filters.html')
 					<ul class="catalog-list">
 						@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/catalog-goods.json")
 					</ul>
@@ -31,7 +31,7 @@
 	@@include('blocks/catalog-section/catalog-section.html', {
         "aside": true,
         "title": "Ранее вы смотрели",
-        "goods": "viewed-earlier",
+        "array": "viewed-earlier",
         "items": "5",
         "with": "bg",
         "withoutBtn": true

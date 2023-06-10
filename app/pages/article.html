@@ -64,20 +64,21 @@
 				</p>
 			</article>
 			@@include('blocks/aside-news/aside-news.html', {
-			"title": "Другие новости",
-			"item": "article-card",
-			"array": "other-articles"
+                "title": "Другие новости",
+                "item": "article-card",
+                "array": "other-articles"
 			})
 		</div>
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
-	"aside": true,
-	"title": "Ранее вы смотрели",
-	"goods": "viewed-earlier",
-	"items": "5",
-	"with": "bg",
-	"withoutBtn": true
+        "aside": true,
+        "title": "Ранее вы смотрели",
+        "array": "viewed-earlier",
+        "items": "5",
+        "with": "bg",
+        "withoutBtn": true
 	})
+    @@include('blocks/footer/footer.html')
 </div>
 @@include("blocks/link/link.html")
 </body>

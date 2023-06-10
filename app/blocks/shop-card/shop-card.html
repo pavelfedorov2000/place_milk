@@ -1,0 +1,40 @@
+<li>
+    <article class="shop-card">
+        <div class="shop-card__top">
+            @@include('blocks/img/img.html', {
+                "class": "shop-card__logo",
+                "src": "@@brand.logo.src",
+                "format": "png",
+                "contain": true,
+                "width": "96",
+                "height": "40"
+            })
+            @@include('blocks/title/title.html', {
+                "class": "full-link shop-card__title",
+                "tag": "a",
+                "text": "@@brand.title"
+            })
+        </div>
+        <div class="shop-card__images">
+            @@loop('blocks/img/img.html', [{
+                "class": "shop-card__img",
+                "src": "@@imgFirst",
+                "contain": true,
+                "width": "80",
+                "height": "80"
+            }, {
+                "class": "shop-card__img",
+                "src": "@@imgSecond",
+                "contain": true,
+                "width": "80",
+                "height": "80"
+            }, {
+                "class": "shop-card__img",
+                "src": "@@imgThird",
+                "contain": true,
+                "width": "80",
+                "height": "80"
+            }])
+        </div>
+    </article>
+</li>

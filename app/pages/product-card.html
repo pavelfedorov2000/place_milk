@@ -39,7 +39,7 @@
             "id": "collection-goods",
             "swiper": "collection-slider",
             "title": "Товары в коллекции",
-            "goods": "collection-goods",
+            "array": "collection-goods",
             "with": "bg",
             "withoutBtn": true
 		})
@@ -160,18 +160,18 @@
 		</div>
 		@@loop('blocks/catalog-section/catalog-section.html', [{
             "title": "Другие товары магазина",
-            "goods": "other-section-goods",
+            "array": "other-section-goods",
             "withoutBtn": true
 		}, {
             "title": "Другие товары раздела",
-            "goods": "other-shop-goods",
+            "array": "other-shop-goods",
             "withoutBtn": true
 		}])
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
         "aside": true,
         "title": "Ранее вы смотрели",
-        "goods": "viewed-earlier",
+        "array": "viewed-earlier",
         "items": "5",
         "with": "bg",
         "withoutBtn": true

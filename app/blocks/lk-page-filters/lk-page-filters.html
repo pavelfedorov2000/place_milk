@@ -1,4 +1,7 @@
 <div class="lk-page__filters">
+    @@if(context.datepicker == 'true') {
+        @@include('blocks/datepicker/datepicker.html')
+    }
 	@@if(context.select == 'true'){
         <div class="select lk-page__select select--style_border-gradient">
             <button class="select__toggle" type="button" aria-expanded="false">

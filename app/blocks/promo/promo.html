@@ -1,11 +1,13 @@
 <div class="promo">
 	<div class="container">
-		<div class="grid-row">
-			@@include('blocks/menu/menu.html', {
-			    "class": "card promo__menu span-3"
-			})
+		<div class="grid-row promo__inner">
+			@@if(!context.smallBanners){
+                @@include('blocks/menu/menu.html', {
+                    "class": "card promo__menu span-3"
+                })
+            }
 			@@include('blocks/banner-slider/banner-slider.html', {
-			    "class": "promo__banner span-9"
+			    "class": "promo__slider span-9"
 			})
 			@@if(context.smallBanners){
                 <a href="#" class="promo__banner span-3">

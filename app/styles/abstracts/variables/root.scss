@@ -45,4 +45,5 @@
     --duration--long: 1s;
     --delay: var(--duration);
     --transition: var(--duration) var(--transition-timing);
+    --transition--long: var(--duration--long) var(--transition-timing);
 }

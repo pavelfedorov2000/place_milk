@@ -5,20 +5,25 @@
 		@@include("blocks/promo/promo.html")
 		@@loop('blocks/catalog-section/catalog-section.html', [{
             "title": "Успей купить",
-            "goods": "sale-goods"
+            "array": "sale-goods"
 		}, {
             "title": "Новинки",
-            "goods": "new-goods"
+            "array": "new-goods"
+		}, {
+            "title": "Магазины для вас",
+            "item": "shop-card",
+            "items": "4",
+            "array": "shops"
 		}, {
             "title": "Рекомендуемые для вас товары",
-            "goods": "recommended-goods"
+            "array": "recommended-goods"
 		}])
 		@@include('blocks/text-section/text-section.html')
 	</main>
 	@@include('blocks/catalog-section/catalog-section.html', {
         "aside": true,
         "title": "Ранее вы смотрели",
-        "goods": "viewed-earlier",
+        "array": "viewed-earlier",
         "items": "5",
         "with": "bg",
         "withoutBtn": true

@@ -1,3 +1,58 @@
 .catalog-sort {
-  // your code
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    &-box {
+        position: relative;
+        @include padding-y(8px);
+        display: flex;
+        background: var(--accent);
+        border-radius: var(--brs-card);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            left: 1px;
+            background-color: var(--white);
+            border-radius: var(--brs-card);
+        }
+    }
+}
+
+.catalog-sort-item {
+    $this: &;
+
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+
+    &:not(:last-child) {
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 10px;
+            background-color: var(--black);
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    &.active {
+        #{$this} {
+            &__text {
+                font-weight: 400;
+            }
+        }
+    }
 }

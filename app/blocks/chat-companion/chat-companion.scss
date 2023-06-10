@@ -10,6 +10,10 @@
 	text-align: left;
 	transition: var(--transition) box-shadow;
 
+    @include media('1024', max) {
+        padding: 8px 5px 8px 9px;
+    }
+
 	&.active {
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
 	}
@@ -30,6 +34,10 @@
 	&__name {
 		grid-area: name;
 		@include truncate(139px);
+
+        @include media('1024', max) {
+            max-width: 81px;
+        }
 	}
 
 	// .chat-companion__time
@@ -40,6 +48,10 @@
 		font-size: 12px;
 		line-height: 14px;
 		font-weight: 300;
+
+        @media(min-width: 501px) and (max-width: 1024px) {
+            @include truncate(30px);
+        }
 	}
 
 	// .chat-companion__text
@@ -50,6 +62,10 @@
 		line-height: 14px;
 		font-weight: 300;
 		@include truncate(157px);
+
+        @include media('1024', max) {
+            max-width: 83px;
+        }
 	}
 
 	&__count {

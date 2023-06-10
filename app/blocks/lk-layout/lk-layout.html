@@ -271,6 +271,7 @@
 
                     @@if(context.filters){
                         @@include('blocks/lk-page-filters/lk-page-filters.html', {
+                            "datepicker": "@@filters.datepicker",
                             "select": "@@filters.select",
                             "btn": "@@filters.btn"
                         })

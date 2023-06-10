@@ -32,26 +32,44 @@
         grid-template-columns: repeat(12, 1fr);
     }
 
+    >* {
+		@include media('767', max) {
+            grid-column: 1 / -1;
+        }
+	}
+
 	&--items {
+        &_4 {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 26px 32px;
+
+            @include media('1200', max) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include media('1024', max) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media('767', max) {
+                display: grid;
+                gap: 15px;
+            }
+        }
+
 		&_5 {
 			grid-template-columns: repeat(5, 1fr);
 			gap: 20px;
 
-			@media(max-width: $lg) {
-				grid-template-columns: repeat(4, 1fr);
+			@include media('1024', max) {
+                grid-template-columns: repeat(4, 1fr);
 
 				>* {
 					&:last-child {
 						display: none;
 					}
 				}
-			}
-		}
-	}
-
-	>* {
-		@media(max-width: $sm) {
-			grid-column: 1 / -1;
+            }
 		}
 	}
 }

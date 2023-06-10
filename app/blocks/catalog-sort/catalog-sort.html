@@ -1,3 +1,16 @@
-<div class="catalog-sort">
-  <!--your code-->
+<div class="catalog-filters__sort catalog-sort">
+    <span class="catalog-sort__title">Сортировать по:</span>
+    <div class="catalog-sort-box">
+        <div class="catalog-sort-item">
+            <span class="catalog-sort-item__text">По популярности</span>
+        </div>
+        <div class="catalog-sort-item active">
+            <span class="catalog-sort-item__text">Цена</span>
+            @@include('blocks/icons/arrow-asc.html')
+        </div>
+        <div class="catalog-sort-item">
+            <span class="catalog-sort-item__text">Цена</span>
+            @@include('blocks/icons/arrow-desc.html')
+        </div>
+    </div>
 </div>
