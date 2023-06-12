@@ -2,9 +2,29 @@
 	<div class="container">
 		<div class="promo-store__inner">
 			<div class="promo-store__body">
+                @@include('blocks/bookmark/bookmark.html', {
+                    "class": "promo-store__mark",
+                    "text": "Official partner "
+                })
 				<div class="promo-store__content">
 					<div class="promo-store__top">
-
+                        @@include('blocks/img/img.html', {
+                            "class": "promo-store__logo",
+                            "src": "assets/images/logo/berlingo",
+                            "format": "png",
+                            "alt": "Berlingo logo",
+                            "width": "96",
+                            "height": "40"
+                        })
+                        @@include('blocks/title/title.html', {
+                            "tag": "div",
+                            "class": "promo-store__title",
+                            "text": "Berlingo"
+                        })
+                        @@include('blocks/rating/rating.html', {
+                            "class": "promo-store__rating",
+                            "total": "4.9"
+                        })
 					</div>
 					<dl class="promo-store__stats review-stats">
 						<div class="review-stats__item review-stat">
@@ -21,18 +41,23 @@
 						</div>
 					</dl>
 					@@include('blocks/button/button.html', {
-                        "style": "bg-white",
+                        "style": "bg-white-2",
                         "class": "promo-store__btn",
                         "text": "Связаться с магазином"
 					})
 				</div>
 			</div>
-            @@include('blocks/img/img.html', {
-                "class": "promo-store__picture",
-                "src": "assets/images/content/",
-                "width": "887",
-                "height": "198"
-            })
+            <div class="promo-store__banner">
+                @@include('blocks/img/img.html', {
+                    "class": "promo-store__picture",
+                    "contain": true,
+                    "src": "assets/images/content/berlingo",
+                    "format": "png",
+                    "alt": "Berlingo logo",
+                    "width": "704",
+                    "height": "284"
+                })
+            </div>
 		</div>
 	</div>
 </article>

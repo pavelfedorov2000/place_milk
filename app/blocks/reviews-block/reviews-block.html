@@ -21,7 +21,7 @@
 		@@include('blocks/checkbox/checkbox.html', {
 		    "text": "Только с фото"
 		})
-		<div class="select reviews-block__select select--style_border">
+		<div class="select reviews-block__select select--style_border-gradient">
 			<button class="select__toggle" type="button" aria-expanded="false">
                 <span class="select__toggle-text">Сначала с высокой оценкой</span>
             </button>
@@ -33,7 +33,9 @@
 				<label for="reviewsSort1" tabindex="0" class="select__label"
 					data-value="Сначала с низкой оценкой">Сначала с низкой оценкой</label>
 				<input id="reviewsSort2" class="select__input" type="radio" name="reviewsSort" />
-				<label for="reviewsSort2" tabindex="0" class="select__label" data-value="По дате">По дате</label>
+				<label for="reviewsSort2" tabindex="0" class="select__label" data-value="Сначала новые">Сначала новые</label>
+                <input id="reviewsSort3" class="select__input" type="radio" name="reviewsSort" />
+				<label for="reviewsSort3" tabindex="0" class="select__label" data-value="Сначала старые">Сначала старые</label>
 			</div>
 		</div>
 	</div>
@@ -54,4 +56,5 @@
 		    "aside": "@@reviewAside"
 		})
 	</ul>
+    @@include('blocks/pagination/pagination.html')
 </section>

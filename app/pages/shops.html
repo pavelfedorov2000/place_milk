@@ -1,11 +1,20 @@
-@@include("blocks/head/head.html", {"title": "Магазины"})
+@@include("blocks/head/head.html", {"title": "Общая магазины"})
 <div class="wrapper">
 	@@include('blocks/layout/layout.html')
 	<main class="page">
 		<div class="container">
-			<div class="page__top">
-				<h1>Магазины</h1>
-			</div>
+			@@include('blocks/title_container/title_container.html', {
+                "class": "page-top",
+                "title": {
+                    "class": "title",
+                    "level": "1",
+                    "text": "Наши магазины"
+                }
+            })
+			<ul class="grid-row grid-row--items_4">
+				@@loop('blocks/shop-card/shop-card.html', "../resources/assets/shops-page.json")
+			</ul>
+			@@include('blocks/pagination/pagination.html')
 		</div>
 	</main>
 	@@include("blocks/footer/footer.html")

@@ -1,6 +1,5 @@
 .file-upload {
 	@include row-grid(15px);
-	justify-items: start;
 	padding: 20px 15px;
 	background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
 	// .file-upload__title
@@ -24,6 +23,7 @@
 	&__wrap {
 		display: flex;
 		align-items: center;
+        flex-wrap: wrap;
 		gap: 22px;
 	}
 
@@ -49,10 +49,13 @@
 
 	&__bar {
 		position: relative;
-		width: 609px;
 		height: 8px;
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
 		border-radius: var(--brs-card);
+
+        @include media('1025', min) {
+            width: 609px;
+        }
 
 		span {
 			position: absolute;

@@ -24,13 +24,32 @@
     </div>
     <div class="catalog-filters__rating rating-filter">
         @@include('blocks/checkbox/checkbox.html')
-        @@include('blocks/rating/rating.html', {
-            "stars": "4",
-            "text": "или более"
-        })
+        <div class="rating-filter__stars">
+            @@loop('blocks/checkbox/checkbox.html', [{
+                "style": "rating",
+                "rating": true,
+                "checked": true
+            }, {
+                "style": "rating",
+                "rating": true,
+                "checked": true
+            }, {
+                "style": "rating",
+                "rating": true,
+                "checked": true
+            }, {
+                "style": "rating",
+                "rating": true,
+                "checked": true
+            }, {
+                "style": "rating",
+                "rating": true,
+            }])
+        </div>
+        <div class="rating-filter__text">или более</div>
     </div>
     @@include('blocks/catalog-sort/catalog-sort.html')
-    <div class="catalog-filters__view catalog-view">
+    <!-- <div class="catalog-filters__view catalog-view">
         <span class="catalog-view__title">Вид:</span>
         @@loop('blocks/button/button.html', [{
             "class": "catalog-view__btn active",
@@ -41,5 +60,5 @@
             "transparent": true,
             "icon": "list"
         }])
-    </div>
+    </div> -->
 </div>

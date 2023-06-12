@@ -6,6 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
     app.select.init();
     app.asideFilters.init();
     app.datepicker.init();
+    app.rating.init();
+    app.catalogSort.init();
 
     document.querySelectorAll('[data-section]').forEach((btn) => {
         btn.addEventListener('click', () => {

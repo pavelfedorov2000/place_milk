@@ -15,6 +15,10 @@
 	&__list {
 		display: flex;
 		gap: 11px;
+
+        @include media('500', max) {
+            gap: 5px;
+        }
 	}
 
 	// .pagination__item
@@ -24,6 +28,11 @@
 		display: grid;
 		place-items: center;
 		transition: var(--transition) all;
+
+        @include media('500', max) {
+            width: 25px;
+            height: 25px;
+        }
 
 		&.active {
 			background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);

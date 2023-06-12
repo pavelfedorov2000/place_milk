@@ -18,6 +18,11 @@
                         "level": "1",
                         "text": "Мужчинам"
                     })
+                    @@include('blocks/button/button.html', {
+                        "style": "bg-gradient",
+                        "class": "filter-btn",
+                        "text": "Фильтры"
+                    })
 					@@include('blocks/catalog-filters/catalog-filters.html')
 					<ul class="catalog-list">
 						@@loop('blocks/catalog-card/catalog-card.html', "../resources/assets/catalog-goods.json")

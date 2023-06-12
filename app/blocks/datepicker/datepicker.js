@@ -3,6 +3,9 @@ app.datepicker = {
     description: 'your script description',
     init() {
         const datepicker = document.querySelector('.datepicker');
+
+        if (!datepicker) return;
+
         const datepickerInput = datepicker.querySelector('input[type=date]');
         const datepickerValue = datepicker.querySelector('.datepicker__value');
 

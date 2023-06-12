@@ -6,7 +6,19 @@
             @@beforeText
 	    </@@if(context.boldText){b}@@if(!context.boldText){span}>
 	}
-	<span class="checkbox__style"></span>
+	@@if(!context.rating){
+        <span class="checkbox__style"></span>
+    }
+    @@if(context.rating){
+        <span class="checkbox__star">
+            @@include('blocks/icons/star.html', {
+                "class": "filled"
+            })
+            @@include('blocks/icons/star-base.html', {
+                "class": "stroked"
+            })
+        </span>
+    }
     @@if(context.color) {
         <span class="checkbox__color@@if(context.color == '#fff'){ checkbox__color--white}" style="background: @@color;"></span>
     }

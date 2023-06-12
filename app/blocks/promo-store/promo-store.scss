@@ -1,3 +1,66 @@
 .promo-store {
-  // your code
+    background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+
+    &__inner {
+        @include media('768', min) {
+            display: flex;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__content {
+        padding: 10px 0 33px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media('501', min) {
+            width: 370px;
+        }
+    }
+
+    &__banner {
+        flex-grow: 1;
+    }
+
+    &__mark {
+
+    }
+
+    &__top {
+        margin-bottom: 17px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__stats {
+        margin-bottom: 30px;
+    }
+
+    &__logo {
+        flex: 0 0 96px;
+        margin-right: 10px;
+    }
+
+    &__title {
+        font-size: 22px;
+        line-height: calc(26 / 22 * 100%);
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__rating {
+        font-size: 22px;
+        line-height: calc(26 / 22 * 100%);
+    }
+
+    &__btn {
+        padding: 8px;
+    }
 }

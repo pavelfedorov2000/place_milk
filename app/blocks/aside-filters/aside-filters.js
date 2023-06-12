@@ -2,6 +2,21 @@ app.asideFilters = {
     name: 'asideFilters',
     description: 'your script description',
     init() {
+        const asideFilters = document.querySelector('.aside-filters');
+        const filterButton = document.querySelector('.filter-btn');
+
+        if (!asideFilters || !filterButton) return;
+
+        filterButton.addEventListener('click', () => {
+            asideFilters.classList.add('active');
+        });
+
+        const asideFiltersClose = asideFilters.querySelector('.aside-filters__close');
+
+        asideFiltersClose.addEventListener('click', () => {
+            asideFilters.classList.remove('active');
+        });
+
         const rangeSlider = document.getElementById('range-slider');
 
         if (!rangeSlider) return;

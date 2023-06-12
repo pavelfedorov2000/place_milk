@@ -131,14 +131,27 @@
 				}
 			}
 
-			&-white {
+			&-white,
+            &-white-2 {
 				background: var(--white);
 
 				&::before {
 					display: none;
 				}
+			}
 
-				#{$this} {
+            &-white-2 {
+                border-radius: var(--brs-card);
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        color: var(--black);
+                    }
+                }
+            }
+
+            &-white {
+                #{$this} {
 					&__text {
 						background: var(--accent);
 						-webkit-background-clip: text;
@@ -147,7 +160,7 @@
 						text-fill-color: transparent;
 					}
 				}
-			}
+            }
 		}
 
 		&_color {
@@ -249,6 +262,11 @@
 			@include round(50px);
 			background: transparent;
 
+            @include media('500', max) {
+                width: 30px;
+                height: 30px;
+            }
+
 			&::before {
 				top: 0;
 				right: 0;
@@ -276,6 +294,11 @@
 				fill: var(--black);
 				width: 18px;
 				height: 18px;
+
+                @include media('500', max) {
+                    width: 10px;
+                    height: 10px;
+                }
 			}
 
 			@media (any-hover: hover) {

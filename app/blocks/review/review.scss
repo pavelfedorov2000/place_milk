@@ -1,5 +1,11 @@
 .reviews-list {
 	@include row-grid(20px);
+
+    & + .pagination {
+        @include media('768', min) {
+            @include padding-y(50px);
+        }
+    }
 }
 
 .review {

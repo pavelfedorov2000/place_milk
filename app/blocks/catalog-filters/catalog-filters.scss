@@ -20,13 +20,22 @@
     align-items: center;
     gap: 10px;
     white-space: nowrap;
+
+    &__stars {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__text {
+        font-weight: 300;
+    }
 }
 
-.catalog-view {
+/* .catalog-view {
     display: flex;
     align-items: center;
     gap: 12px;
-}
+} */
 
 .switchers {
     display: flex;
@@ -102,5 +111,14 @@
         display: flex;
         align-items: center;
         gap: 9px;
+    }
+}
+
+.filter-btn {
+    display: none;
+    padding: 16px;
+
+    @include media('767', max) {
+        display: flex;
     }
 }

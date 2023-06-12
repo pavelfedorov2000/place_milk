@@ -1,6 +1,10 @@
 .catalog-section {
 	@include padding-y(60px);
 
+    @include media('767', max) {
+        @include padding-y(30px);
+    }
+
 	&+.catalog-section {
 		padding-top: 0;
 	}
@@ -42,4 +46,8 @@
 aside.catalog-section {
 	padding-top: 30px;
 	padding-bottom: 50px;
+
+    @include media('767', max) {
+        padding-bottom: 30px;
+    }
 }
