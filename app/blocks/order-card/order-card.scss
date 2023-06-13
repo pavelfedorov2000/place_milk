@@ -194,6 +194,7 @@
 
         @include media('1200', max) {
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 8px;
             text-align: left;
         }

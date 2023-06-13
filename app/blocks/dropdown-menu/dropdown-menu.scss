@@ -111,6 +111,10 @@
 		display: flex;
 		flex-direction: column;
         gap: 25px;
+
+        @include media('1024', max) {
+            padding-bottom: 50px;
+        }
 	}
 
 	// .dropdown-menu__menu

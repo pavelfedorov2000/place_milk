@@ -27,8 +27,13 @@
 
 	&__img {
 		margin-bottom: 20px;
-		display: block;
-        aspect-ratio: 1 / 1;
+		display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 160px;
+            max-height: 160px;
+        }
 	}
 
 	// .catalog-card__prices
