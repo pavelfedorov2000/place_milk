@@ -1,6 +1,6 @@
 <@@if(context.tag){@@tag}@@if(!context.tag){div} class="title-container@@if(context.orientation){ title-container--orientation_@@orientation}@@if(context.class){ @@class}">
     @@include('blocks/title/title.html', {
-        "class": "@@title.class",
+        @@if(context.class){"class": "@@title.class",}
         "level": "@@title.level",
         "text": "@@title.text",
         @@if(context.count){

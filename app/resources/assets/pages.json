@@ -8,9 +8,6 @@
     "href": "catalog.html",
     "title": "Каталог"
 }, {
-    "href": "catalog-subcategories.html",
-    "title": "Каталог подкатегорий"
-}, {
     "href": "product-card.html",
     "title": "Карточка товара"
 }, {
@@ -19,12 +16,6 @@
 }, {
     "href": "shops.html",
     "title": "Общая магазины"
-}, {
-    "href": "shop-reviews.html",
-    "title": "Страница магазина отзывы"
-}, {
-    "href": "shop-goods.html",
-    "title": "Страница магазина товары"
 }, {
     "href": "lk-orders.html",
     "title": "ЛК Заказы"

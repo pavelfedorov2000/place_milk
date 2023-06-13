@@ -11,19 +11,19 @@
             "listItem": true,
             "transparent": true,
             "class": "aside-nav__link@@if(context.secondActive){ active}",
-            "text": "@@if(context.disputes){Возвраты и споры}@@if(!context.disputes){Каталог товаров}"
+            "text": "@@if(context.disputes == 'true'){Возвраты и споры}@@if(context.disputes == 'false'){Каталог товаров}"
 		}, {
             "href": "#",
             "listItem": true,
             "transparent": true,
             "class": "aside-nav__link@@if(context.thirdActive){ active}",
-            "text": "@@if(context.wishes){Мои желания}@@if(!context.wishes){Сообщения}"
+            "text": "@@if(context.wishes == 'true'){Мои желания}@@if(context.wishes == 'false'){Сообщения}"
 		}, {
             "href": "#",
             "listItem": true,
             "transparent": true,
             "class": "aside-nav__link@@if(context.fourthActive){ active}",
-            "text": "@@if(context.reviews){Отзывы}@@if(!context.reviews){Сообщения}"
+            "text": "@@if(context.reviews == 'true'){Отзывы}@@if(context.reviews == 'false'){Сообщения}"
 		}, {
             "href": "#",
             "listItem": true,

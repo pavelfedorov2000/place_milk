@@ -14,7 +14,8 @@ fieldset {
 
 	&__field {
 		display: flex;
-		gap: 30px;
+        flex-wrap: wrap;
+		gap: 8px 30px;
 	}
 
 	// .lk-main-info__label
@@ -40,6 +41,10 @@ fieldset {
 		padding: 6px 10px;
 		width: 263px;
 
+        @include media('500', max) {
+            width: 100%;
+        }
+
 		&--short {
 			@include padding-x(5px);
 			width: auto;
@@ -47,6 +52,10 @@ fieldset {
 
 		&--long {
 			width: 480px;
+
+            @include media('500', max) {
+                width: 100%;
+            }
 		}
 	}
 
@@ -62,6 +71,10 @@ fieldset {
 		display: flex;
 		gap: 40px;
 		font-weight: 300;
+
+        @include media('500', max) {
+            gap: 8px 12px;
+        }
 
 		&-sum {
 			font-weight: 400;

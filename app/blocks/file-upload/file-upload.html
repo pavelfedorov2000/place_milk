@@ -19,8 +19,9 @@
 	}
 	@@if(context.file){
         <div class="file-upload__wrap">
-            <div class="file-upload__file">@@file</div>
+            <span class="file-upload__file"></span>
             @@include('blocks/button/button.html', {
+                "type": "submit",
                 "class": "file-upload__btn",
                 "style": "bg-gradient",
                 "text": "Загрузить файл"
@@ -30,10 +31,10 @@
 	@@if(context.progress){
         <div class="file-upload__progress">
             <div class="file-upload__bar">
-                <span style="width: @@progress"></span>
+                <span style="width: 0%"></span>
             </div>
             <p class="file-upload__progress-text">
-                Загрузка файла @@progress
+                Загрузка файла 0%
             </p>
         </div>
 	}

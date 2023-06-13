@@ -1,7 +1,7 @@
 .pagination {
 	$this: &;
 
-	@include padding-y(13px);
+	@include padding-y(20px);
 	display: flex;
 	gap: 11px;
 	justify-content: center;

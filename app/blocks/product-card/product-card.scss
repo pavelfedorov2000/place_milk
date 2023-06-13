@@ -1,15 +1,21 @@
 .product-card {
 	padding: 10px 0 54px;
 
+    &__inner {
+        @include media('767', max) {
+            display: block;
+        }
+    }
+
 	&__gallery {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 54px;
 
-		@media(min-width: $xl) {
-			width: 656px;
-		}
+		@include media('1201', min) {
+            width: 656px;
+        }
 	}
 
 	// .product-card__slider
@@ -21,9 +27,9 @@
 	// .product-card__thumbs
 
 	&__thumbs {
-		@media(min-width: $xl) {
-			width: 588px;
-		}
+		@include media('1201', min) {
+            width: 588px;
+        }
 
 		.swiper-slide {
 			width: 100px;
@@ -49,11 +55,11 @@
 	// .product-card__articul
 
 	&__articul {
-		@media(min-width: $xl) {
-			position: absolute;
+		@include media('1201', min) {
+            position: absolute;
 			right: 0;
 			top: -7px;
-		}
+        }
 	}
 
 	// .product-card__title

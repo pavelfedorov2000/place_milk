@@ -24,6 +24,10 @@
         @include media('1024', max) {
             align-items: flex-start;
         }
+
+        @include media('767', max) {
+            display: block;
+        }
     }
 
 	// .dropdown-menu__aside

@@ -86,8 +86,12 @@
 
 	&__count {
 		position: absolute;
-		top: -2px;
-		right: 9px;
+		top: 8px;
+		right: 20px;
+
+        @include media('1024', max) {
+            right: 5px;
+        }
 	}
 
 	&--style {
@@ -127,8 +131,18 @@
 				color: var(--white);
 
 				&::before {
-					display: none;
+					opacity: 0;
 				}
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        color: var(--black);
+                        
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
 			}
 
 			&-white,
@@ -221,12 +235,6 @@
 
 			&::before {
 				display: none;
-				/* top: 0.5px;
-				right: 0.5px;
-				bottom: 0.5px;
-				left: 0.5px;
-				background-color: var(--white);
-				border-radius: var(--brs-card); */
 			}
 
 			@media (any-hover: hover) {
@@ -401,6 +409,7 @@
 
 				@media (any-hover: hover) {
 					&:hover {
+                        color: var(--color-default);
 						border-color: var(--color-default);
 					}
 				}

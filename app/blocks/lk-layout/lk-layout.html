@@ -6,7 +6,10 @@
 			<div class="grid-row lk-page__grid">
 				<div class="span-3 lk-page__nav">
 					@@include('blocks/aside-nav/aside-nav.html', {
-					    "@@asideNav.activeItem": true
+					    "@@asideNav.activeItem": true,
+                        "disputes": "@@asideNav.disputes",
+                        "wishes": "@@asideNav.wishes",
+                        "reviews": "@@asideNav.reviews",
 					})
 				</div>
 
@@ -42,7 +45,7 @@
                                 @@loop('blocks/button/button.html', [{
                                     "listItem": true,
                                     "data": {
-                                        "attr": "scroll",
+                                        "attr": "section",
                                         "value": "profile-info"
                                     },
                                     "transparent": true,
@@ -52,7 +55,7 @@
                                 }, {
                                     "listItem": true,
                                     "data": {
-                                        "attr": "scroll",
+                                        "attr": "section",
                                         "value": "profile-contacts"
                                     },
                                     "transparent": true,
@@ -62,7 +65,7 @@
                                 }, {
                                     "listItem": true,
                                     "data": {
-                                        "attr": "scroll",
+                                        "attr": "section",
                                         "value": "profile-requisites"
                                     },
                                     "transparent": true,
@@ -72,7 +75,7 @@
                                 }, {
                                     "listItem": true,
                                     "data": {
-                                        "attr": "scroll",
+                                        "attr": "section",
                                         "value": "profile-notifications"
                                     },
                                     "transparent": true,
@@ -82,7 +85,7 @@
                                 }, {
                                     "listItem": true,
                                     "data": {
-                                        "attr": "scroll",
+                                        "attr": "section",
                                         "value": "profile-security"
                                     },
                                     "transparent": true,

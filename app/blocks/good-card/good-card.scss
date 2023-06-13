@@ -3,6 +3,10 @@
 
 	padding: 10px 0 64px;
 
+    @include media('767', max) {
+        padding-bottom: 32px;
+    }
+
 	&__grid {
 		@include media('768', min) {
             grid-template-rows: repeat(2, auto);
@@ -173,7 +177,12 @@
 		gap: 15px;
 
         @include media('1024', max) {
+            margin-top: 50px;
             gap: 10px;
+        }
+
+        @include media('500', max) {
+            margin-top: 30px;
         }
 	}
 

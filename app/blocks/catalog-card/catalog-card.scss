@@ -28,12 +28,7 @@
 	&__img {
 		margin-bottom: 20px;
 		display: block;
-		overflow: hidden;
-
-		img {
-			aspect-ratio: 1 / 1;
-			transition: 0.7s transform ease;
-		}
+        aspect-ratio: 1 / 1;
 	}
 
 	// .catalog-card__prices
@@ -65,9 +60,10 @@
 	}
 
 	&__btn {
+        position: relative;
+        z-index: 3;
 		margin-top: auto;
 		padding: 9px;
-		//width: 100%;
 	}
 
 	&--style {
@@ -80,8 +76,8 @@
 				'img price'
 			;
 
-			@media(max-width: $lg) {
-				padding: 26px 30px 14px;
+			@include media('1024', max) {
+                padding: 26px 30px 14px;
 				grid-template-columns: 1fr;
 				grid-template-areas:
 					'img'
@@ -89,16 +85,16 @@
 					'price'
 				;
 				gap: 8px;
-			}
+            }
 
 			#{$this} {
 				&__img {
 					margin-bottom: 0;
 					grid-area: img;
 
-					@media(max-width: $lg) {
-						margin-bottom: 8px;
-					}
+					@include media('1024', max) {
+                        margin-bottom: 8px;
+                    }
 				}
 
 				&__title {
@@ -130,18 +126,6 @@
 		&_3 {
 			background-color: transparent;
 			box-shadow: none;
-		}
-	}
-
-	@media (any-hover: hover) {
-		&:hover {
-			#{$this} {
-				&__img {
-					img {
-						transform: scale(1.05);
-					}
-				}
-			}
 		}
 	}
 }

@@ -51,5 +51,10 @@
 
 	&__price {
 		margin-right: 10px;
+        white-space: nowrap;
 	}
+
+    &__remove {
+        flex-shrink: 0;
+    }
 }

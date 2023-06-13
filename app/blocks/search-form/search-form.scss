@@ -45,5 +45,11 @@
 			width: 26px;
 			height: 26px;
 		}
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: var(--light-blue);
+            }
+        }
 	}
 }

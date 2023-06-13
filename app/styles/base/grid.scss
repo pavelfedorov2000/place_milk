@@ -26,10 +26,18 @@
 }
 
 .grid-row {
+    display: grid;
+	gap: var(--gap);
+
     @include media('501', min) {
-        display: grid;
-	    gap: var(--gap);
         grid-template-columns: repeat(12, 1fr);
+    }
+
+    &--flex {
+        @include media('500', max) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     >* {
@@ -91,7 +99,7 @@
             justify-content: center;
     
             >* {
-                @media(min-width: $xl) {
+                @include media('1201', min) {
                     max-width: 188px;
                 }
             }

@@ -3,6 +3,10 @@
 	flex-wrap: wrap;
 	gap: 38px;
 
+    @include media('1024', max) {
+        gap: 20px;
+    }
+
 	.media-choose {
 		&:not(:first-child) {
 			.media-choose {
@@ -18,9 +22,15 @@
 	$this: &;
 
 	position: relative;
+    aspect-ratio: 1 / 1;
 	width: 160px;
 	height: 160px;
 	background: var(--accent);
+
+    @include media('500', max) {
+        width: 150px;
+        height: 150px;
+    }
 
 	&::before {
 		content: '';
@@ -38,8 +48,11 @@
 		top: 15px;
 		right: 15px;
 		color: var(--black);
-		opacity: 0;
-		transition: var(--transition) opacity;
+		
+        @include media('1025', min) {
+            opacity: 0;
+		    transition: var(--transition) opacity;
+        }
 	}
 
 	&__img {

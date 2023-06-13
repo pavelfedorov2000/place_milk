@@ -84,21 +84,23 @@
 	// .header__actions
 
 	&__actions {
+        margin-left: 8px;
 		grid-area: actions;
-		gap: 50px;
+		gap: 30px;
 
         @include media('1024', max) {
-            margin-left: 16px;
-            gap: 32px;
+            gap: 12px;
         }
 
         @include media('767', max) {
-            gap: 25px;
+            gap: 5px;
             justify-self: end;
         }
 	}
 
 	&__action {
+        padding: 10px;
+        border-radius: var(--brs);
 		flex-direction: column;
 
 		svg {
@@ -117,6 +119,12 @@
         .btn__text {
             @include media('1024', max) {
                 display: none;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: var(--light-blue);
             }
         }
 	}

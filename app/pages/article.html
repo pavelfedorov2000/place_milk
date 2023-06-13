@@ -13,11 +13,11 @@
                         "text": "Главные тренды весны 2021"
                     }
                 })
-				<picture>
-					<source type="image/webp" srcset="assets/images/content/articles/banner.webp">
-					<img src="assets/images/content/articles/banner.jpg" alt="фото" width="1280" height="406"
-						loading="lazy">
-				</picture>
+                @@include('blocks/img/img.html', {
+                    "src": "assets/images/content/articles/banner",
+                    "width": "1280",
+                    "height": "406"
+                })
 				<h2>Говорят, что тренды больше не в моде</h2>
 				<p>
 					Говорят, что тренды больше не в моде. Потому что к чему нам маркетинговые уловки, провоцирующие

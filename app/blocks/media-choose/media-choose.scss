@@ -7,6 +7,10 @@
 	align-items: center;
 	gap: 27px;
 
+    @include media('500', max) {
+        gap: 15px;
+    }
+
 	&:first-child {
 		grid-column: 1 / -1;
 	}
@@ -21,6 +25,11 @@
 		place-items: center;
 		background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%);
 		transition: var(--transition) box-shadow;
+
+        @include media('500', max) {
+            width: 150px;
+            height: 150px;
+        }
 
 		&--round {
 			border-radius: 50%;
