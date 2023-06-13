@@ -1,6 +1,23 @@
 # Place Milk 
 **Marketplace Platform**
 
+http://pavfed.com/place_milk/
+
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/d5de398f-8b37-405c-9b0d-232348bdef83" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/21094d3a-f14c-4a5b-b70f-91e99dbdb2ba" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/c7b29aa9-587c-4834-88fb-52f02f3ee913" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/84764c4a-aa17-460f-98d6-06554b05aaea" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/81ede7ca-118d-40e8-b55f-d7f46a17d987)" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/3bb81431-ba1c-4310-9cd4-9b3dbc14d790" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/526ff26a-02fb-41ff-97ab-1a79352d5b28" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/e05a8c09-d3c9-4225-a6fb-ba71051ef49a" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/d14fc371-ebe1-44ea-9d51-d9226a916f6f" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/7d9976db-9c31-4b6c-9863-c721cdf23ca3" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/3ca47284-f4b7-415d-9ada-b00a1540fee5" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/704c276c-84fc-49cb-a21e-dcd5557135bf" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/8c184801-afdb-4eb0-9058-78e8b1aa50f2" />
+<img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/3c833b27-85e1-47d0-be1d-8f513859cb1c" />
+
 ## Команды для запуска
 
 ### Запуск с отслеживанием изменений
