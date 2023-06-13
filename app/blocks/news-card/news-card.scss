@@ -48,7 +48,6 @@
 	row-gap: 18px;
 
     @include media('768', min) {
-        padding-bottom: 50px;
         grid-template-areas:
 		'news-1 news-1 news-1 news-1 news-2 news-2 news-2 news-2 news-3 news-3 news-3 news-3'
 		'news-1 news-1 news-1 news-1 news-2 news-2 news-2 news-2 news-5 news-5 news-5 news-5'

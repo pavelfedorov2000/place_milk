@@ -16,9 +16,17 @@
 	gap: 32px;
 
 	&__item {
+        transition: var(--transition) transform;
+
 		.icon {
 			width: 25px;
 			height: 25px;
 		}
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
 	}
 }

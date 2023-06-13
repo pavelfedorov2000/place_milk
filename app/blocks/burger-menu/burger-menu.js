@@ -9,12 +9,16 @@ app.burger = {
 
         burgerBtn.addEventListener('click', () => {
             if (burgerBtn.getAttribute('aria-expanded') === 'false') {
-                html.classList.add('disable-fix');
+                if (navigator.userAgent.includes('Safari')) {
+                    html.classList.add('disable-fix');
+                }
                 body.classList.add('_lock');
                 burgerBtn.setAttribute('aria-expanded', true);
                 dropdownMenu.classList.add('active');
             } else {
-                html.classList.remove('disable-fix');
+                if (navigator.userAgent.includes('Safari')) {
+                    html.classList.remove('disable-fix');
+                }
                 body.classList.remove('_lock');
                 burgerBtn.setAttribute('aria-expanded', false);
                 dropdownMenu.classList.remove('active');

@@ -3,17 +3,17 @@
 		<li class="breadcrumbs__item">
 			<a href="#">
 				@@if(context.firstPage){
-				@@firstPage
+				    @@firstPage
 				}
 				@@if(!context.firstPage){
-				Главная
+				    Главная
 				}
 			</a>
 		</li>
 		@@if(context.prevPage){
-		<li class="breadcrumbs__item">
-			<a href="#">@@prevPage</a>
-		</li>
+            <li class="breadcrumbs__item">
+                <a href="#">@@prevPage</a>
+            </li>
 		}
 		<li class="breadcrumbs__item">
 			<span>@@currentPage</span>

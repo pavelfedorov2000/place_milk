@@ -9,7 +9,11 @@
 	</div>
 	<div class="chat__body">
 		<div class="chat__day">
-			<div class="chat__title">Понедельник</div>
+            @@include('blocks/title/title.html', {
+                "tag": "div",
+                "class": "chat__title",
+                "text": "Понедельник"
+            })
 			<div class="chat__messages">
 				<div class="chat__message chat-message">
 					<p class="chat-message__text">
@@ -70,25 +74,6 @@
 				</div>
 			</div>
 		</div>
-		<form action="#" class="chat-send">
-			<textarea class="chat-send__textfield" placeholder="Введите сообщение"></textarea>
-			<div class="chat-send__bottom">
-				<div class="btns chat-send__icons">
-					@@loop('blocks/button/button.html', [{
-                        "transparent": true,
-                        "sprite": "gallery"
-					}, {
-                        "transparent": true,
-                        "sprite": "happy"
-					}])
-				</div>
-				@@include('blocks/button/button.html', {
-                    "type": "submit",
-                    "class": "chat-send__submit",
-                    "style": "bg-gradient",
-                    "text": "Отправить"
-				})
-			</div>
-		</form>
+		@@include('blocks/chat-send/chat-send.html')
 	</div>
 </div>

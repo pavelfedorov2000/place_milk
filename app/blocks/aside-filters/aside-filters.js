@@ -37,8 +37,8 @@ app.asideFilters = {
 
             if (!rangeValueFrom || !rangeValueTo) return;
 
-            rangeValueFrom.innerHTML = `${Math.floor(values[0])}`;
-            rangeValueTo.innerHTML = `${Math.floor(values[1])}`;
+            rangeValueFrom.innerHTML = Math.floor(values[0]);
+            rangeValueTo.innerHTML = Math.floor(values[1]);
         });
     },
 };

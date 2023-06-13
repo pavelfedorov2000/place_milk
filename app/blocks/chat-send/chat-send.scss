@@ -1,0 +1,40 @@
+.chat-send {
+	padding: 18px 30px 12px;
+	background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.1) 101.17%);
+
+    @include media('1024', max) {
+        @include padding-x(18px);
+    }
+	// .chat-send__textfield
+
+	&__textfield {
+		margin-bottom: 13.5px;
+		padding: 13.5px 15px;
+		width: 100%;
+		background-color: var(--white);
+		border: none;
+		border-radius: var(--brs-card);
+		font-size: 14px;
+		line-height: calc(18 / 14 * 100%);
+		font-weight: 300;
+	}
+
+	// .chat-send__bottom
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .chat-send__icons
+
+	&__icons {
+		gap: 15px;
+	}
+
+	&__submit {
+		padding: 6px 18.5px;
+		border-radius: var(--brs-card);
+	}
+}

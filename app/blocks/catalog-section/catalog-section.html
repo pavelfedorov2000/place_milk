@@ -40,7 +40,7 @@
                 @@include('blocks/button/button.html', {
                     "href": "#",
                     "class": "catalog-section__btn",
-                    "text": "Все товары"
+                    "text": "Все@@if(context.btn){ @@btn}@@if(!context.btn){ товары}"
                 })
             </div>
 		}

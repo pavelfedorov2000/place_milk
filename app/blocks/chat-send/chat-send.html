@@ -1,0 +1,20 @@
+<form action="#" class="chat-send">
+	<textarea class="chat-send__textfield" placeholder="Введите сообщение"></textarea>
+	<div class="chat-send__bottom">
+		<div class="btns chat-send__icons">
+			@@loop('blocks/button/button.html', [{
+                "transparent": true,
+                "sprite": "gallery"
+			}, {
+                "transparent": true,
+                "sprite": "happy"
+			}])
+		</div>
+		@@include('blocks/button/button.html', {
+            "type": "submit",
+            "class": "chat-send__submit",
+            "style": "bg-gradient",
+            "text": "Отправить"
+		})
+	</div>
+</form>
