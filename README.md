@@ -1,7 +1,7 @@
 # Place Milk 
 **Marketplace Platform**
 
-http://pavfed.com/place_milk/
+http://pavfed.com/place_mik/
 
 <img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/d5de398f-8b37-405c-9b0d-232348bdef83" />
 <img src="https://github.com/pavelfedorov2000/place_milk/assets/66357864/21094d3a-f14c-4a5b-b70f-91e99dbdb2ba" />
